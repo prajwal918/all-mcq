@@ -1,0 +1,1569 @@
+{
+  "daa": [],
+  "dbms": [
+    {
+      "question": "Which of the following best describes a database?",
+      "options": [
+        "A collection of unrelated data",
+        "A structured collection of related data stored for retrieval",
+        "A set of tables without any relationships",
+        "A file system"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a benefit of using a database system?",
+      "options": [
+        "Data redundancy increases",
+        "Data sharing is not possible",
+        "Ensures data consistency",
+        "Higher dependency on files"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is not a characteristic of a database approach?",
+      "options": [
+        "Data abstraction",
+        "Program-data independence",
+        "Multiple View",
+        "Dependent file formats"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What does the three-schema architecture help achieve?",
+      "options": [
+        "Data redundancy",
+        "Data independence",
+        "Faster database access",
+        "Improved file handling"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which level of the three-schema architecture provides a user\u2019s view of the database?",
+      "options": [
+        "Internal level",
+        "Conceptual level",
+        "External level",
+        "Physical level"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which type of independence is achieved when changes in the physical schema do not affect the logical schema?",
+      "options": [
+        "Logical independence",
+        "Physical independence",
+        "Data independence",
+        "None of the above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In ER-to-Relational mapping, what does each entity type translate into?",
+      "options": [
+        "A relationship",
+        "A foreign key",
+        "A table",
+        "A schema"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does a multi-valued attribute in ER model translate to in a relational model?",
+      "options": [
+        "A single table column",
+        "A separate table",
+        "A foreign key",
+        "A derived attribute"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In a database system, what is meant by \u201cconcurrency control\u201d?",
+      "options": [
+        "Preventing data redundancy",
+        "Ensuring simultaneous access to data without conflicts",
+        "Backing up data regularly",
+        "Controlling user permissions"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which key is used to establish a relationship between two tables in a relational model?",
+      "options": [
+        "Primary key",
+        "Foreign key",
+        "Composite key",
+        "Surrogate key"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does an ER diagram represent?",
+      "options": [
+        "Relationships between files in a database",
+        "Data and relationships in a database",
+        "Hardware architecture of a database",
+        "The software used in a database"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which type of attribute cannot be divided into smaller parts?",
+      "options": [
+        "Composite attribute",
+        "Derived attribute",
+        "Multivalued attribute",
+        "Simple attribute"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "How are multi-valued attributes represented in an ER diagram?",
+      "options": [
+        "Ellipse",
+        "Double ellipse",
+        "Dashed ellipse",
+        "Rectangle"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following attributes is a derived attribute?",
+      "options": [
+        "Date of birth",
+        "Age",
+        "Name",
+        "Address"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which attribute in an ER diagram is unique for every entity?",
+      "options": [
+        "Foreign key",
+        "Primary key",
+        "Composite attribute",
+        "Multi-valued attribute"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is an example of a many-to-many relationship?",
+      "options": [
+        "A teacher teaches one class",
+        "A student enrolls in multiple courses, and a course has multiple students",
+        "A customer buys one product",
+        "A manager supervises one employee"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following uniquely identifies the elements in the relation?",
+      "options": [
+        "Secondary Key",
+        "Primary key",
+        "Foreign key",
+        "Composite key"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "______ is a special type of integrity constraint that relates two relations & maintains consistency across the relations.",
+      "options": [
+        "Entity Integrity Constraints",
+        "Referential Integrity Constraints",
+        "Domain Integrity Constraints",
+        "Domain Constraints"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Foreign key is the one in which the ________ of one relation is referenced by  another relation.",
+      "options": [
+        "Foreign key",
+        "Primary key",
+        "References",
+        "Check constraint"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "For each attribute of a relation, there is a set of permitted values, called the ________ of that attribute.",
+      "options": [
+        "Domain",
+        "Relation",
+        "Set",
+        "Schema"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The tuples of the relations can be of ________ order.",
+      "options": [
+        "Any",
+        "Same",
+        "Sorted",
+        "Constant"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let X(a, b, c, d) and Y(p,q r, s) be two relations in which a is foreign key of X that refers to primary key of Y. Which of the following operation causes referential integrity constraint violation?",
+      "options": [
+        "insert into Y",
+        "Delete from X",
+        "insert into X",
+        "All above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following operation do not violates domain constraints?",
+      "options": [
+        "Insert operation",
+        "Delete operation",
+        "Update operation",
+        "All above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following is a set of one or more attributes taken collectively to uniquely identify a record?",
+      "options": [
+        "Candidate key",
+        "Sub key",
+        "Super key",
+        "Foreign key"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is a correct statement regarding a relational schema?",
+      "options": [
+        "It defines the structure of data and the relationships between tables.",
+        "It only stores data, not metadata.",
+        "It refers to the actual data stored in the database.",
+        "It cannot include any constraints."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is a violation of a referential integrity constraint?",
+      "options": [
+        "Attempting to insert a duplicate value in a primary key column",
+        "Inserting a value into a foreign key column that does not exist in the primary key column of the referenced table",
+        "Updating a value in a foreign key column",
+        "All of the above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements is true about a primary key constraint?",
+      "options": [
+        "It allows duplicate values but ensures that each value is unique within the table.",
+        "It ensures that no two rows in a table can have the same value for the primary key attribute(s).",
+        "It can be null.",
+        "It can be created on any non-key column."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following operations are part of relational update operations?",
+      "options": [
+        "Insert",
+        "Delete",
+        "Update",
+        "All of the above"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is NOT a fundamental concept of the Relational Model?",
+      "options": [
+        "Relations",
+        "Tuples",
+        "Keys",
+        "Objects"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The relational algebra query language is ___.",
+      "options": [
+        "Analytical",
+        "Procedural",
+        "Symmetrical",
+        "Instrumental"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Relational Algebra, queries are performed using ___.",
+      "options": [
+        "Entities",
+        "Relationships",
+        "Operators",
+        "Objects"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For select operation the ________ appear in the subscript and the ___________ argument appears in the parenthesis after the sigma.",
+      "options": [
+        "Predicates, relation",
+        "Relation, Predicates",
+        "Operation, Predicates",
+        "Relation, Operation"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The select, project and rename operations are called____",
+      "options": [
+        "Binary operations",
+        "Ternary Operations",
+        "Unary operations",
+        "None of the above."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If in the JOIN operation, the conditions of JOIN operation are not satisfied then the results of the operation is",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The DIVISION operation can be applied to two relations A and B such as R(A)  \u00f7  R(B) where as",
+      "options": [
+        "A does not belong to B",
+        "A must be added to B",
+        "A belongs or equal to B",
+        "A must be subtracted from B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The operation which allows to process relationships from multiple relations rather than single relation is classified as",
+      "options": [
+        "division operation",
+        "relation operation",
+        "square operation",
+        "join operation"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The kind of operation by which one tuple can be created with the help of combining tuples from two relations is classified as",
+      "options": [
+        "square operation",
+        "join operation",
+        "division operation",
+        "relation operation"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The ________ clause is used to list the attributes desired in the result of a query.",
+      "options": [
+        "Where",
+        "Select",
+        "From",
+        "Distinct"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements contains an error?",
+      "options": [
+        "Select * from emp where empid = 10003;",
+        "Select empid from emp where empid = 10006;",
+        "Select empid from emp;",
+        "Select empid where empid = 1009 and lastname = \u2018GELLER\u2019;"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is a key concept of the Relational Model?",
+      "options": [
+        "Data is stored in hierarchical structure",
+        "Data is organized in tables (relations)",
+        "Data is stored in linked lists",
+        "Data is represented as objects"
+      ],
+      "answer": 1
+    }
+  ],
+  "sepm": [
+    {
+      "question": "Choose the correct option in terms of Issues related to professional responsibility",
+      "options": [
+        "Confidentiality",
+        "Intellectual property rights",
+        "Both Confidentiality & Intellectual property rights",
+        "Managing Client Relationships"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "\u201cSoftware engineers should not use their technical skills to misuse other people\u2019s computers.\u201d Here the term misuse refers to:",
+      "options": [
+        "Unauthorized access to computer material",
+        "Unauthorized modification of computer material",
+        "Dissemination of viruses or other malware",
+        "All of the mentioned"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Explain what is meant by PRODUCT with reference to one of the eight principles as per the ACM/IEEE Code of Ethics ?",
+      "options": [
+        "The product should be easy to use",
+        "Software engineers shall ensure that their products and related modifications meet the highest professional standards possible",
+        "Software engineers shall ensure that their products and related modifications satisfy the client",
+        "It means that the product designed /created should be easily available"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Identify an ethical dilemma from the situations mentioned below:",
+      "options": [
+        "Your employer releases a safety-critical system without finishing the testing of the system",
+        "Refusing to undertake a project",
+        "Agreement in principle with the policies of senior management",
+        "All of the mentioned"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Identify the correct statement: \u201cSoftware engineers shall",
+      "options": [
+        "act in a manner that is in the best interests of his expertise and favour.\u201d",
+        "act consistently with the public interest.\u201d",
+        "ensure that their products only meet the SRS.\u201d",
+        "all of the mentioned"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Select the incorrect statement: \u201cSoftware engineers should",
+      "options": [
+        "not knowingly accept work that is outside your competence.\u201d",
+        "not use your technical skills to misuse other people\u2019s computers.\u201d",
+        "be dependent on their colleagues.\u201d",
+        "maintain integrity and independence in their professional judgment.\u201d"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Efficiency in a software product does not include",
+      "options": [
+        "responsiveness",
+        "licensing",
+        "memory utilization",
+        "processing time"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "As per an IBM report, \u201c31% of the project get cancelled before they are completed, 53% overrun their cost estimates by an average of 189% and for every 100 projects, there are 94 restarts\u201d. What is the reason for these statistics?",
+      "options": [
+        "Lack of adequate training in software engineering",
+        "Lack of software ethics and understanding",
+        "Management issues in the company",
+        "All of the mentioned"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following property does not correspond to a good Software Requirements Specification (SRS) ?",
+      "options": [
+        "Verifiable",
+        "Ambiguous",
+        "Complete",
+        "Traceable"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following is a functional requirement ?",
+      "options": [
+        "Maintainability",
+        "Portability",
+        "Robustness",
+        "Operations of the system"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "_______requirements capture the intended behavior of the system.",
+      "options": [
+        "Functional",
+        "Non-functional",
+        "Emergent",
+        "Quality"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The SRS document is also known as ____specification.",
+      "options": [
+        "black-box",
+        "white-box",
+        "grey-box",
+        "green-box"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Requirements should specify ___but not \u2018how\u2019.",
+      "options": [
+        "\u2018what\u2019",
+        "\u2018how\u2019",
+        "\u2018why\u2019",
+        "\u2018which\u2019"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Requirements Analysis is an ____Process.",
+      "options": [
+        "Iterative",
+        "Non-Iterative",
+        "Sequential",
+        "Unidirectional"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "SDLC stands for",
+      "options": [
+        "Software Development Life Cycle",
+        "System Development Life cycle",
+        "Software Design Life Cycle",
+        "System Design Life Cycle"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The spiral model was originally proposed by",
+      "options": [
+        "IBM",
+        "Barry Boehm",
+        "Pressman",
+        "Royce"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Compilers, Editors software come under which type of software?",
+      "options": [
+        "System software",
+        "Application software",
+        "Scientific software",
+        "Business Software"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is not defined in a good Software Requirement Specification (SRS) document?",
+      "options": [
+        "Functional Requirement.",
+        "Nonfunctional Requirement.",
+        "Goals of implementation.",
+        "Algorithm for software implementation."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Requirement engineering process includes which of these steps?",
+      "options": [
+        "Feasibility study",
+        "Requirement Gathering",
+        "Software Requirement specification & Validation",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If requirements are easily understandable and defined then which model is best suited?",
+      "options": [
+        "Spiral model",
+        "Waterfall model",
+        "Prototyping model",
+        "Incremental"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Software is defined as \t.",
+      "options": [
+        "Instructions",
+        "Data Structures",
+        "Documents",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is the meaning of requirement elicitation in software engineering?",
+      "options": [
+        "Gathering of requirement.",
+        "Understanding of requirement.",
+        "Getting the requirements from client.",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which is not a step of Requirement Engineering?",
+      "options": [
+        "Requirements elicitation",
+        "Requirements analysis",
+        "Requirements design",
+        "Requirements documentation"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Find out which phase is not available in SDLC?",
+      "options": [
+        "Coding",
+        "Testing",
+        "Maintenance",
+        "Abstraction"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is/are considered stakeholder in the software process?",
+      "options": [
+        "Customers",
+        "End-users",
+        "Project managers",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The process together the software requirements from Client, Analyze and Document is known as____.",
+      "options": [
+        "Requirement engineering process",
+        "Requirement elicitation process",
+        "User interface requirements",
+        "Software system analyst"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For the best Software model suitable for the project, in which of the phase the developers decide a roadmap for project plan?",
+      "options": [
+        "Software Design",
+        "System Analysis",
+        "Coding",
+        "Testing"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of these primary objectives have to be achieved for the requirement model?",
+      "options": [
+        "To describe what the customer requires",
+        "To establish a basis for the creation of a software design",
+        "To define a set of requirements that can be validated",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Design phase is followed by \t.",
+      "options": [
+        "Coding",
+        "Testing",
+        "Maintenance",
+        "Analysis"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Project risk factor is considered in which model?",
+      "options": [
+        "Spiral model.",
+        "Waterfall model.",
+        "Prototyping model",
+        "Incremental"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Abbreviate the term SRS.",
+      "options": [
+        "Software Requirement Specification",
+        "Software Refining Solution",
+        "Software Resource Source",
+        "Software Service"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An SRS",
+      "options": [
+        "establishes the basis for agreement between client and the supplier.",
+        "provides a reference for validation of the final product.",
+        "is a prerequisite to high quality software.",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Main aim of software engineering is to produce",
+      "options": [
+        "program",
+        "software",
+        "within budget",
+        "software within budget in the given schedule"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Reliability of software is directly dependent on",
+      "options": [
+        "quality of the design",
+        "number of errors present",
+        "software engineers experience",
+        "user requirement"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Working software is not available until late in the process in",
+      "options": [
+        "Waterfall model",
+        "Prototyping model",
+        "Incremental model",
+        "Evolutionary Development model"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The major shortcoming of waterfall model is",
+      "options": [
+        "the difficulty in accommodating changes after requirement analysis.",
+        "the difficult in accommodating changes after feasibility analysis.",
+        "the system testing.",
+        "the maintenance of system."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is not included in waterfall model ?",
+      "options": [
+        "Requirement analysis",
+        "Risk analysis",
+        "Design",
+        "Coding"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Software Engineering is an engineering discipline that is concerned with:",
+      "options": [
+        "how computer systems work",
+        "theories and methods that underlie computers and software systems",
+        "all aspects of software production",
+        "all aspects of computer-based systems development, including hardware, software and process engineering"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which process model is also called as classic life cycle model?",
+      "options": [
+        "Waterfall model",
+        "RAD model",
+        "Prototyping model",
+        "Incremental model"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Requirements prioritization and negotiation belongs to :",
+      "options": [
+        "Requirements validation",
+        "Requirements elicitation",
+        "Feasibility study",
+        "Requirements reviews"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Select the most appropriate statement about software engineering.",
+      "options": [
+        ".\tHas been around as a discipline since the early 50\u2019s",
+        ".\tIs a set of rules about developing software products",
+        ".\tNone of these choices",
+        ".\tIs an engineering discipline concerned with all the aspects of software production"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Who proposed the spiral model?",
+      "options": [
+        "Barry Boehm",
+        "Pressman",
+        "Royce",
+        "IBM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following document contains the user system requirements?",
+      "options": [
+        "SRD",
+        "DDD",
+        "SDD",
+        "SRS"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Software engineering is intended to support \tsoftware development.",
+      "options": [
+        "professional",
+        "individual programming",
+        "personal programming",
+        "unstructured"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Good software should deliver the required ___ and___ to the user and should be maintainable, dependable, and usable.",
+      "options": [
+        "non-functionality and performance",
+        "functionality and performance",
+        "unreliable and underperformance",
+        "functionality and non-availability"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "______, where customers and engineers define the software that is to be produced and the constraints on its operation.",
+      "options": [
+        "Software development",
+        "Software validation",
+        "Software specification",
+        "Software evolution"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The waterfall model is an example of a  process__in principle, you must plan and schedule all of the process activities before starting work on them.",
+      "options": [
+        "incremental",
+        "non plan-driven",
+        "unstructured",
+        "plan-driven"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "By developing the software ___, it is cheaper and easier to make changes in the software as it is being developed.",
+      "options": [
+        "incrementally",
+        "non concurrently",
+        "structured",
+        "plan-driven"
+      ],
+      "answer": 0
+    }
+  ],
+  "maths": [
+    {
+      "question": "Rank of an identity matrix of order 4 is___________________",
+      "options": [
+        "4",
+        "3",
+        "1",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "System of equations AX=B has solutions if",
+      "options": [
+        "Rank[A] = number of unknowns",
+        "Rank[A] = Rank[A\u2502B]\u2264 number of unknowns",
+        "Rank[A] \u2260 number of unknowns",
+        "Rank[A] \u2260 Rank[A\u2502B]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "System AX=0 has nontrivial solution if and only if",
+      "options": [
+        "Determinant of A=Determinant of X",
+        "Determinant of A =0",
+        "Rank[A] \u2260 Rank[A\u2502B]",
+        "Determinant of A \u2260 0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statements is incorrect?",
+      "options": [
+        "Rank of a matrix A is the number of nonzero rows in its echelon form",
+        "Rank of a matrix A is equal to number of pivot columns in it.",
+        "Rank of a matrix A is number of free variables in the system AX=B",
+        "Rank of a matrix A is number of basic variables in the system AX=B"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If [\ud835\udc34: \ud835\udc35] = [ 2 3 \u22121 \u2236 5 0 1 3  \u2236\u22121 0 0 \ud835\udc58 3 \u22126 \u2236 5 ]  then the value of k  for which the system is inconsistent is___________",
+      "options": [
+        "18",
+        "-18",
+        "6",
+        "-6"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "System of equations AX=B has infinite number of solutions if",
+      "options": [
+        "Rank[A] = Rank[A\u2502B] = number of unknowns",
+        "Rank[A] = Rank[A\u2502B] < number of unknowns",
+        "Rank[A] \u2260 Rank[A\u2502B]",
+        "Rank[A] = Rank[A\u2502B] > number of unknowns"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "then \ud835\udc61\ud835\udc5f(\ud835\udc34\ud835\udc34\ud835\udc47) is",
+      "options": [
+        "21",
+        "22",
+        "3",
+        "26"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In the LU factorization of \ud835\udc34= [ 3 \u22127 \u22122 \u22123 5 1 6 \u22124 0 ], the matrix U is",
+      "options": [
+        "\ud835\udc34= [ 3 7 2 0 \u22122 \u22121 0 0 \u22121 ]",
+        "\ud835\udc34= [ 3 \u22127 \u22122 0 \u22122 2 0 0 \u22121 ]",
+        "\ud835\udc34= [ 3 \u22127 \u22122 0 \u22122 \u22121 0 0 \u22121 ]",
+        "\ud835\udc34= [ 3 \u22127 \u22122 0 5 1 0 0 0 ]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The eigen values of \ud835\udc34= [ 5 6 17 0 \u221219 23 0 0 37 ]are",
+      "options": [
+        "-19, 37, 5",
+        "2, \u22123,7 2",
+        "5, 19, 37",
+        "0, 5 ,17"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The eigen values of \ud835\udc34= [ 2 4 \u22126 0 3 6 0 0 3 ] are",
+      "options": [
+        "2,2,4",
+        "2,3,2",
+        "1,3,4",
+        "2,3,3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A \ud835\udc5b\u00d7 \ud835\udc5b matrix A is diagonalizable if and only if",
+      "options": [
+        "A has n distinct eigen values",
+        "A has repeated eigen vectors",
+        "A has repeated eigen values",
+        "A has linearly independent eigen vectors"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If  \ud835\udc34= [1 2 3 4] , \ud835\udc35= [ 5 2 \u22121 3]then  \ud835\udc61\ud835\udc5f(\ud835\udc35\u22121\ud835\udc34\ud835\udc35) is",
+      "options": [
+        "4",
+        "5",
+        "10",
+        "8"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If  \ud835\udc34= [\u22121 2 3 \u22123]then \ud835\udc61\ud835\udc5f(\ud835\udc34\ud835\udc34\ud835\udc47) is",
+      "options": [
+        "23",
+        "10",
+        "1",
+        "22"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Eigen value of a triangular matrix A are",
+      "options": [
+        "diagonal element of A",
+        "sum of diagonal element of A",
+        "Determinant of A",
+        "Trace of A"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Eigen values of  A= [4 1 1 4] are",
+      "options": [
+        "3,-3",
+        "-3,-5",
+        "3,5",
+        "5,0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc34= [ 3 10 5 \u22122 \u22123 \u22124 3 5 7 ], the eigen value \ud835\udf061 = 2, \ud835\udf062 = 3 and \ud835\udf063 = ___________",
+      "options": [
+        "3",
+        "2",
+        "5",
+        "7"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The eigen vectors of the matrix A is the nontrivial solution of the equation ________________",
+      "options": [
+        "\ud835\udc34\ud835\udc4b= 0",
+        "\ud835\udc34\ud835\udc4b= \ud835\udc35",
+        "\ud835\udc34\ud835\udc4b= \ud835\udf06\ud835\udc4b",
+        "none"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If  \ud835\udc34= [ 1 3 2 5 6 \u22121 2 \u22122 3 ]  \ud835\udc35= [ \u22126 2 5 2 1 8 4 \u22122 2 ] then tr(A-B) is",
+      "options": [
+        "1",
+        "12",
+        "13",
+        "7"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If A is a square matrix, then det (A)=",
+      "options": [
+        "sum of the eigen values of A",
+        "product of eigen values of A",
+        "product of diagonal elements of A",
+        "sum of diagonal elements of A"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The sum of the eigen  values  of    [ 1 1 3 1 5 1 3 \u22121 \u22121 ] is",
+      "options": [
+        "-2",
+        "3",
+        "6",
+        "5 3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc34= [ 2 1 1 1 2 1 0 0 1 ], then eigen values of A are  \ud835\udf061 = 1, \ud835\udf062 = 3 and \ud835\udf063 = ___________",
+      "options": [
+        "-2",
+        "1",
+        "2",
+        "-1"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc34 be an \ud835\udc5b\u00d7 \ud835\udc5b matrix, then \ud835\udc34 is diagonalizable if and only if",
+      "options": [
+        "\ud835\udc34 has linearly dependent eigen vectors.",
+        "\ud835\udc34 has n linearly independent columns.",
+        "\ud835\udc34 has n linearly independent eigen vectors.",
+        "\ud835\udc34 has (n-1) linearly independent eigen vectors."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For which value of \ud835\udc58 the system of two equations \ud835\udc65+ \ud835\udc66= 1 2\ud835\udc65+ 2\ud835\udc66= \ud835\udc58   has infinite solutions:",
+      "options": [
+        "\ud835\udc58= 0",
+        "\ud835\udc58= 1",
+        "\ud835\udc58= 2",
+        "any value of \ud835\udc58\u22601"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The eigen values of  \ud835\udc34= [3 2 3 8] are",
+      "options": [
+        "7,4",
+        "9,2",
+        "8,3",
+        "6,5"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Spectrum of the matrix [ 1 0 0 0 2 0 0 0 3 ]  is:",
+      "options": [
+        "{ 3, 2, 1}",
+        "{1, 3, 1}",
+        "{0, 0, 6}",
+        "{2, 3, 0}"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc34= [ 8 \u22126 2 \u22126 7 \u22124 2 \u22124 3 ] and \ud835\udc35= [ \u22122 2 \u22123 2 1 \u22126 \u22121 \u22122 0 ], then \ud835\udc61\ud835\udc5f(\ud835\udc34+ \ud835\udc35) is",
+      "options": [
+        "19",
+        "17",
+        "20",
+        "21"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statements are/is correct for the system \ud835\udc34\ud835\udc4b= \ud835\udc35,   \ud835\udc64\u210e\ud835\udc52\ud835\udc5b \ud835\udc34 \ud835\udc56\ud835\udc60 \ud835\udc4e  3 \u00d7 4 matrix of rank 2. I. Matrix \ud835\udc34 has 2 non-pivot columns. II.System \ud835\udc34\ud835\udc4b= \ud835\udc35 has 2 basic variables.",
+      "options": [
+        "Only I is correct",
+        "Only II is correct",
+        "Both are correct",
+        "Both are not true"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If A is 3 \u00d7 4  matrix the maximum possible value of the rank A is",
+      "options": [
+        "4",
+        "3",
+        "2",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If a matrix A is reduced to row echelon form, then rank of the matrix is",
+      "options": [
+        "number of zero rows",
+        "number of non-zero rows",
+        "total number of rows",
+        "total number of columns"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The characteristic equation of the matrix   \ud835\udc34= [2 0 4 7] is:",
+      "options": [
+        "\ud835\udf062 \u22129\ud835\udf06+ 14 = 0",
+        "\ud835\udf062 \u221214\ud835\udf06+ 9 = 0",
+        "\ud835\udf062 \u22129\ud835\udf06\u221214 = 0",
+        "\ud835\udf062 \u221214\ud835\udf06\u22129 = 0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statement is correct I.  Trace of the square matrix is equal to product of eigenvalues II. Trace of the square matrix is equal to sum of diagonal entries of the matrix.",
+      "options": [
+        "only I is true",
+        "only II is true",
+        "both I and II are true",
+        "neither I nor II is true."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the LU factorization of a matrix A is A=LU where A=[ 2 5 \u22123 \u22124] then U is",
+      "options": [
+        "[2 5 0 7]",
+        "[ 1 4 \u22125 1]",
+        "[2 5 1 7]",
+        "[ 1 4 \u22127/2 1]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following method is not used to find the solution of the system of equations:",
+      "options": [
+        "Gauss elimination method",
+        "Gauss seidel method",
+        "Rayleigh\u2019s power method",
+        "LU decomposition method"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The value of h for which the augmented matrix \uf0fa\uf0fb \uf0f9 \uf0ea\uf0eb \uf0e9 \u2212 \u2212 \u2212 7 2 3 5 1 h of a linear system is inconsistent",
+      "options": [
+        "\u210e= \u221215",
+        "\u210e\u2260 \u221215",
+        "\u210e= 5",
+        "\u210e= \u22121"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Number of pivot columns in the matrix  [ 0 0 1 0 2 0 1 0 1 0 0 0 ] is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following vector is an eigen vector of the matrix [ 1 2 \u22121 4] \u2236",
+      "options": [
+        "[1 1]",
+        "[1 2]",
+        "[0 0]",
+        "[0 1] UNIT II"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If {\ud835\udc621, \ud835\udc622, . . . . . . . . . , \ud835\udc62\ud835\udc5b}is linearly independent  set, then \ud835\udc501\ud835\udc621 + \ud835\udc502\ud835\udc622+. . . . . . +\ud835\udc50\ud835\udc5b\ud835\udc62\ud835\udc5b= 0   has",
+      "options": [
+        "infinitely many solutions",
+        "unique nonzero solution",
+        "unique zero solution",
+        "both B and C are possible"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The row space of an \ud835\udc5a\u00d7 \ud835\udc5b matrix A is a subspace of",
+      "options": [
+        "\ud835\udc45\ud835\udc5b",
+        "A",
+        "\ud835\udc45\ud835\udc5a",
+        "R"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In two dimensional Euclidean space identity element with respect to vector addition is",
+      "options": [
+        "(1,1)",
+        "(0,0)",
+        "(-1,-1)",
+        "doesn\u2019t exists 5"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In three dimensional Euclidean space inverse of (-2,-2,0) with respect to vector addition is",
+      "options": [
+        "(0,0,0)",
+        "(2,2,2)",
+        "(2,2,-2)",
+        "(2,2,0)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc47: \ud835\udc454 \u2192\ud835\udc454be the linear transformation with null space of T={(0,0,0,0)} . Then nullity of T is",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "2"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The dimension of the subspace of \ud835\udc453 spanned by {(2,0,1), (5,2,1), (1,2, \u22121)} is",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc47: \ud835\udc453 \u2192\ud835\udc453 be the linear transformation with nullity of T is 1 then rank of T is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If \ud835\udc47: \ud835\udc49\u2192\ud835\udc4a is a linear transformation, which of the following statements  is not true?",
+      "options": [
+        "\ud835\udc47(\ud835\udc65\ud835\udc66) = \ud835\udc47(\ud835\udc65)\ud835\udc47(\ud835\udc66)\u2200\ud835\udc65, \ud835\udc66\u2208\ud835\udc49",
+        "\ud835\udc47(\u2212\ud835\udc65) = \u2212\ud835\udc47(\ud835\udc65)\u2200\ud835\udc65\u2208\ud835\udc49",
+        "\ud835\udc47(0) = 0 \ud835\udc53\ud835\udc5c\ud835\udc5f 0 \u2208\ud835\udc49",
+        "\ud835\udc47(2\ud835\udc65) = 2\ud835\udc47(\ud835\udc65)\u2200\ud835\udc65\u2208\ud835\udc49"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The set \ud835\udc4a= {(\ud835\udc4e, 0,0): \ud835\udc4e, \ud835\udc4f \ud835\udf16\ud835\udc45} is  a subspace of .",
+      "options": [
+        "\ud835\udc452(\ud835\udc45)",
+        "\ud835\udc45(\ud835\udc45)",
+        "\ud835\udc453(\ud835\udc45)",
+        "\ud835\udc454(\ud835\udc45)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If \ud835\udc62= [1 2] , \ud835\udc63= [\u22125 7 ] then inner product of \ud835\udc62and \ud835\udc63 is",
+      "options": [
+        "9",
+        "19",
+        "-3",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A system of equation \ud835\udc34\ud835\udc4b= \ud835\udc4f has solution if and only if",
+      "options": [
+        "\ud835\udc4f \u2208\ud835\udc36\ud835\udc5c\ud835\udc59(\ud835\udc34)",
+        "\ud835\udc4f \u2208\ud835\udc45\ud835\udc5c\ud835\udc64(\ud835\udc34)",
+        "\ud835\udc4f \u2208\ud835\udc41\ud835\udc62\ud835\udc59\ud835\udc59(\ud835\udc34)",
+        "\ud835\udc4f \u2208\ud835\udc36\ud835\udc5c\ud835\udc59(\ud835\udc34) and  \ud835\udc4f \u2208\ud835\udc45\ud835\udc5c\ud835\udc64(\ud835\udc34)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc47: \ud835\udc452 \u2192\ud835\udc452 be the linear transformation defined by \ud835\udc47(\ud835\udc65, \ud835\udc66) = (\ud835\udc65, 0), then the matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "[0 1 0 1]",
+        "[0 \u22121 0 1 ]",
+        "[1 0 0 0]",
+        "[1 0 0 1]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statement is not true if \ud835\udc47: \ud835\udc48\u2192\ud835\udc49is a  linear transformation",
+      "options": [
+        "Range space of T is a subspace of V",
+        "Null space of T is a subspace of U",
+        "V is always the range of T",
+        "None"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Two vectors \ud835\udc62 and \ud835\udc63  in \ud835\udc45\ud835\udc5b are orthogonal if",
+      "options": [
+        "\ud835\udc62. \ud835\udc63= \ud835\udc63. \ud835\udc62",
+        "\ud835\udc62. \ud835\udc63= 1 6",
+        "\ud835\udc62. \ud835\udc63\u22650",
+        "\ud835\udc96. \ud835\udc97= \ud835\udfce"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If \ud835\udc62= [ 2 3 \u22125 ] , \ud835\udc63= [ 2 0 \u22123 ]then inner product of \ud835\udc62and \ud835\udc63 is",
+      "options": [
+        "-5",
+        "-11",
+        "19",
+        "11"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If a basis of a vector space has 3 elements, then dimension of the vector space is_______",
+      "options": [
+        "less than 4",
+        "greater than 3",
+        "3",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If \ud835\udc63= [1 1 1 \u22121]\ud835\udc47 then normalized form of \ud835\udc63 is",
+      "options": [
+        "[ 1 \u221a2 1 \u221a2 1 \u221a2 \u22121 \u221a2] \ud835\udc47",
+        "[ 1 \u221a3 1 \u221a3 1 \u221a3 \u22121 \u221a3] \ud835\udc47",
+        "[ 1 2 1 2 1 2 \u22121 2 ] \ud835\udc47",
+        "[1 1 1 1]\ud835\udc47"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc47: \ud835\udc452 \u2192\ud835\udc452be the linear transformation defined by \ud835\udc47(\ud835\udc65, \ud835\udc66) = (\ud835\udc65, 0). The null space of T is",
+      "options": [
+        "{(x, 0)}",
+        "{(0, y)}",
+        "{(0, x)}",
+        "{(0, 0)}"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The set of all solution to the homogeneous equation system \ud835\udc34\ud835\udc4b= 0, where A be an \ud835\udc5a\u00d7 \ud835\udc5b matrix is",
+      "options": [
+        "Null space of A",
+        "Column space of A",
+        "Row space of A",
+        "Null space of A and column space of A"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following are linear combination of u= (0,-2,2) and v=(1,3,-1)?",
+      "options": [
+        "(1,0,0)",
+        "(2,2,2)",
+        "both (a) &(b)",
+        "neither (a) nor (b)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc47: \ud835\udc452 \u2192\ud835\udc452be the linear transformation defined by \ud835\udc47(\ud835\udc65, \ud835\udc66) = (0, \ud835\udc66).Then matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "[0 0 0 1]",
+        "[0 \u22121 0 \u22121]",
+        "[1 0 0 0]",
+        "[\u22121 0 0 0]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If \uf07b \uf07d nv v v S ,... , 2 1 = is a set of vectors in a finite dimension vector space V , then S is called a basis for V if",
+      "options": [
+        "S  spans  V",
+        "S is linearly independent",
+        "either (a) or (b)",
+        "both (a) and (b)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let \ud835\udc47: \ud835\udc454 \u2192\ud835\udc454be the linear transformation defined by \ud835\udc47(\ud835\udc651, \ud835\udc652, \ud835\udc653, \ud835\udc654) = (\ud835\udc652, \ud835\udc653, 0,0). Then null space of T consist of vectors of the form",
+      "options": [
+        "(0,0, \ud835\udc652, \ud835\udc653)",
+        "(\ud835\udc651, 0,0,0)",
+        "(\ud835\udc651, 0,0, \ud835\udc654)",
+        "(\ud835\udc651, \ud835\udc651, \ud835\udc653, 0)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The quadratic form 3\ud835\udc651 2 \u22124\ud835\udc651\ud835\udc652 + 6\ud835\udc652 2 is",
+      "options": [
+        "Positive definite",
+        "Positive semi definite",
+        "Negative definite",
+        "Neither negative definite nor positive definite"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In QR factorization of matrix A, Q is a matrix whose columns form an orthonormal basis for",
+      "options": [
+        "Col A",
+        "Null(A)",
+        "Row(A)",
+        "both Null(A) and Row(A)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The matrix of the quadratic form \ud835\udc44(\ud835\udc4b) = 5\ud835\udc651 2 + 5\ud835\udc652 2 \u22124\ud835\udc651\ud835\udc652 is",
+      "options": [
+        "[ 5 \u22122 \u22122 5 ]",
+        "[5 2 2 5]",
+        "[5 4 4 5]",
+        "[ 5 \u22124 \u22124 5 ]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The quadratic form  3\ud835\udc652 + 5\ud835\udc662 + \ud835\udc672 is",
+      "options": [
+        "Positive definite",
+        "Negative definite",
+        "Negative semi definite",
+        "Positive semi definite"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In PCA, what are the principal components",
+      "options": [
+        "Features of the data set",
+        "Eigen values of the covariance matrix",
+        "Eigen vectors",
+        "Data points in the data set"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In PCA, what is the relationship between the first principal component and the second principal component",
+      "options": [
+        "They are orthogonal to each other",
+        "They are positively correlated",
+        "They are negatively correlated",
+        "There is no defined relationship between them"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The matrix of the quadratic form 4\ud835\udc651\ud835\udc652 + 6\ud835\udc651\ud835\udc653 \u22128\ud835\udc652\ud835\udc653 8",
+      "options": [
+        "[ 0 2 2 2 0 \u22124 2 \u22124 0 ]",
+        "[ 0 1 3 2 0 \u22124 3 \u22124 0 ]",
+        "[ 1 2 3 2 1 \u22124 3 \u22124 1 ]",
+        "[ 0 2 3 2 0 \u22124 3 \u22124 0 ]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A quadratic form Q(x) is semi positive definite if",
+      "options": [
+        "\ud835\udc44(\ud835\udc65) > 0 for all \ud835\udc65\u22600",
+        "\ud835\udc44(\ud835\udc65) \u22650 for all x",
+        "\ud835\udc44(\ud835\udc65) < 0 for all \ud835\udc65\u22600",
+        "\ud835\udc44(\ud835\udc65) \u22640 for all \ud835\udc65"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "and \ud835\udc65= [\ud835\udc651 \ud835\udc652], then \ud835\udc65\ud835\udc47\ud835\udc34\ud835\udc65 is",
+      "options": [
+        "4\ud835\udc651 2 + 3\ud835\udc652 2",
+        "2\ud835\udc651 2 + 3\ud835\udc652 2 + 7\ud835\udc651\ud835\udc652",
+        "2\ud835\udc651 2 + 3\ud835\udc652 2 \u22127\ud835\udc651\ud835\udc652",
+        "2\ud835\udc651 2 + 3\ud835\udc652 2"
+      ],
+      "answer": 0
+    }
+  ]
+}
