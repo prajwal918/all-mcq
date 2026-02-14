@@ -75,6 +75,8 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg)
 .opt-btn:disabled{cursor:default}
 .controls{margin-top:1.25rem;display:flex;justify-content:flex-end}
 .next-btn{background:var(--lime);color:#000;border:none;padding:.75rem 1.5rem;border-radius:10px;font-size:.88rem;font-weight:800;cursor:pointer;font-family:inherit;display:none;transition:all .15s;user-select:none}
+.prev-btn{background:var(--border);color:var(--muted)}
+.prev-btn:hover,.prev-btn:active{background:var(--card-hover);color:#fff}
 .next-btn:active{transform:scale(.97);opacity:.85}
 .result{text-align:center;padding:2rem .5rem}
 .result .trophy{font-size:3.5rem;margin-bottom:.75rem}
@@ -149,7 +151,13 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg)
             <div class="q-number" id="q-number"></div>
             <div class="q-text" id="question-text"></div>
             <div class="options" id="options-list"></div>
-            <div class="controls"><button class="next-btn" id="next-btn">Next &rarr;</button></div>
+            <div class="controls">
+                <div class="btn-row">
+                    <button class="next-btn prev-btn" id="prev-btn" style="display:none">&larr; Previous</button>
+                    <button class="next-btn" id="next-btn">Next &rarr;</button>
+                </div>
+                <button class="back-btn" id="quiz-back-btn" style="margin-top:.7rem" onclick="goBackFromQuiz()">&larr; Back to Menu</button>
+            </div>
         </div>
     </div>
     <div id="result-screen" class="hidden">
@@ -207,6 +215,7 @@ function startQuiz(m){
 }
 function loadQuestion(){
     answered=false;$('next-btn').style.display='none';
+    $('prev-btn').style.display=cur>0?'block':'none';
     const q=questions[cur];
     $('progress-bar').style.width=((cur/questions.length)*100)+'%';
     $('question-counter').textContent=(cur+1)+' / '+questions.length;
@@ -218,6 +227,13 @@ function loadQuestion(){
         btn.innerHTML='<span class="lbl">'+LABELS[i]+'</span><span class="opt-text">'+opt+'</span>';
         btn.onclick=()=>check(i,btn);ol.appendChild(btn);
     });
+    if(mode==='practice'){
+        answered=true;
+        const btns=ol.getElementsByClassName('opt-btn');
+        btns[q.answer].classList.add('correct');
+        for(let b of btns)b.disabled=true;
+        $('next-btn').style.display='block';
+    }
     window.scrollTo({top:0,behavior:'smooth'});
 }
 function check(idx,btn){
@@ -233,6 +249,8 @@ function check(idx,btn){
     for(let b of btns)b.disabled=true;$('next-btn').style.display='block';
 }
 $('next-btn').onclick=()=>{cur++;cur<questions.length?loadQuestion():showResults()};
+$('prev-btn').onclick=()=>{if(cur>0){cur--;loadQuestion()}};
+function goBackFromQuiz(){selectSubject(currentSubject)}
 function showResults(){
     show('result-screen');$('progress-bar').style.width='100%';
     const pct=(score/questions.length)*100;
