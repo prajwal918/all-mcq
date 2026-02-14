@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microprocessor &amp; Embedded Systems — MCQ Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --primary:#6366f1;--primary-dark:#4f46e5;--primary-light:#a5b4fc;
+            --green:#22c55e;--green-bg:#dcfce7;--green-border:#86efac;
+            --red:#ef4444;--red-bg:#fee2e2;--red-border:#fca5a5;
+            --blue:#3b82f6;--blue-bg:#dbeafe;--blue-border:#93c5fd;
+            --bg:#f8fafc;--card:#fff;--text:#1e293b;--muted:#64748b;--border:#e2e8f0;
+            --radius:12px;
+        }
+        body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1rem}
+        .container{width:100%;max-width:680px}
+
+        .progress-wrap{background:var(--border);border-radius:99px;height:6px;margin-bottom:1.25rem;overflow:hidden}
+        .progress-bar{height:100%;background:linear-gradient(90deg,var(--primary),var(--primary-light));border-radius:99px;transition:width .4s ease}
+
+        .card{background:var(--card);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 20px rgba(0,0,0,.04);padding:2rem;animation:fadeUp .35s ease}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+        .mode-screen .hero{text-align:center;margin-bottom:2rem}
+        .mode-screen .hero .icon{font-size:3rem;margin-bottom:.75rem}
+        .mode-screen .hero h1{font-size:1.6rem;font-weight:800;margin-bottom:.35rem}
+        .mode-screen .hero p{color:var(--muted);font-size:.95rem}
+        .mode-screen .badge{display:inline-block;background:var(--primary);color:#fff;font-size:.75rem;font-weight:600;padding:.25rem .7rem;border-radius:99px;margin-bottom:.75rem}
+        .mode-cards{display:grid;gap:1rem}
+        .mode-card{display:flex;align-items:center;gap:1rem;padding:1.25rem;border:2px solid var(--border);border-radius:var(--radius);cursor:pointer;transition:all .2s;background:var(--card)}
+        .mode-card:hover{border-color:var(--primary);box-shadow:0 0 0 3px rgba(99,102,241,.15)}
+        .mode-card .emoji{font-size:2rem;flex-shrink:0}
+        .mode-card h3{font-size:1rem;font-weight:600;margin-bottom:.15rem}
+        .mode-card p{font-size:.85rem;color:var(--muted);line-height:1.4}
+
+        .quiz-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.5rem}
+        .quiz-header .counter{font-size:.85rem;color:var(--muted);font-weight:500}
+        .quiz-header .score-pill{background:var(--primary);color:#fff;font-size:.8rem;font-weight:600;padding:.3rem .85rem;border-radius:99px}
+        .quiz-header .mode-pill{background:var(--border);color:var(--muted);font-size:.75rem;font-weight:600;padding:.25rem .7rem;border-radius:99px}
+        .q-number{font-size:.8rem;color:var(--primary);font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.5rem}
+        .q-text{font-size:1.15rem;font-weight:600;line-height:1.55;margin-bottom:1.5rem;white-space:pre-line}
+        .options{display:flex;flex-direction:column;gap:.65rem}
+        .opt-btn{display:flex;align-items:center;gap:.85rem;padding:.9rem 1.1rem;border:2px solid var(--border);border-radius:10px;background:var(--card);cursor:pointer;font-size:.95rem;font-family:inherit;text-align:left;transition:all .18s;line-height:1.4}
+        .opt-btn:hover:not(:disabled){border-color:var(--primary);background:#f5f3ff}
+        .opt-btn .label{flex-shrink:0;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;background:var(--bg);color:var(--muted);border:1.5px solid var(--border);transition:all .18s}
+        .opt-btn:hover:not(:disabled) .label{background:var(--primary);color:#fff;border-color:var(--primary)}
+        .opt-btn.correct{background:var(--green-bg);border-color:var(--green-border)}
+        .opt-btn.correct .label{background:var(--green);color:#fff;border-color:var(--green)}
+        .opt-btn.incorrect{background:var(--red-bg);border-color:var(--red-border)}
+        .opt-btn.incorrect .label{background:var(--red);color:#fff;border-color:var(--red)}
+        .opt-btn.selected-exam{background:var(--blue-bg);border-color:var(--blue-border)}
+        .opt-btn.selected-exam .label{background:var(--blue);color:#fff;border-color:var(--blue)}
+        .opt-btn:disabled{cursor:default}
+        .controls{margin-top:1.75rem;display:flex;justify-content:flex-end}
+        .next-btn{background:var(--primary);color:#fff;border:none;padding:.75rem 1.6rem;border-radius:10px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit;display:none;transition:background .18s}
+        .next-btn:hover{background:var(--primary-dark)}
+
+        .result{text-align:center;padding:2rem 1rem}
+        .result .trophy{font-size:4rem;margin-bottom:1rem}
+        .result h2{font-size:1.5rem;font-weight:800;margin-bottom:.5rem}
+        .result .big-score{font-size:3.5rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--primary-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:.5rem 0}
+        .result .pct{font-size:1.1rem;color:var(--muted);margin-bottom:1.5rem}
+        .result .grade{display:inline-block;padding:.4rem 1.2rem;border-radius:99px;font-weight:700;font-size:1rem;margin-bottom:1.5rem}
+        .grade-a{background:var(--green-bg);color:#166534}
+        .grade-b{background:#fef9c3;color:#854d0e}
+        .grade-c{background:#ffedd5;color:#9a3412}
+        .grade-f{background:var(--red-bg);color:#991b1b}
+        .restart-btn{background:var(--primary);color:#fff;border:none;padding:.85rem 2rem;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;font-family:inherit;transition:background .18s}
+        .restart-btn:hover{background:var(--primary-dark)}
+        .hidden{display:none!important}
+        @media(max-width:500px){.card{padding:1.25rem}.q-text{font-size:1.05rem}.result .big-score{font-size:2.5rem}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card mode-screen" id="mode-screen">
+            <div class="hero">
+                <div class="icon">🖥️</div>
+                <span class="badge">UNIT 1 • 40 Questions</span>
+                <h1>Microprocessor &amp; Embedded Systems</h1>
+                <p>8086 Architecture, Addressing Modes &amp; Instruction Set</p>
+            </div>
+            <div class="mode-cards">
+                <div class="mode-card" onclick="startQuiz('practice')">
+                    <div class="emoji">📝</div>
+                    <div>
+                        <h3>Practice Mode</h3>
+                        <p>See the correct answer immediately after each question. Great for learning.</p>
+                    </div>
+                </div>
+                <div class="mode-card" onclick="startQuiz('exam')">
+                    <div class="emoji">🎯</div>
+                    <div>
+                        <h3>Exam Mode</h3>
+                        <p>Answers are hidden until the end. Test yourself under real exam conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div class="progress-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+            <div class="card">
+                <div class="quiz-header">
+                    <span class="counter" id="question-counter">1 / 40</span>
+                    <span class="score-pill" id="score-counter">Score: 0</span>
+                    <span class="mode-pill" id="mode-label">Practice</span>
+                </div>
+                <div class="q-number" id="q-number">Question 1</div>
+                <div class="q-text" id="question-text"></div>
+                <div class="options" id="options-list"></div>
+                <div class="controls">
+                    <button class="next-btn" id="next-btn">Next →</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <div class="card result">
+                <div class="trophy" id="trophy">🏆</div>
+                <h2>Quiz Complete!</h2>
+                <div class="big-score" id="final-score">0 / 40</div>
+                <div class="pct" id="percentage-display"></div>
+                <div class="grade" id="grade-badge"></div><br>
+                <button class="restart-btn" onclick="location.reload()">🔄 Try Again</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+const questions=[{"question":"8086 can access up to?","options":["512KB","2Mb","1Mb","256KB"],"answer":2},{"question":"8086 has ___ address bus","options":["20 bit","8 bit","16 bit","24 bit"],"answer":0},{"question":"Which flag is set to 1 when the result of arithmetic or logical operation is zero else it is set to 0?","options":["Trap flag","Zero flag","Sign flag","Over flow flag"],"answer":1},{"question":"Which index register in the 8086 is primarily used for operations involving string processing?","options":["BP, SP","DH, DL","BH, BL","SI, DI"],"answer":3},{"question":"The different ways in which a source operand is denoted in an instruction is known as","options":["Instruction Set","Interrupts","8086 Configuration","Addressing Modes"],"answer":3},{"question":"The 16 bit flag of 8086 microprocessor is responsible to indicate ___________","options":["the condition of result of ALU operation","the condition of memory","the result of addition","the result of subtraction"],"answer":0},{"question":"The 1 MB byte of memory can be divided into ______ segment","options":["1 Kbyte","64 Kbyte","34 Kbyte","256 Kbyte"],"answer":1},{"question":"The SS is called as ________","options":["stack segment","random stack","single stack","sequence stack"],"answer":0},{"question":"The BIU contains FIFO/ INSTRUCTION QUEUE register of size __________ bytes","options":["8","6","4","12"],"answer":1},{"question":"The instruction, MOV AX, 0005H belongs to the address mode","options":["register","direct","immediate","register indirect"],"answer":2},{"question":"The instruction, MOV AX, [2500H] is an example of","options":["immediate addressing mode","direct addressing mode","indirect addressing mode","register addressing mode"],"answer":1},{"question":"The instruction, MOV AX,[BX] is an example of","options":["direct addressing mode","register addressing mode","register relative addressing mode","register indirect addressing mode"],"answer":3},{"question":"If the location to which the control is to be transferred lies in a different segment other than the current one, then the mode is called","options":["intrasegment mode","intersegment direct mode","intersegment direct and indirect mode","intersegment indirect mode"],"answer":2},{"question":"If [CS]=348AH, [IP]=4214H, then the 20-bit physical address from which the code is accessed will be","options":["455CAH","0769EH","390B4H","38AB4H"],"answer":3},{"question":"Setting of direction flag in 8086 causes,","options":["The microprocessor to operate in single stepping mode","The microprocessor to operate in break point mode","The microprocessor string operations in auto increment mode","The microprocessor string operations in auto decrement mode"],"answer":3},{"question":"In the 8086 microprocessor, if a program execution requires accessing an array stored in memory with an offset stored in SI (Source Index), which combination of registers would typically be used for addressing?","options":["CS:SI (Code Segment with Source Index)","DS:SI (Data Segment with Source Index)","SS:SI (Stack Segment with Source Index)","ES:SI (Extra Segment with Source Index)"],"answer":1},{"question":"The size of ALU in 8086 is","options":["8 bit","16 bit","32 bit","64 bit"],"answer":1},{"question":"The directive used to inform the assembler, the names of the logical segments to be assumed for different segments used in the program is","options":["ASSUME","SEGMENT","SHORT","DB"],"answer":0},{"question":"Match the following\na) DB           1) used to direct the assembler to reserve only 10-bytes\nb) DT           2) used to direct the assembler to reserve only 4 words\nc) DW          3) used to direct the assembler to reserve byte or bytes\nd) DQ          4) used to direct the assembler to reserve words","options":["a-3, b-2, c-4, d-1","a-2, b-3, c-1, d-4","a-3, b-1, c-2, d-4","a-3, b-1, c-4, d-2"],"answer":3},{"question":"The directive that marks the end of a logical segment is","options":["ENDS","END","ENDS & END","ENDD"],"answer":0},{"question":"The instruction that is invalid among the following is","options":["MOV AX, BX","MOV AX, [BX]","MOV 55H, BL","MOV AL, 55H"],"answer":2},{"question":"What does the RCR instruction do?","options":["Rotates bits to the right including the Carry Flag","Rotates bits to the left excluding the Carry Flag","Shifts bits to the right","Performs logical AND operation"],"answer":0},{"question":"The JS is called as","options":["jump signed bit","jump single bit","jump simple bit","jump signal it"],"answer":0},{"question":"The expansion of DAA is","options":["decimal adjust after addition","decimal adjust before addition","decimal adjust accumulator","decimal adjust auxiliary"],"answer":2},{"question":"Which group of instructions do not affect the flags?","options":["Arithmetic operations","Logic operations","Data transfer operations","Branch operations"],"answer":2},{"question":"The LOOP instruction in 8086:","options":["Jumps if CX is zero","Decrements CX and jumps if CX \u2260 0","Increments CX and jumps","Decrements CX and jumps if CX = 0"],"answer":1},{"question":"The instruction RET is used to:","options":["Return from subroutine","Jump to a memory address","Load a segment register","Move to the next instruction"],"answer":0},{"question":"The JMP instruction is used to:","options":["Jump to a specified location","Call a subroutine","Return from subroutine","Interrupt execution"],"answer":0},{"question":"What is the effect of CMP AX, BX?","options":["Adds AX and BX","Subtracts BX from AX","Moves BX to AX","Subtracts AX from BX"],"answer":1},{"question":"What does PUSH AX do in 8086?","options":["Moves AX into memory","Moves AX onto the stack","Moves AX into the instruction pointer","Moves AX to an I/O port"],"answer":1},{"question":"If AX = 36H and AAM is executed, what will be the values of AH and AL?","options":["AH = 03H, AL = 06H","AH = 06H, AL = 03H","AH = 02H, AL = 08H","AH = 04H, AL = 06H"],"answer":0},{"question":"The instruction SAR BX, 1 does what?","options":["Shifts right with zero fill","Shifts right and maintains the sign bit","Shifts left","Rotates right"],"answer":1},{"question":"The instruction PUSHF is used to:","options":["Push a register onto the stack","Push the flag register onto the stack","Pop a register from the stack","Load a segment register"],"answer":1},{"question":"The IN AL, DX instruction:","options":["Inputs a byte from a port address in DX into AL","Inputs a word from memory into AL","Moves a byte from AL to DX","Outputs a byte to a port"],"answer":0},{"question":"If AL = 05H, what will be the result of executing NEG AL?","options":["FAH","FBH","FCH","FDH"],"answer":1},{"question":"If the DIV instruction is used on an 8-bit operand, which register stores the quotient?","options":["AX","AL","AH","DX"],"answer":1},{"question":"If AL = 27H and ADD AL, 48H is executed, what will be the result after DAA?","options":["75H and CF=1","6FH and AF = 1","75H and AF = 1","6FH and CF = 1"],"answer":2},{"question":"The instruction SHL AX, 1 performs:","options":["Divides AX by 2","Multiplies AX by 2","Rotates AX left","Exchanges upper and lower bytes of AX"],"answer":1},{"question":"If AX = 1001 0110 1010 1100B and CF = 1, what will be the result of RCL AX, 1?","options":["0010 1101 0101 1001B, CF = 1","0010 1101 0101 1000B, CF = 1","0010 1101 0101 1001B, CF = 0","1001 0110 1010 1101B, CF = 1"],"answer":0},{"question":"The AAM instruction operates on which register?","options":["AL","AX","AH","DX"],"answer":1}];
+
+let cur=0,score=0,answered=false,mode='practice';
+const LABELS=['A','B','C','D'];
+const $=id=>document.getElementById(id);
+
+function startQuiz(m){
+    mode=m;
+    $('mode-screen').classList.add('hidden');
+    $('quiz-screen').classList.remove('hidden');
+    $('mode-label').textContent=mode==='practice'?'Practice':'Exam';
+    if(mode==='exam') $('score-counter').classList.add('hidden');
+    loadQuestion();
+}
+
+function loadQuestion(){
+    answered=false;
+    $('next-btn').style.display='none';
+    const q=questions[cur];
+    $('progress-bar').style.width=((cur/questions.length)*100)+'%';
+    $('question-counter').textContent=`${cur+1} / ${questions.length}`;
+    $('q-number').textContent=`Question ${cur+1}`;
+    $('question-text').textContent=q.question;
+    const ol=$('options-list');
+    ol.innerHTML='';
+    q.options.forEach((opt,i)=>{
+        const btn=document.createElement('button');
+        btn.className='opt-btn';
+        btn.innerHTML=`<span class="label">${LABELS[i]}</span><span>${opt}</span>`;
+        btn.onclick=()=>check(i,btn);
+        ol.appendChild(btn);
+    });
+}
+
+function check(idx,btn){
+    if(answered)return;
+    answered=true;
+    const q=questions[cur];
+    const btns=$('options-list').getElementsByClassName('opt-btn');
+    if(idx===q.answer){
+        score++;
+        if(mode==='practice'){btn.classList.add('correct');$('score-counter').textContent=`Score: ${score}`}
+        else btn.classList.add('selected-exam');
+    }else{
+        if(mode==='practice'){btn.classList.add('incorrect');btns[q.answer].classList.add('correct')}
+        else btn.classList.add('selected-exam');
+    }
+    for(let b of btns)b.disabled=true;
+    $('next-btn').style.display='block';
+}
+
+$('next-btn').onclick=()=>{
+    cur++;
+    if(cur<questions.length)loadQuestion();
+    else showResults();
+};
+
+function showResults(){
+    $('quiz-screen').classList.add('hidden');
+    $('result-screen').classList.remove('hidden');
+    $('progress-bar').style.width='100%';
+    const pct=(score/questions.length)*100;
+    $('final-score').textContent=`${score} / ${questions.length}`;
+    $('percentage-display').textContent=`You scored ${pct.toFixed(1)}%`;
+    let g,gc,emoji;
+    if(pct>=90){g='Excellent!';gc='grade-a';emoji='🏆'}
+    else if(pct>=75){g='Good Job!';gc='grade-b';emoji='⭐'}
+    else if(pct>=50){g='Keep Practicing';gc='grade-c';emoji='💪'}
+    else{g='Needs Improvement';gc='grade-f';emoji='📚'}
+    $('trophy').textContent=emoji;
+    const gb=$('grade-badge');gb.textContent=g;gb.className='grade '+gc;
+}
+</script>
+</body>
+</html>
