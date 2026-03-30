@@ -42,7 +42,7 @@
       "answer": 1
     },
     {
-      "question": "Which level of the three-schema architecture provides a user\u2019s view of the database?",
+      "question": "Which level of the three-schema architecture provides a user’s view of the database?",
       "options": [
         "Internal level",
         "Conceptual level",
@@ -82,7 +82,7 @@
       "answer": 1
     },
     {
-      "question": "In a database system, what is meant by \u201cconcurrency control\u201d?",
+      "question": "In a database system, what is meant by “concurrency control”?",
       "options": [
         "Preventing data redundancy",
         "Ensuring simultaneous access to data without conflicts",
@@ -342,7 +342,7 @@
       "answer": 0
     },
     {
-      "question": "The DIVISION operation can be applied to two relations A and B such as R(A)  \u00f7  R(B) where as",
+      "question": "The DIVISION operation can be applied to two relations A and B such as R(A)  ÷  R(B) where as",
       "options": [
         "A does not belong to B",
         "A must be added to B",
@@ -387,7 +387,7 @@
         "Select * from emp where empid = 10003;",
         "Select empid from emp where empid = 10006;",
         "Select empid from emp;",
-        "Select empid where empid = 1009 and lastname = \u2018GELLER\u2019;"
+        "Select empid where empid = 1009 and lastname = ‘GELLER’;"
       ],
       "answer": 3
     },
@@ -414,7 +414,7 @@
       "answer": 2
     },
     {
-      "question": "\u201cSoftware engineers should not use their technical skills to misuse other people\u2019s computers.\u201d Here the term misuse refers to:",
+      "question": "“Software engineers should not use their technical skills to misuse other people’s computers.” Here the term misuse refers to:",
       "options": [
         "Unauthorized access to computer material",
         "Unauthorized modification of computer material",
@@ -444,22 +444,22 @@
       "answer": 0
     },
     {
-      "question": "Identify the correct statement: \u201cSoftware engineers shall",
+      "question": "Identify the correct statement: “Software engineers shall",
       "options": [
-        "act in a manner that is in the best interests of his expertise and favour.\u201d",
-        "act consistently with the public interest.\u201d",
-        "ensure that their products only meet the SRS.\u201d",
+        "act in a manner that is in the best interests of his expertise and favour.”",
+        "act consistently with the public interest.”",
+        "ensure that their products only meet the SRS.”",
         "all of the mentioned"
       ],
       "answer": 1
     },
     {
-      "question": "Select the incorrect statement: \u201cSoftware engineers should",
+      "question": "Select the incorrect statement: “Software engineers should",
       "options": [
-        "not knowingly accept work that is outside your competence.\u201d",
-        "not use your technical skills to misuse other people\u2019s computers.\u201d",
-        "be dependent on their colleagues.\u201d",
-        "maintain integrity and independence in their professional judgment.\u201d"
+        "not knowingly accept work that is outside your competence.”",
+        "not use your technical skills to misuse other people’s computers.”",
+        "be dependent on their colleagues.”",
+        "maintain integrity and independence in their professional judgment.”"
       ],
       "answer": 2
     },
@@ -474,7 +474,7 @@
       "answer": 1
     },
     {
-      "question": "As per an IBM report, \u201c31% of the project get cancelled before they are completed, 53% overrun their cost estimates by an average of 189% and for every 100 projects, there are 94 restarts\u201d. What is the reason for these statistics?",
+      "question": "As per an IBM report, “31% of the project get cancelled before they are completed, 53% overrun their cost estimates by an average of 189% and for every 100 projects, there are 94 restarts”. What is the reason for these statistics?",
       "options": [
         "Lack of adequate training in software engineering",
         "Lack of software ethics and understanding",
@@ -524,12 +524,12 @@
       "answer": 0
     },
     {
-      "question": "Requirements should specify ___but not \u2018how\u2019.",
+      "question": "Requirements should specify ___but not ‘how’.",
       "options": [
-        "\u2018what\u2019",
-        "\u2018how\u2019",
-        "\u2018why\u2019",
-        "\u2018which\u2019"
+        "‘what’",
+        "‘how’",
+        "‘why’",
+        "‘which’"
       ],
       "answer": 0
     },
@@ -806,7 +806,7 @@
     {
       "question": "Select the most appropriate statement about software engineering.",
       "options": [
-        ".\tHas been around as a discipline since the early 50\u2019s",
+        ".\tHas been around as a discipline since the early 50’s",
         ".\tIs a set of rules about developing software products",
         ".\tNone of these choices",
         ".\tIs an engineering discipline concerned with all the aspects of software production"
@@ -899,9 +899,9 @@
       "question": "System of equations AX=B has solutions if",
       "options": [
         "Rank[A] = number of unknowns",
-        "Rank[A] = Rank[A\u2502B]\u2264 number of unknowns",
-        "Rank[A] \u2260 number of unknowns",
-        "Rank[A] \u2260 Rank[A\u2502B]"
+        "Rank[A] = Rank[A│B]≤ number of unknowns",
+        "Rank[A] ≠ number of unknowns",
+        "Rank[A] ≠ Rank[A│B]"
       ],
       "answer": 0
     },
@@ -910,8 +910,8 @@
       "options": [
         "Determinant of A=Determinant of X",
         "Determinant of A =0",
-        "Rank[A] \u2260 Rank[A\u2502B]",
-        "Determinant of A \u2260 0"
+        "Rank[A] ≠ Rank[A│B]",
+        "Determinant of A ≠ 0"
       ],
       "answer": 0
     },
@@ -926,7 +926,7 @@
       "answer": 0
     },
     {
-      "question": "If [\ud835\udc34: \ud835\udc35] = [ 2 3 \u22121 \u2236 5 0 1 3  \u2236\u22121 0 0 \ud835\udc58 3 \u22126 \u2236 5 ]  then the value of k  for which the system is inconsistent is___________",
+      "question": "If [𝐴: 𝐵] = [ 2 3 −1 ∶ 5 0 1 3  ∶−1 0 0 𝑘 3 −6 ∶ 5 ]  then the value of k  for which the system is inconsistent is___________",
       "options": [
         "18",
         "-18",
@@ -938,15 +938,15 @@
     {
       "question": "System of equations AX=B has infinite number of solutions if",
       "options": [
-        "Rank[A] = Rank[A\u2502B] = number of unknowns",
-        "Rank[A] = Rank[A\u2502B] < number of unknowns",
-        "Rank[A] \u2260 Rank[A\u2502B]",
-        "Rank[A] = Rank[A\u2502B] > number of unknowns"
+        "Rank[A] = Rank[A│B] = number of unknowns",
+        "Rank[A] = Rank[A│B] < number of unknowns",
+        "Rank[A] ≠ Rank[A│B]",
+        "Rank[A] = Rank[A│B] > number of unknowns"
       ],
       "answer": 0
     },
     {
-      "question": "then \ud835\udc61\ud835\udc5f(\ud835\udc34\ud835\udc34\ud835\udc47) is",
+      "question": "then 𝑡𝑟(𝐴𝐴𝑇) is",
       "options": [
         "21",
         "22",
@@ -956,27 +956,27 @@
       "answer": 0
     },
     {
-      "question": "In the LU factorization of \ud835\udc34= [ 3 \u22127 \u22122 \u22123 5 1 6 \u22124 0 ], the matrix U is",
+      "question": "In the LU factorization of 𝐴= [ 3 −7 −2 −3 5 1 6 −4 0 ], the matrix U is",
       "options": [
-        "\ud835\udc34= [ 3 7 2 0 \u22122 \u22121 0 0 \u22121 ]",
-        "\ud835\udc34= [ 3 \u22127 \u22122 0 \u22122 2 0 0 \u22121 ]",
-        "\ud835\udc34= [ 3 \u22127 \u22122 0 \u22122 \u22121 0 0 \u22121 ]",
-        "\ud835\udc34= [ 3 \u22127 \u22122 0 5 1 0 0 0 ]"
+        "𝐴= [ 3 7 2 0 −2 −1 0 0 −1 ]",
+        "𝐴= [ 3 −7 −2 0 −2 2 0 0 −1 ]",
+        "𝐴= [ 3 −7 −2 0 −2 −1 0 0 −1 ]",
+        "𝐴= [ 3 −7 −2 0 5 1 0 0 0 ]"
       ],
       "answer": 0
     },
     {
-      "question": "The eigen values of \ud835\udc34= [ 5 6 17 0 \u221219 23 0 0 37 ]are",
+      "question": "The eigen values of 𝐴= [ 5 6 17 0 −19 23 0 0 37 ]are",
       "options": [
         "-19, 37, 5",
-        "2, \u22123,7 2",
+        "2, −3,7 2",
         "5, 19, 37",
         "0, 5 ,17"
       ],
       "answer": 0
     },
     {
-      "question": "The eigen values of \ud835\udc34= [ 2 4 \u22126 0 3 6 0 0 3 ] are",
+      "question": "The eigen values of 𝐴= [ 2 4 −6 0 3 6 0 0 3 ] are",
       "options": [
         "2,2,4",
         "2,3,2",
@@ -986,7 +986,7 @@
       "answer": 0
     },
     {
-      "question": "A \ud835\udc5b\u00d7 \ud835\udc5b matrix A is diagonalizable if and only if",
+      "question": "A 𝑛× 𝑛 matrix A is diagonalizable if and only if",
       "options": [
         "A has n distinct eigen values",
         "A has repeated eigen vectors",
@@ -996,7 +996,7 @@
       "answer": 0
     },
     {
-      "question": "If  \ud835\udc34= [1 2 3 4] , \ud835\udc35= [ 5 2 \u22121 3]then  \ud835\udc61\ud835\udc5f(\ud835\udc35\u22121\ud835\udc34\ud835\udc35) is",
+      "question": "If  𝐴= [1 2 3 4] , 𝐵= [ 5 2 −1 3]then  𝑡𝑟(𝐵−1𝐴𝐵) is",
       "options": [
         "4",
         "5",
@@ -1006,7 +1006,7 @@
       "answer": 0
     },
     {
-      "question": "If  \ud835\udc34= [\u22121 2 3 \u22123]then \ud835\udc61\ud835\udc5f(\ud835\udc34\ud835\udc34\ud835\udc47) is",
+      "question": "If  𝐴= [−1 2 3 −3]then 𝑡𝑟(𝐴𝐴𝑇) is",
       "options": [
         "23",
         "10",
@@ -1036,7 +1036,7 @@
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc34= [ 3 10 5 \u22122 \u22123 \u22124 3 5 7 ], the eigen value \ud835\udf061 = 2, \ud835\udf062 = 3 and \ud835\udf063 = ___________",
+      "question": "Let 𝐴= [ 3 10 5 −2 −3 −4 3 5 7 ], the eigen value 𝜆1 = 2, 𝜆2 = 3 and 𝜆3 = ___________",
       "options": [
         "3",
         "2",
@@ -1048,15 +1048,15 @@
     {
       "question": "The eigen vectors of the matrix A is the nontrivial solution of the equation ________________",
       "options": [
-        "\ud835\udc34\ud835\udc4b= 0",
-        "\ud835\udc34\ud835\udc4b= \ud835\udc35",
-        "\ud835\udc34\ud835\udc4b= \ud835\udf06\ud835\udc4b",
+        "𝐴𝑋= 0",
+        "𝐴𝑋= 𝐵",
+        "𝐴𝑋= 𝜆𝑋",
         "none"
       ],
       "answer": 0
     },
     {
-      "question": "If  \ud835\udc34= [ 1 3 2 5 6 \u22121 2 \u22122 3 ]  \ud835\udc35= [ \u22126 2 5 2 1 8 4 \u22122 2 ] then tr(A-B) is",
+      "question": "If  𝐴= [ 1 3 2 5 6 −1 2 −2 3 ]  𝐵= [ −6 2 5 2 1 8 4 −2 2 ] then tr(A-B) is",
       "options": [
         "1",
         "12",
@@ -1076,7 +1076,7 @@
       "answer": 0
     },
     {
-      "question": "The sum of the eigen  values  of    [ 1 1 3 1 5 1 3 \u22121 \u22121 ] is",
+      "question": "The sum of the eigen  values  of    [ 1 1 3 1 5 1 3 −1 −1 ] is",
       "options": [
         "-2",
         "3",
@@ -1086,7 +1086,7 @@
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc34= [ 2 1 1 1 2 1 0 0 1 ], then eigen values of A are  \ud835\udf061 = 1, \ud835\udf062 = 3 and \ud835\udf063 = ___________",
+      "question": "Let 𝐴= [ 2 1 1 1 2 1 0 0 1 ], then eigen values of A are  𝜆1 = 1, 𝜆2 = 3 and 𝜆3 = ___________",
       "options": [
         "-2",
         "1",
@@ -1096,27 +1096,27 @@
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc34 be an \ud835\udc5b\u00d7 \ud835\udc5b matrix, then \ud835\udc34 is diagonalizable if and only if",
+      "question": "Let 𝐴 be an 𝑛× 𝑛 matrix, then 𝐴 is diagonalizable if and only if",
       "options": [
-        "\ud835\udc34 has linearly dependent eigen vectors.",
-        "\ud835\udc34 has n linearly independent columns.",
-        "\ud835\udc34 has n linearly independent eigen vectors.",
-        "\ud835\udc34 has (n-1) linearly independent eigen vectors."
+        "𝐴 has linearly dependent eigen vectors.",
+        "𝐴 has n linearly independent columns.",
+        "𝐴 has n linearly independent eigen vectors.",
+        "𝐴 has (n-1) linearly independent eigen vectors."
       ],
       "answer": 0
     },
     {
-      "question": "For which value of \ud835\udc58 the system of two equations \ud835\udc65+ \ud835\udc66= 1 2\ud835\udc65+ 2\ud835\udc66= \ud835\udc58   has infinite solutions:",
+      "question": "For which value of 𝑘 the system of two equations 𝑥+ 𝑦= 1 2𝑥+ 2𝑦= 𝑘   has infinite solutions:",
       "options": [
-        "\ud835\udc58= 0",
-        "\ud835\udc58= 1",
-        "\ud835\udc58= 2",
-        "any value of \ud835\udc58\u22601"
+        "𝑘= 0",
+        "𝑘= 1",
+        "𝑘= 2",
+        "any value of 𝑘≠1"
       ],
       "answer": 0
     },
     {
-      "question": "The eigen values of  \ud835\udc34= [3 2 3 8] are",
+      "question": "The eigen values of  𝐴= [3 2 3 8] are",
       "options": [
         "7,4",
         "9,2",
@@ -1136,7 +1136,7 @@
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc34= [ 8 \u22126 2 \u22126 7 \u22124 2 \u22124 3 ] and \ud835\udc35= [ \u22122 2 \u22123 2 1 \u22126 \u22121 \u22122 0 ], then \ud835\udc61\ud835\udc5f(\ud835\udc34+ \ud835\udc35) is",
+      "question": "Let 𝐴= [ 8 −6 2 −6 7 −4 2 −4 3 ] and 𝐵= [ −2 2 −3 2 1 −6 −1 −2 0 ], then 𝑡𝑟(𝐴+ 𝐵) is",
       "options": [
         "19",
         "17",
@@ -1146,7 +1146,7 @@
       "answer": 0
     },
     {
-      "question": "Which of the following statements are/is correct for the system \ud835\udc34\ud835\udc4b= \ud835\udc35,   \ud835\udc64\u210e\ud835\udc52\ud835\udc5b \ud835\udc34 \ud835\udc56\ud835\udc60 \ud835\udc4e  3 \u00d7 4 matrix of rank 2. I. Matrix \ud835\udc34 has 2 non-pivot columns. II.System \ud835\udc34\ud835\udc4b= \ud835\udc35 has 2 basic variables.",
+      "question": "Which of the following statements are/is correct for the system 𝐴𝑋= 𝐵,   𝑤ℎ𝑒𝑛 𝐴 𝑖𝑠 𝑎  3 × 4 matrix of rank 2. I. Matrix 𝐴 has 2 non-pivot columns. II.System 𝐴𝑋= 𝐵 has 2 basic variables.",
       "options": [
         "Only I is correct",
         "Only II is correct",
@@ -1156,7 +1156,7 @@
       "answer": 0
     },
     {
-      "question": "If A is 3 \u00d7 4  matrix the maximum possible value of the rank A is",
+      "question": "If A is 3 × 4  matrix the maximum possible value of the rank A is",
       "options": [
         "4",
         "3",
@@ -1176,12 +1176,12 @@
       "answer": 0
     },
     {
-      "question": "The characteristic equation of the matrix   \ud835\udc34= [2 0 4 7] is:",
+      "question": "The characteristic equation of the matrix   𝐴= [2 0 4 7] is:",
       "options": [
-        "\ud835\udf062 \u22129\ud835\udf06+ 14 = 0",
-        "\ud835\udf062 \u221214\ud835\udf06+ 9 = 0",
-        "\ud835\udf062 \u22129\ud835\udf06\u221214 = 0",
-        "\ud835\udf062 \u221214\ud835\udf06\u22129 = 0"
+        "𝜆2 −9𝜆+ 14 = 0",
+        "𝜆2 −14𝜆+ 9 = 0",
+        "𝜆2 −9𝜆−14 = 0",
+        "𝜆2 −14𝜆−9 = 0"
       ],
       "answer": 0
     },
@@ -1196,12 +1196,12 @@
       "answer": 0
     },
     {
-      "question": "If the LU factorization of a matrix A is A=LU where A=[ 2 5 \u22123 \u22124] then U is",
+      "question": "If the LU factorization of a matrix A is A=LU where A=[ 2 5 −3 −4] then U is",
       "options": [
         "[2 5 0 7]",
-        "[ 1 4 \u22125 1]",
+        "[ 1 4 −5 1]",
         "[2 5 1 7]",
-        "[ 1 4 \u22127/2 1]"
+        "[ 1 4 −7/2 1]"
       ],
       "answer": 0
     },
@@ -1210,18 +1210,18 @@
       "options": [
         "Gauss elimination method",
         "Gauss seidel method",
-        "Rayleigh\u2019s power method",
+        "Rayleigh’s power method",
         "LU decomposition method"
       ],
       "answer": 0
     },
     {
-      "question": "The value of h for which the augmented matrix \uf0fa\uf0fb \uf0f9 \uf0ea\uf0eb \uf0e9 \u2212 \u2212 \u2212 7 2 3 5 1 h of a linear system is inconsistent",
+      "question": "The value of h for which the augmented matrix     − − − 7 2 3 5 1 h of a linear system is inconsistent",
       "options": [
-        "\u210e= \u221215",
-        "\u210e\u2260 \u221215",
-        "\u210e= 5",
-        "\u210e= \u22121"
+        "ℎ= −15",
+        "ℎ≠ −15",
+        "ℎ= 5",
+        "ℎ= −1"
       ],
       "answer": 0
     },
@@ -1236,7 +1236,7 @@
       "answer": 0
     },
     {
-      "question": "Which of the following vector is an eigen vector of the matrix [ 1 2 \u22121 4] \u2236",
+      "question": "Which of the following vector is an eigen vector of the matrix [ 1 2 −1 4] ∶",
       "options": [
         "[1 1]",
         "[1 2]",
@@ -1246,7 +1246,7 @@
       "answer": 0
     },
     {
-      "question": "If {\ud835\udc621, \ud835\udc622, . . . . . . . . . , \ud835\udc62\ud835\udc5b}is linearly independent  set, then \ud835\udc501\ud835\udc621 + \ud835\udc502\ud835\udc622+. . . . . . +\ud835\udc50\ud835\udc5b\ud835\udc62\ud835\udc5b= 0   has",
+      "question": "If {𝑢1, 𝑢2, . . . . . . . . . , 𝑢𝑛}is linearly independent  set, then 𝑐1𝑢1 + 𝑐2𝑢2+. . . . . . +𝑐𝑛𝑢𝑛= 0   has",
       "options": [
         "infinitely many solutions",
         "unique nonzero solution",
@@ -1256,11 +1256,11 @@
       "answer": 0
     },
     {
-      "question": "The row space of an \ud835\udc5a\u00d7 \ud835\udc5b matrix A is a subspace of",
+      "question": "The row space of an 𝑚× 𝑛 matrix A is a subspace of",
       "options": [
-        "\ud835\udc45\ud835\udc5b",
+        "𝑅𝑛",
         "A",
-        "\ud835\udc45\ud835\udc5a",
+        "𝑅𝑚",
         "R"
       ],
       "answer": 0
@@ -1271,7 +1271,7 @@
         "(1,1)",
         "(0,0)",
         "(-1,-1)",
-        "doesn\u2019t exists 5"
+        "doesn’t exists 5"
       ],
       "answer": 0
     },
@@ -1286,7 +1286,7 @@
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc47: \ud835\udc454 \u2192\ud835\udc454be the linear transformation with null space of T={(0,0,0,0)} . Then nullity of T is",
+      "question": "Let 𝑇: 𝑅4 →𝑅4be the linear transformation with null space of T={(0,0,0,0)} . Then nullity of T is",
       "options": [
         "0",
         "1",
@@ -1296,7 +1296,7 @@
       "answer": 0
     },
     {
-      "question": "The dimension of the subspace of \ud835\udc453 spanned by {(2,0,1), (5,2,1), (1,2, \u22121)} is",
+      "question": "The dimension of the subspace of 𝑅3 spanned by {(2,0,1), (5,2,1), (1,2, −1)} is",
       "options": [
         "3",
         "2",
@@ -1306,7 +1306,7 @@
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc47: \ud835\udc453 \u2192\ud835\udc453 be the linear transformation with nullity of T is 1 then rank of T is",
+      "question": "Let 𝑇: 𝑅3 →𝑅3 be the linear transformation with nullity of T is 1 then rank of T is",
       "options": [
         "1",
         "2",
@@ -1316,27 +1316,27 @@
       "answer": 0
     },
     {
-      "question": "If \ud835\udc47: \ud835\udc49\u2192\ud835\udc4a is a linear transformation, which of the following statements  is not true?",
+      "question": "If 𝑇: 𝑉→𝑊 is a linear transformation, which of the following statements  is not true?",
       "options": [
-        "\ud835\udc47(\ud835\udc65\ud835\udc66) = \ud835\udc47(\ud835\udc65)\ud835\udc47(\ud835\udc66)\u2200\ud835\udc65, \ud835\udc66\u2208\ud835\udc49",
-        "\ud835\udc47(\u2212\ud835\udc65) = \u2212\ud835\udc47(\ud835\udc65)\u2200\ud835\udc65\u2208\ud835\udc49",
-        "\ud835\udc47(0) = 0 \ud835\udc53\ud835\udc5c\ud835\udc5f 0 \u2208\ud835\udc49",
-        "\ud835\udc47(2\ud835\udc65) = 2\ud835\udc47(\ud835\udc65)\u2200\ud835\udc65\u2208\ud835\udc49"
+        "𝑇(𝑥𝑦) = 𝑇(𝑥)𝑇(𝑦)∀𝑥, 𝑦∈𝑉",
+        "𝑇(−𝑥) = −𝑇(𝑥)∀𝑥∈𝑉",
+        "𝑇(0) = 0 𝑓𝑜𝑟 0 ∈𝑉",
+        "𝑇(2𝑥) = 2𝑇(𝑥)∀𝑥∈𝑉"
       ],
       "answer": 0
     },
     {
-      "question": "The set \ud835\udc4a= {(\ud835\udc4e, 0,0): \ud835\udc4e, \ud835\udc4f \ud835\udf16\ud835\udc45} is  a subspace of .",
+      "question": "The set 𝑊= {(𝑎, 0,0): 𝑎, 𝑏 𝜖𝑅} is  a subspace of .",
       "options": [
-        "\ud835\udc452(\ud835\udc45)",
-        "\ud835\udc45(\ud835\udc45)",
-        "\ud835\udc453(\ud835\udc45)",
-        "\ud835\udc454(\ud835\udc45)"
+        "𝑅2(𝑅)",
+        "𝑅(𝑅)",
+        "𝑅3(𝑅)",
+        "𝑅4(𝑅)"
       ],
       "answer": 0
     },
     {
-      "question": "If \ud835\udc62= [1 2] , \ud835\udc63= [\u22125 7 ] then inner product of \ud835\udc62and \ud835\udc63 is",
+      "question": "If 𝑢= [1 2] , 𝑣= [−5 7 ] then inner product of 𝑢and 𝑣 is",
       "options": [
         "9",
         "19",
@@ -1346,27 +1346,27 @@
       "answer": 0
     },
     {
-      "question": "A system of equation \ud835\udc34\ud835\udc4b= \ud835\udc4f has solution if and only if",
+      "question": "A system of equation 𝐴𝑋= 𝑏 has solution if and only if",
       "options": [
-        "\ud835\udc4f \u2208\ud835\udc36\ud835\udc5c\ud835\udc59(\ud835\udc34)",
-        "\ud835\udc4f \u2208\ud835\udc45\ud835\udc5c\ud835\udc64(\ud835\udc34)",
-        "\ud835\udc4f \u2208\ud835\udc41\ud835\udc62\ud835\udc59\ud835\udc59(\ud835\udc34)",
-        "\ud835\udc4f \u2208\ud835\udc36\ud835\udc5c\ud835\udc59(\ud835\udc34) and  \ud835\udc4f \u2208\ud835\udc45\ud835\udc5c\ud835\udc64(\ud835\udc34)"
+        "𝑏 ∈𝐶𝑜𝑙(𝐴)",
+        "𝑏 ∈𝑅𝑜𝑤(𝐴)",
+        "𝑏 ∈𝑁𝑢𝑙𝑙(𝐴)",
+        "𝑏 ∈𝐶𝑜𝑙(𝐴) and  𝑏 ∈𝑅𝑜𝑤(𝐴)"
       ],
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc47: \ud835\udc452 \u2192\ud835\udc452 be the linear transformation defined by \ud835\udc47(\ud835\udc65, \ud835\udc66) = (\ud835\udc65, 0), then the matrix of linear transformation with respect to standard basis is",
+      "question": "Let 𝑇: 𝑅2 →𝑅2 be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0), then the matrix of linear transformation with respect to standard basis is",
       "options": [
         "[0 1 0 1]",
-        "[0 \u22121 0 1 ]",
+        "[0 −1 0 1 ]",
         "[1 0 0 0]",
         "[1 0 0 1]"
       ],
       "answer": 0
     },
     {
-      "question": "Which of the following statement is not true if \ud835\udc47: \ud835\udc48\u2192\ud835\udc49is a  linear transformation",
+      "question": "Which of the following statement is not true if 𝑇: 𝑈→𝑉is a  linear transformation",
       "options": [
         "Range space of T is a subspace of V",
         "Null space of T is a subspace of U",
@@ -1376,17 +1376,17 @@
       "answer": 0
     },
     {
-      "question": "Two vectors \ud835\udc62 and \ud835\udc63  in \ud835\udc45\ud835\udc5b are orthogonal if",
+      "question": "Two vectors 𝑢 and 𝑣  in 𝑅𝑛 are orthogonal if",
       "options": [
-        "\ud835\udc62. \ud835\udc63= \ud835\udc63. \ud835\udc62",
-        "\ud835\udc62. \ud835\udc63= 1 6",
-        "\ud835\udc62. \ud835\udc63\u22650",
-        "\ud835\udc96. \ud835\udc97= \ud835\udfce"
+        "𝑢. 𝑣= 𝑣. 𝑢",
+        "𝑢. 𝑣= 1 6",
+        "𝑢. 𝑣≥0",
+        "𝒖. 𝒗= 𝟎"
       ],
       "answer": 0
     },
     {
-      "question": "If \ud835\udc62= [ 2 3 \u22125 ] , \ud835\udc63= [ 2 0 \u22123 ]then inner product of \ud835\udc62and \ud835\udc63 is",
+      "question": "If 𝑢= [ 2 3 −5 ] , 𝑣= [ 2 0 −3 ]then inner product of 𝑢and 𝑣 is",
       "options": [
         "-5",
         "-11",
@@ -1406,17 +1406,17 @@
       "answer": 0
     },
     {
-      "question": "If \ud835\udc63= [1 1 1 \u22121]\ud835\udc47 then normalized form of \ud835\udc63 is",
+      "question": "If 𝑣= [1 1 1 −1]𝑇 then normalized form of 𝑣 is",
       "options": [
-        "[ 1 \u221a2 1 \u221a2 1 \u221a2 \u22121 \u221a2] \ud835\udc47",
-        "[ 1 \u221a3 1 \u221a3 1 \u221a3 \u22121 \u221a3] \ud835\udc47",
-        "[ 1 2 1 2 1 2 \u22121 2 ] \ud835\udc47",
-        "[1 1 1 1]\ud835\udc47"
+        "[ 1 √2 1 √2 1 √2 −1 √2] 𝑇",
+        "[ 1 √3 1 √3 1 √3 −1 √3] 𝑇",
+        "[ 1 2 1 2 1 2 −1 2 ] 𝑇",
+        "[1 1 1 1]𝑇"
       ],
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc47: \ud835\udc452 \u2192\ud835\udc452be the linear transformation defined by \ud835\udc47(\ud835\udc65, \ud835\udc66) = (\ud835\udc65, 0). The null space of T is",
+      "question": "Let 𝑇: 𝑅2 →𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0). The null space of T is",
       "options": [
         "{(x, 0)}",
         "{(0, y)}",
@@ -1426,7 +1426,7 @@
       "answer": 0
     },
     {
-      "question": "The set of all solution to the homogeneous equation system \ud835\udc34\ud835\udc4b= 0, where A be an \ud835\udc5a\u00d7 \ud835\udc5b matrix is",
+      "question": "The set of all solution to the homogeneous equation system 𝐴𝑋= 0, where A be an 𝑚× 𝑛 matrix is",
       "options": [
         "Null space of A",
         "Column space of A",
@@ -1446,17 +1446,17 @@
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc47: \ud835\udc452 \u2192\ud835\udc452be the linear transformation defined by \ud835\udc47(\ud835\udc65, \ud835\udc66) = (0, \ud835\udc66).Then matrix of linear transformation with respect to standard basis is",
+      "question": "Let 𝑇: 𝑅2 →𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (0, 𝑦).Then matrix of linear transformation with respect to standard basis is",
       "options": [
         "[0 0 0 1]",
-        "[0 \u22121 0 \u22121]",
+        "[0 −1 0 −1]",
         "[1 0 0 0]",
-        "[\u22121 0 0 0]"
+        "[−1 0 0 0]"
       ],
       "answer": 0
     },
     {
-      "question": "If \uf07b \uf07d nv v v S ,... , 2 1 = is a set of vectors in a finite dimension vector space V , then S is called a basis for V if",
+      "question": "If   nv v v S ,... , 2 1 = is a set of vectors in a finite dimension vector space V , then S is called a basis for V if",
       "options": [
         "S  spans  V",
         "S is linearly independent",
@@ -1466,17 +1466,17 @@
       "answer": 0
     },
     {
-      "question": "Let \ud835\udc47: \ud835\udc454 \u2192\ud835\udc454be the linear transformation defined by \ud835\udc47(\ud835\udc651, \ud835\udc652, \ud835\udc653, \ud835\udc654) = (\ud835\udc652, \ud835\udc653, 0,0). Then null space of T consist of vectors of the form",
+      "question": "Let 𝑇: 𝑅4 →𝑅4be the linear transformation defined by 𝑇(𝑥1, 𝑥2, 𝑥3, 𝑥4) = (𝑥2, 𝑥3, 0,0). Then null space of T consist of vectors of the form",
       "options": [
-        "(0,0, \ud835\udc652, \ud835\udc653)",
-        "(\ud835\udc651, 0,0,0)",
-        "(\ud835\udc651, 0,0, \ud835\udc654)",
-        "(\ud835\udc651, \ud835\udc651, \ud835\udc653, 0)"
+        "(0,0, 𝑥2, 𝑥3)",
+        "(𝑥1, 0,0,0)",
+        "(𝑥1, 0,0, 𝑥4)",
+        "(𝑥1, 𝑥1, 𝑥3, 0)"
       ],
       "answer": 0
     },
     {
-      "question": "The quadratic form 3\ud835\udc651 2 \u22124\ud835\udc651\ud835\udc652 + 6\ud835\udc652 2 is",
+      "question": "The quadratic form 3𝑥1 2 −4𝑥1𝑥2 + 6𝑥2 2 is",
       "options": [
         "Positive definite",
         "Positive semi definite",
@@ -1496,17 +1496,17 @@
       "answer": 0
     },
     {
-      "question": "The matrix of the quadratic form \ud835\udc44(\ud835\udc4b) = 5\ud835\udc651 2 + 5\ud835\udc652 2 \u22124\ud835\udc651\ud835\udc652 is",
+      "question": "The matrix of the quadratic form 𝑄(𝑋) = 5𝑥1 2 + 5𝑥2 2 −4𝑥1𝑥2 is",
       "options": [
-        "[ 5 \u22122 \u22122 5 ]",
+        "[ 5 −2 −2 5 ]",
         "[5 2 2 5]",
         "[5 4 4 5]",
-        "[ 5 \u22124 \u22124 5 ]"
+        "[ 5 −4 −4 5 ]"
       ],
       "answer": 0
     },
     {
-      "question": "The quadratic form  3\ud835\udc652 + 5\ud835\udc662 + \ud835\udc672 is",
+      "question": "The quadratic form  3𝑥2 + 5𝑦2 + 𝑧2 is",
       "options": [
         "Positive definite",
         "Negative definite",
@@ -1536,34 +1536,1070 @@
       "answer": 0
     },
     {
-      "question": "The matrix of the quadratic form 4\ud835\udc651\ud835\udc652 + 6\ud835\udc651\ud835\udc653 \u22128\ud835\udc652\ud835\udc653 8",
+      "question": "The matrix of the quadratic form 4𝑥1𝑥2 + 6𝑥1𝑥3 −8𝑥2𝑥3 8",
       "options": [
-        "[ 0 2 2 2 0 \u22124 2 \u22124 0 ]",
-        "[ 0 1 3 2 0 \u22124 3 \u22124 0 ]",
-        "[ 1 2 3 2 1 \u22124 3 \u22124 1 ]",
-        "[ 0 2 3 2 0 \u22124 3 \u22124 0 ]"
+        "[ 0 2 2 2 0 −4 2 −4 0 ]",
+        "[ 0 1 3 2 0 −4 3 −4 0 ]",
+        "[ 1 2 3 2 1 −4 3 −4 1 ]",
+        "[ 0 2 3 2 0 −4 3 −4 0 ]"
       ],
       "answer": 0
     },
     {
       "question": "A quadratic form Q(x) is semi positive definite if",
       "options": [
-        "\ud835\udc44(\ud835\udc65) > 0 for all \ud835\udc65\u22600",
-        "\ud835\udc44(\ud835\udc65) \u22650 for all x",
-        "\ud835\udc44(\ud835\udc65) < 0 for all \ud835\udc65\u22600",
-        "\ud835\udc44(\ud835\udc65) \u22640 for all \ud835\udc65"
+        "𝑄(𝑥) > 0 for all 𝑥≠0",
+        "𝑄(𝑥) ≥0 for all x",
+        "𝑄(𝑥) < 0 for all 𝑥≠0",
+        "𝑄(𝑥) ≤0 for all 𝑥"
       ],
       "answer": 0
     },
     {
-      "question": "and \ud835\udc65= [\ud835\udc651 \ud835\udc652], then \ud835\udc65\ud835\udc47\ud835\udc34\ud835\udc65 is",
+      "question": "and 𝑥= [𝑥1 𝑥2], then 𝑥𝑇𝐴𝑥 is",
       "options": [
-        "4\ud835\udc651 2 + 3\ud835\udc652 2",
-        "2\ud835\udc651 2 + 3\ud835\udc652 2 + 7\ud835\udc651\ud835\udc652",
-        "2\ud835\udc651 2 + 3\ud835\udc652 2 \u22127\ud835\udc651\ud835\udc652",
-        "2\ud835\udc651 2 + 3\ud835\udc652 2"
+        "4𝑥1 2 + 3𝑥2 2",
+        "2𝑥1 2 + 3𝑥2 2 + 7𝑥1𝑥2",
+        "2𝑥1 2 + 3𝑥2 2 −7𝑥1𝑥2",
+        "2𝑥1 2 + 3𝑥2 2"
       ],
       "answer": 0
+    }
+  ],
+  "daa_u2": [
+    {
+      "question": "What is the primary idea behind the 'Decrease and Conquer' technique?",
+      "options": [
+        "Increase the problem size incrementally",
+        "Solve the entire problem in one step",
+        "Reduce the problem size at each step and solve it recursively",
+        "Divide the problem into multiple subproblems of equal size"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is a characteristic of the 'Decrease and Conquer' method?",
+      "options": [
+        "It always involves dividing the problem into two equal parts",
+        "It solves the problem by repeatedly reducing it to a smaller subproblem",
+        "It uses dynamic programming to store intermediate results",
+        "It is only applicable to sorting problems"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Insertion Sort, the problem size is reduced by:",
+      "options": [
+        "Splitting the array into two parts of equal size",
+        "Sorting only the largest element in each iteration",
+        "Sorting a single element at a time",
+        "Exchanging adjacent elements"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which algorithm uses a variable-size decrease approach?",
+      "options": [
+        "Exponentiation by squaring",
+        "Binary search",
+        "Euclid's algorithm",
+        "Insertion sort"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Binary Search is a classic example of which variation of Decrease and Conquer?",
+      "options": [
+        "Decrease by a constant",
+        "Decrease by a constant factor",
+        "Decrease by one",
+        "Divide and conquer"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What type of data structure is used in Depth-First Search (DFS)?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Priority Queue",
+        "Heap"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "DFS is more suitable than BFS for which of the following?",
+      "options": [
+        "Finding the shortest path in an unweighted graph",
+        "Exploring all vertices in a level-by-level manner",
+        "Detecting cycles in a graph",
+        "Solving shortest path problems in weighted graphs"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the key difference between BFS and DFS in their approach?",
+      "options": [
+        "BFS uses a stack; DFS uses a queue",
+        "BFS explores neighbors level by level; DFS explores as deep as possible along one branch",
+        "BFS works only on trees; DFS works only on graphs",
+        "BFS is recursive; DFS is iterative"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is true for BFS?",
+      "options": [
+        "It always uses recursion",
+        "It can handle graphs with cycles by avoiding revisits using a 'visited' array",
+        "It cannot be used to check graph connectivity",
+        "It is suitable only for weighted graphs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following problems can be solved using DFS?",
+      "options": [
+        "Finding connected components in a graph",
+        "Finding the shortest path in an unweighted graph",
+        "Topological sorting of a directed acyclic graph (DAG)",
+        "Both a and c"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is the primary application of topological sorting?",
+      "options": [
+        "Finding the shortest path in a graph",
+        "Sorting a list of elements in ascending order",
+        "Ordering the vertices of a directed acyclic graph (DAG) such that for every edge (u,v), vertex u comes before vertex v",
+        "Finding the minimum spanning tree of a graph"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is a necessary condition for a graph to have a topological sorting?",
+      "options": [
+        "The graph must be a tree",
+        "The graph must be a DAG",
+        "The graph must be a complete graph",
+        "The graph must be a bipartite graph"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the time complexity of the topological sorting algorithm using Kahn's algorithm?",
+      "options": [
+        "O(V + E)",
+        "O(V * E)",
+        "O(E^2)",
+        "O(V^2)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is a correct statement about topological sorting?",
+      "options": [
+        "Topological sorting is only possible for graphs with a single source vertex",
+        "Topological sorting is only possible for graphs with a single sink vertex",
+        "Topological sorting can be performed on any DAG",
+        "Topological sorting can only be performed on graphs with a single cycle"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What happens if a graph has a cycle and we try to perform topological sorting on it?",
+      "options": [
+        "The algorithm will produce a correct topological sorting",
+        "The algorithm will produce an incorrect topological sorting",
+        "The algorithm will detect the cycle and report an error",
+        "The algorithm will go into an infinite loop"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is an example of the Transform and Conquer method?",
+      "options": [
+        "Merge Sort",
+        "Binary search",
+        "Matrix multiplication",
+        "Heap sort"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What operation is performed on an AVL tree when the balance factor of a node becomes greater than 1 or less than -1?",
+      "options": [
+        "Rotation",
+        "Deletion",
+        "Insertion",
+        "Search"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the condition for a binary search tree to be considered an AVL tree?",
+      "options": [
+        "The height of the left subtree and the right subtree of every node differs by at most 2",
+        "The height of the left subtree and the right subtree of every node differs by at most 1",
+        "The height of the left subtree and the right subtree of every node is always equal",
+        "The height of the left subtree and the right subtree of every node differs by at least 1"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the time complexity of search, insert, and delete operations in a 2-3 tree?",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(nlogn)",
+        "O(2^n)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What happens when a node in a 2-3 tree is split due to the insertion of a new key?",
+      "options": [
+        "The node is replaced by two new nodes, each with one key",
+        "The node is replaced by three new nodes, each with one key",
+        "The node is not split, and the new key is added to the existing node",
+        "The node is replaced by two new nodes, each with one or two keys"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In a max-heap, which of the following is true?",
+      "options": [
+        "The parent node is smaller than its child nodes",
+        "The parent node is greater than or equal to its child nodes",
+        "The tree is a binary search tree",
+        "The elements are stored in ascending order"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the time complexity to build and heapify a heap of n elements?",
+      "options": [
+        "O(n log n)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "You are given an array: [3, 9, 2, 1, 4, 8]. After building a max-heap from this array, what will be the root element?",
+      "options": [
+        "1",
+        "9",
+        "2",
+        "8"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following applications is a heap NOT suited for?",
+      "options": [
+        "Implementing a priority queue",
+        "Finding the median of a data stream",
+        "Sorting data in ascending order",
+        "Depth-first search of a graph"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is NOT true about heap sort?",
+      "options": [
+        "It is an in-place sorting algorithm",
+        "It is a stable sorting algorithm",
+        "It has a time complexity of O(n log n)",
+        "It uses the heap data structure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What makes Counting Sort a distribution-based algorithm?",
+      "options": [
+        "It uses element frequencies to determine sorted positions",
+        "It divides the array into smaller subarrays",
+        "It recursively splits and merges data",
+        "It compares each pair of elements to sort the array"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which sorting algorithm explicitly trades off space for time by using extra space to count occurrences of elements?",
+      "options": [
+        "Merge Sort",
+        "Bubble sort",
+        "Sorting by counting",
+        "Quick sort"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the time complexity of distribution counting sort?",
+      "options": [
+        "Θ(n²)",
+        "Θ(n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the time complexity of comparison counting sort?",
+      "options": [
+        "Θ(n²)",
+        "O(n)",
+        "O(n²)",
+        "Θ(n)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Sorting by counting trades off space for time efficiency by:",
+      "options": [
+        "Using recursion to divide the array into smaller parts",
+        "Allocating extra memory for the frequency and cumulative arrays",
+        "Avoiding comparisons between elements",
+        "Reducing the overall size of the input array"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Horspool's algorithm, when the last character of the pattern does not match the text, what action does the algorithm take?",
+      "options": [
+        "Shift the pattern by 1 character to the right",
+        "Perform a full re-check from the beginning of the pattern",
+        "Shift the pattern by the value stored for the text character in the shift table",
+        "Abort the search"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In Horspool's algorithm, when does the algorithm perform a full comparison of the pattern with the text?",
+      "options": [
+        "Every time a mismatch occurs",
+        "Only when a match is found",
+        "Only when the shift table suggests no shift",
+        "Initially, when the first character in the pattern is compared with the first character of the text"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In Horspool's algorithm, what is the primary purpose of the shift table?",
+      "options": [
+        "To store the indices of pattern matches",
+        "To store the positions of all characters in the pattern",
+        "To store the number of shifts required for each character in the pattern",
+        "To store the hash values of pattern characters"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In Horspool's algorithm, which table is used to store the shift values for the pattern matching process?",
+      "options": [
+        "Shift Table",
+        "Hash Table",
+        "Match Table",
+        "Character Table"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the primary advantage of Horspool's algorithm over the naive string matching algorithm?",
+      "options": [
+        "It guarantees finding all occurrences in linear time",
+        "It uses a precomputed shift table to skip unnecessary comparisons",
+        "It always matches patterns in fewer comparisons than the naive algorithm",
+        "It works in constant space"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is an example of a problem that can be solved using dynamic programming?",
+      "options": [
+        "Binary search",
+        "Knapsack problem",
+        "Merge sort",
+        "Depth First Search"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In dynamic programming, the solution to a problem is built up from:",
+      "options": [
+        "A single recursive call",
+        "A series of overlapping subproblems",
+        "A greedy approach",
+        "A divide and conquer method"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When solving a problem using dynamic programming, what is the role of 'optimal substructure'?",
+      "options": [
+        "It ensures that solving subproblems will always result in the correct solution for the entire problem",
+        "It guarantees that the problem can be solved in constant time",
+        "It allows for efficient recursion without overlapping subproblems",
+        "It simplifies the problem by eliminating unnecessary subproblems"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the time complexity of solving the 0/1 knapsack problem using dynamic programming with an array-based approach?",
+      "options": [
+        "O(n²)",
+        "O(n * W) where n is the number of items and W is the maximum weight",
+        "O(W)",
+        "O(n)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does the term 'overlapping subproblems' refer to in dynamic programming?",
+      "options": [
+        "Problems that can be solved using greedy algorithms",
+        "Subproblems that appear multiple times in the recursive solution",
+        "Subproblems that are completely independent",
+        "Subproblems that cannot be solved independently"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the primary purpose of the Floyd-Warshall algorithm?",
+      "options": [
+        "Finding the shortest path between two specific nodes",
+        "Finding the shortest paths between all pairs of nodes in a graph",
+        "Finding the minimum spanning tree of a graph",
+        "Finding the longest path in a weighted graph"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which type of graph is required for the Floyd-Warshall algorithm?",
+      "options": [
+        "Directed or undirected weighted graphs",
+        "Only directed weighted graphs",
+        "Only undirected graphs",
+        "Only acyclic graphs"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How does the Floyd-Warshall algorithm handle negative weight cycles?",
+      "options": [
+        "It detects them and stops execution",
+        "It ignores them and continues finding shortest paths",
+        "It gives incorrect results",
+        "It runs indefinitely"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which technique is used to solve the 0/1 Knapsack problem efficiently?",
+      "options": [
+        "Greedy algorithm",
+        "Divide and conquer",
+        "Dynamic programming",
+        "Depth-first search"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does the Floyd-Warshall algorithm store in its intermediate matrix?",
+      "options": [
+        "Edge weights only",
+        "Shortest path distances",
+        "Number of edges in the shortest path",
+        "The longest path in the graph"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a major limitation of the Floyd-Warshall algorithm?",
+      "options": [
+        "Cannot handle negative weights",
+        "High space complexity",
+        "Cannot find shortest paths for undirected graphs",
+        "Cannot find shortest paths for large graphs efficiently"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is the space complexity of the Floyd-Warshall algorithm?",
+      "options": [
+        "O(V)",
+        "O(V²)",
+        "O(V³)",
+        "O(V log V)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the Knapsack problem primarily used for?",
+      "options": [
+        "Finding the shortest path in a graph",
+        "Maximizing the value of items in a knapsack without exceeding its capacity",
+        "Sorting a list of items",
+        "Finding the minimum spanning tree"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is true about memory function?",
+      "options": [
+        "It is a top-down approach",
+        "It is a bottom-up approach",
+        "It does not use recursion",
+        "It is only applicable to sorting algorithms"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following problems can be solved using memory function?",
+      "options": [
+        "0/1 Knapsack algorithms",
+        "Travelling salesman problem",
+        "Job assignment",
+        "All of the above"
+      ],
+      "answer": 3
+    }
+  ],
+  "dbms_u2": [
+    {
+      "question": "What SQL statement would you use to create SQL database named Test?",
+      "options": [
+        "CREATE DBT Test;",
+        "CREATE Test",
+        "CREATE DATABASE Test;",
+        "MAKE DATABASE Test;"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which SQL statement is used to retrieve data from a database?",
+      "options": [
+        "Update",
+        "select",
+        "insert",
+        "Delete"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Identify the error in \"ALTER TABLE Students DROP COLUMN DateOfBirth date;\"",
+      "options": [
+        "ALTER TABLE",
+        "DROP COLUMN",
+        "DateOfBirth",
+        "date"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is not a class of constraint in SQL Server?",
+      "options": [
+        "NOT NULL",
+        "CHECK",
+        "NULL",
+        "UNIQUE"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Purpose of foreign key constraint in SQL Server is __________",
+      "options": [
+        "FOREIGN KEY constraints identify and enforce the relationships between tables",
+        "A foreign key in one table points to a candidate key in another table",
+        "You cannot insert a row with a foreign key value, except NULL, if there is no candidate key with that value",
+        "Foreign keys allow for NULL as one of the unique values"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the constraint can be enforced one per table?",
+      "options": [
+        "primary key constraint",
+        "Not Null constraint",
+        "Foreign Key constraint",
+        "Check constraint"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "______ is a special type of integrity constraint that relates two relations & maintains consistency across the relations.",
+      "options": [
+        "Entity Integrity Constraints",
+        "Referential Integrity Constraints",
+        "Domain Integrity Constraints",
+        "Domain Constraints"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Drop Table cannot be used to drop a table referenced by a _________ constraint.",
+      "options": [
+        "Local Key",
+        "Primary Key",
+        "Composite Key",
+        "Foreign Key"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "How many Primary keys can have in a table?",
+      "options": [
+        "Only 1",
+        "Only 2",
+        "Depends on no of Columns.",
+        "Depends on DBA"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is true about the SQL AS clause?",
+      "options": [
+        "The AS clause in SQL is used to change the column name in the output or assign a name to a derived column",
+        "The SQL AS clause can only be used with the JOIN clause.",
+        "The AS clause in SQL is used to defines a search condition.",
+        "AS clause is used to change the values in all rows"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How can you change \"Thomas\" into \"Michel\" in the \"LastName\" column in the Users table?",
+      "options": [
+        "UPDATE User SET LastName = 'Thomas' INTO LastName = 'Michel'",
+        "MODIFY Users SET LastName = 'Michel' WHERE LastName = 'Thomas'",
+        "MODIFY Users SET LastName = 'Thomas' INTO LastName = 'Michel'",
+        "UPDATE Users SET LastName = 'Michel' WHERE LastName = 'Thomas'"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which command is used to change the definition of a table in SQL?",
+      "options": [
+        "CREATE",
+        "UPDATE",
+        "ALTER",
+        "SELECT"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What keyword in SQL is used to check for a null value?",
+      "options": [
+        "=",
+        "IS NULL",
+        "IS NOT NULL",
+        "< >"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does the IN operator do in SQL?",
+      "options": [
+        "Returns rows that match a specified value",
+        "Filters rows that do not match a specified value",
+        "Compares a value to a list of specified values",
+        "Compares columns of two tables"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the result of the query SELECT COUNT (DISTINCT Salary) FROM EMPLOYEE;?",
+      "options": [
+        "Total number of employees",
+        "Total number of unique salaries",
+        "Total number of salaries greater than a specified value",
+        "Average salary of employees"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the meaning of “HAVING” clause in MySQL?",
+      "options": [
+        "To filter out the row values",
+        "To filter out the column values",
+        "To filter out the row and column values",
+        "None of the mentioned"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which operator is used to check the existence of a record in a subquery?",
+      "options": [
+        "In",
+        "Exists",
+        "Check",
+        "For"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How many records must be matched with the given criteria to return TRUE from EXISTS condition in SQL?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "EXISTS operator is used with WHICH of the following clause(s)?",
+      "options": [
+        "Select",
+        "In",
+        "Where",
+        "Group by"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the basic syntax of EXISTS operator in SQL?",
+      "options": [
+        "SELECT column_list FROM TABLE_NAME WHERE COLUMN EXISTS (subquery);",
+        "SELECT column_list FROM TABLE_NAME WHERE EXISTS (subquery);",
+        "SELECT column_list FROM TABLE_NAME WHERE TABLE_NAME EXISTS (subquery);",
+        "SELECT column_list FROM TABLE_NAME COLUMN EXISTS (subquery); FROM TABLE_NAME WHERE EXISTS (subquery);"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The ________Clause is an additional filter that is applied to the result set in a SQL statement.",
+      "options": [
+        "Group by",
+        "Order by",
+        "Having",
+        "Select"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does the EXISTS keyword do in SQL?",
+      "options": [
+        "Checks if a value exists in a table",
+        "Verifies if a nested query returns at least one row",
+        "Ensures a column is not null",
+        "Combines results of multiple queries"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the primary use of a SQL view?",
+      "options": [
+        "To store permanent data in the database",
+        "To create a virtual table from a SQL query",
+        "To create relationships between tables",
+        "To perform database migrations"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which SQL command is used to create a view?",
+      "options": [
+        "CREATE TABLE",
+        "CREATE VIEW",
+        "ALTER VIEW",
+        "SELECT INTO"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "You can delete a view with ___________ command.",
+      "options": [
+        "drop view",
+        "delete view",
+        "remove view",
+        "truncate view"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is a trigger in SQL?",
+      "options": [
+        "A stored procedure that executes automatically in response to an event",
+        "A command to backup data",
+        "A query to create new views",
+        "A temporary table for transaction logs"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following can activate a trigger?",
+      "options": [
+        "A user login event",
+        "A SELECT query",
+        "An INSERT, UPDATE, or DELETE operation",
+        "A schema modification"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which SQL command is used to modify the structure of an existing table?",
+      "options": [
+        "update table",
+        "modify table",
+        "alter table",
+        "change table"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What happens when DROP TABLE CASCADE is executed?",
+      "options": [
+        "Only the table structure is removed",
+        "The table and its dependent objects are removed",
+        "The table data is cleared, but the structure is preserved",
+        "The table is locked for further operations"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What happens if you execute DROP TABLE table_name; in SQL?",
+      "options": [
+        "The table structure is removed, but the data is retained",
+        "Both the table structure and data are removed",
+        "Only the table relationships are deleted",
+        "The table is temporarily hidden"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the main goal of informal design guidelines for relation schemas?",
+      "options": [
+        "Improve efficiency of queries",
+        "Reduce anomalies and redundancies",
+        "Simplify database architecture",
+        "Increase the size of the database"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A relation schema is said to have good design if it avoids which of the following?",
+      "options": [
+        "Foreign keys",
+        "Redundancy and null values",
+        "Composite attributes",
+        "Views"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is NOT a type of functional dependency?",
+      "options": [
+        "Full functional dependency",
+        "Partial functional dependency",
+        "Transitive functional dependency",
+        "Reflexive functional dependency"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which dependency violates 3NF?",
+      "options": [
+        "Transitive dependency",
+        "Partial dependency Partial dependency",
+        "Candidate key dependency",
+        "FP-Growth uses a horizontal data format"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following algorithms is commonly used for schema decomposition in relational databases?",
+      "options": [
+        "Algorithm for Lossless Decomposition",
+        "BCNF Decomposition Algorithm",
+        "Dependency Closure Algorithm",
+        "Minimal Cover Algorithm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which property is NOT a characteristic of a good relational decomposition?",
+      "options": [
+        "Lossless join property",
+        "Dependency preservation",
+        "Minimization of redundancy",
+        "Elimination of derived attributes"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is a candidate key in a relation?",
+      "options": [
+        "Any subset of attributes",
+        "A super key that has no proper subset as a super key",
+        "A primary key with additional attributes",
+        "An attribute that is functionally dependent"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is true for a schema in 3NF?",
+      "options": [
+        "It is in 2NF and every non-prime attribute is fully functionally dependent on the primary key",
+        "It is in BCNF",
+        "It contains transitive dependencies",
+        "It has minimal redundancy primary key"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following decompositions is always guaranteed to be lossless?",
+      "options": [
+        "Decomposition into BCNF",
+        "Decomposition based on a candidate key",
+        "Decomposition into 2NF",
+        "Decomposition preserving dependencies"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the closure of an attribute set in functional dependency theory?",
+      "options": [
+        "All attributes in the relation",
+        "The set of all attributes that can be functionally determined by the attribute set",
+        "All possible super keys",
+        "The smallest key for the relation set =================================================="
+      ],
+      "answer": 1
+    }
+  ],
+  "maths_u2": [
+    {
+      "question": "Rank of an identity matrix of order 4 is",
+      "options": [
+        "4",
+        "3",
+        "1",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "System of equations AX=B has solutions if",
+      "options": [
+        "Rank[A] = number of unknowns",
+        "Rank[A] = Rank[A│B] ≤ number of unknowns",
+        "Rank[A] ≠ number of unknowns",
+        "Rank[A] ≠ Rank[A│B]"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "System AX=0 has nontrivial solution if and only if",
+      "options": [
+        "Determinant of A = Determinant of X",
+        "Determinant of A = 0",
+        "Rank[A] ≠ Rank[A│B]",
+        "Determinant of A ≠ 0"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements is incorrect?",
+      "options": [
+        "Rank of a matrix A is the number of nonzero rows in its echelon form",
+        "Rank of a matrix A is equal to number of pivot columns in it",
+        "Rank of a matrix A is number of free variables in the system AX=B",
+        "Rank of a matrix A is number of basic variables in the system AX=B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "System of equations AX=B has infinite number of solutions if",
+      "options": [
+        "Rank[A] = Rank[A│B] = number of unknowns",
+        "Rank[A] = Rank[A│B] < number of unknowns",
+        "Rank[A] ≠ Rank[A│B]",
+        "Rank[A] = Rank[A│B] > number of unknowns"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A n×n matrix A is diagonalizable if and only if",
+      "options": [
+        "A has n distinct eigen values",
+        "A has repeated eigen vectors",
+        "A has repeated eigen values",
+        "A has linearly independent eigen vectors"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Eigen value of a triangular matrix A are",
+      "options": [
+        "Diagonal element of A",
+        "Sum of diagonal element of A",
+        "Determinant of A",
+        "Trace of A"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Eigen values of A = [[4,1],[1,4]] are",
+      "options": [
+        "3, -3",
+        "-3, -5",
+        "3, 5",
+        "5, 0"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The eigen vectors of the matrix A is the nontrivial solution of the equation",
+      "options": [
+        "AX = 0",
+        "AX = B",
+        "AX = λX",
+        "None"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If A is a square matrix, then det(A) =",
+      "options": [
+        "Sum of the eigen values of A",
+        "Product of eigen values of A",
+        "Product of diagonal elements of A",
+        "Sum of diagonal elements of A"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Let A be an n×n matrix, then A is diagonalizable if and only if",
+      "options": [
+        "A has linearly dependent eigen vectors",
+        "A has n linearly independent columns",
+        "A has n linearly independent eigen vectors",
+        "A has (n-1) linearly independent eigen vectors"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For which value of k the system of two equations x+y=1, 2x+2y=k has infinite solutions:",
+      "options": [
+        "k = 0",
+        "k = 1",
+        "k = 2",
+        "Any value of k ≠ 1"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The eigen values of A = [[3,2],[3,8]] are",
+      "options": [
+        "7, 4",
+        "9, 2",
+        "8, 3",
+        "6, 5"
+      ],
+      "answer": 1
     }
   ]
 }
