@@ -2601,5 +2601,326 @@
       ],
       "answer": 1
     }
+  ],
+  "maths_la_u2_img": [
+    {
+      "questionImg": "images/maths_unit2/q-4.png",
+      "qNum": 39,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-4.png",
+      "qNum": 40,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-4.png",
+      "qNum": 41,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-4.png",
+      "qNum": 42,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 1
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 43,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 3
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 44,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 45,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 1
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 46,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 47,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 1
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 48,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 49,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 50,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 1
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 51,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 52,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 53,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 54,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-5.png",
+      "qNum": 55,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 3
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 56,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 57,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 58,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 59,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 60,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 61,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 1
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 62,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 63,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 64,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 65,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 3
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 66,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2
+    },
+    {
+      "questionImg": "images/maths_unit2/q-6.png",
+      "qNum": 67,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0
+    }
   ]
 }
