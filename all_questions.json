@@ -899,9 +899,9 @@
       "question": "System of equations AX=B has solutions if",
       "options": [
         "Rank[A] = number of unknowns",
-        "Rank[A] = Rank[A│B]≤ number of unknowns",
-        "Rank[A] ≠ number of unknowns",
-        "Rank[A] ≠ Rank[A│B]"
+        "Rank[A] = Rank[A│B]\\leq number of unknowns",
+        "Rank[A] \\neq number of unknowns",
+        "Rank[A] \\neq Rank[A│B]"
       ],
       "answer": 0
     },
@@ -910,8 +910,8 @@
       "options": [
         "Determinant of A=Determinant of X",
         "Determinant of A =0",
-        "Rank[A] ≠ Rank[A│B]",
-        "Determinant of A ≠ 0"
+        "Rank[A] \\neq Rank[A│B]",
+        "Determinant of A \\neq 0"
       ],
       "answer": 0
     },
@@ -926,7 +926,7 @@
       "answer": 0
     },
     {
-      "question": "If [𝐴: 𝐵] = [ 2 3 −1 ∶ 5 0 1 3  ∶−1 0 0 𝑘 3 −6 ∶ 5 ]  then the value of k  for which the system is inconsistent is___________",
+      "question": "If [A: B] = $\\begin{bmatrix} 2 & 3 & -1 & 5 \\\\ 0 & 1 & 3 & -1 \\\\ 0 & 0 & k & 3 \\\\ -6 & 5 \\end{bmatrix}$  then the value of k  for which the system is inconsistent is___________",
       "options": [
         "18",
         "-18",
@@ -940,13 +940,13 @@
       "options": [
         "Rank[A] = Rank[A│B] = number of unknowns",
         "Rank[A] = Rank[A│B] < number of unknowns",
-        "Rank[A] ≠ Rank[A│B]",
+        "Rank[A] \\neq Rank[A│B]",
         "Rank[A] = Rank[A│B] > number of unknowns"
       ],
       "answer": 0
     },
     {
-      "question": "then 𝑡𝑟(𝐴𝐴𝑇) is",
+      "question": "then 𝑡𝑟(AA𝑇) is",
       "options": [
         "21",
         "22",
@@ -956,27 +956,27 @@
       "answer": 0
     },
     {
-      "question": "In the LU factorization of 𝐴= [ 3 −7 −2 −3 5 1 6 −4 0 ], the matrix U is",
+      "question": "In the LU factorization of A= $\\begin{bmatrix} 3 & -7 & -2 \\\\ -3 & 5 & 1 \\\\ 6 & -4 & 0 \\end{bmatrix}$, the matrix U is",
       "options": [
-        "𝐴= [ 3 7 2 0 −2 −1 0 0 −1 ]",
-        "𝐴= [ 3 −7 −2 0 −2 2 0 0 −1 ]",
-        "𝐴= [ 3 −7 −2 0 −2 −1 0 0 −1 ]",
-        "𝐴= [ 3 −7 −2 0 5 1 0 0 0 ]"
+        "A= $\\begin{bmatrix} 3 & 7 & 2 \\\\ 0 & -2 & -1 \\\\ 0 & 0 & -1 \\end{bmatrix}$",
+        "A= $\\begin{bmatrix} 3 & -7 & -2 \\\\ 0 & -2 & 2 \\\\ 0 & 0 & -1 \\end{bmatrix}$",
+        "A= $\\begin{bmatrix} 3 & -7 & -2 \\\\ 0 & -2 & -1 \\\\ 0 & 0 & -1 \\end{bmatrix}$",
+        "A= $\\begin{bmatrix} 3 & -7 & -2 \\\\ 0 & 5 & 1 \\\\ 0 & 0 & 0 \\end{bmatrix}$"
       ],
       "answer": 0
     },
     {
-      "question": "The eigen values of 𝐴= [ 5 6 17 0 −19 23 0 0 37 ]are",
+      "question": "The eigen values of A= $\\begin{bmatrix} 5 & 6 & 17 \\\\ 0 & -19 & 23 \\\\ 0 & 0 & 37 \\end{bmatrix}$are",
       "options": [
         "-19, 37, 5",
-        "2, −3,7 2",
+        "2, -3,7 2",
         "5, 19, 37",
         "0, 5 ,17"
       ],
       "answer": 0
     },
     {
-      "question": "The eigen values of 𝐴= [ 2 4 −6 0 3 6 0 0 3 ] are",
+      "question": "The eigen values of A= $\\begin{bmatrix} 2 & 4 & -6 \\\\ 0 & 3 & 6 \\\\ 0 & 0 & 3 \\end{bmatrix}$ are",
       "options": [
         "2,2,4",
         "2,3,2",
@@ -986,7 +986,7 @@
       "answer": 0
     },
     {
-      "question": "A 𝑛× 𝑛 matrix A is diagonalizable if and only if",
+      "question": "A 𝑛\\times 𝑛 matrix A is diagonalizable if and only if",
       "options": [
         "A has n distinct eigen values",
         "A has repeated eigen vectors",
@@ -996,7 +996,7 @@
       "answer": 0
     },
     {
-      "question": "If  𝐴= [1 2 3 4] , 𝐵= [ 5 2 −1 3]then  𝑡𝑟(𝐵−1𝐴𝐵) is",
+      "question": "If  A= $\\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$ , B= $\\begin{bmatrix} 5 & 2 \\\\ -1 & 3 \\end{bmatrix}$then  𝑡𝑟(B-1AB) is",
       "options": [
         "4",
         "5",
@@ -1006,7 +1006,7 @@
       "answer": 0
     },
     {
-      "question": "If  𝐴= [−1 2 3 −3]then 𝑡𝑟(𝐴𝐴𝑇) is",
+      "question": "If  A= $\\begin{bmatrix} -1 & 2 \\\\ 3 & -3 \\end{bmatrix}$then 𝑡𝑟(AA𝑇) is",
       "options": [
         "23",
         "10",
@@ -1026,7 +1026,7 @@
       "answer": 0
     },
     {
-      "question": "Eigen values of  A= [4 1 1 4] are",
+      "question": "Eigen values of  A= $\\begin{bmatrix} 4 & 1 \\\\ 1 & 4 \\end{bmatrix}$ are",
       "options": [
         "3,-3",
         "-3,-5",
@@ -1036,7 +1036,7 @@
       "answer": 0
     },
     {
-      "question": "Let 𝐴= [ 3 10 5 −2 −3 −4 3 5 7 ], the eigen value 𝜆1 = 2, 𝜆2 = 3 and 𝜆3 = ___________",
+      "question": "Let A= $\\begin{bmatrix} 3 & 10 & 5 \\\\ -2 & -3 & -4 \\\\ 3 & 5 & 7 \\end{bmatrix}$, the eigen value \\lambda1 = 2, \\lambda2 = 3 and \\lambda3 = ___________",
       "options": [
         "3",
         "2",
@@ -1048,15 +1048,15 @@
     {
       "question": "The eigen vectors of the matrix A is the nontrivial solution of the equation ________________",
       "options": [
-        "𝐴𝑋= 0",
-        "𝐴𝑋= 𝐵",
-        "𝐴𝑋= 𝜆𝑋",
+        "A𝑋= 0",
+        "A𝑋= B",
+        "A𝑋= \\lambda𝑋",
         "none"
       ],
       "answer": 0
     },
     {
-      "question": "If  𝐴= [ 1 3 2 5 6 −1 2 −2 3 ]  𝐵= [ −6 2 5 2 1 8 4 −2 2 ] then tr(A-B) is",
+      "question": "If  A= $\\begin{bmatrix} 1 & 3 & 2 \\\\ 5 & 6 & -1 \\\\ 2 & -2 & 3 \\end{bmatrix}$  B= $\\begin{bmatrix} -6 & 2 & 5 \\\\ 2 & 1 & 8 \\\\ 4 & -2 & 2 \\end{bmatrix}$ then tr(A-B) is",
       "options": [
         "1",
         "12",
@@ -1076,7 +1076,7 @@
       "answer": 0
     },
     {
-      "question": "The sum of the eigen  values  of    [ 1 1 3 1 5 1 3 −1 −1 ] is",
+      "question": "The sum of the eigen  values  of    $\\begin{bmatrix} 1 & 1 & 3 \\\\ 1 & 5 & 1 \\\\ 3 & -1 & -1 \\end{bmatrix}$ is",
       "options": [
         "-2",
         "3",
@@ -1086,7 +1086,7 @@
       "answer": 0
     },
     {
-      "question": "Let 𝐴= [ 2 1 1 1 2 1 0 0 1 ], then eigen values of A are  𝜆1 = 1, 𝜆2 = 3 and 𝜆3 = ___________",
+      "question": "Let A= $\\begin{bmatrix} 2 & 1 & 1 \\\\ 1 & 2 & 1 \\\\ 0 & 0 & 1 \\end{bmatrix}$, then eigen values of A are  \\lambda1 = 1, \\lambda2 = 3 and \\lambda3 = ___________",
       "options": [
         "-2",
         "1",
@@ -1096,27 +1096,27 @@
       "answer": 0
     },
     {
-      "question": "Let 𝐴 be an 𝑛× 𝑛 matrix, then 𝐴 is diagonalizable if and only if",
+      "question": "Let A be an 𝑛\\times 𝑛 matrix, then A is diagonalizable if and only if",
       "options": [
-        "𝐴 has linearly dependent eigen vectors.",
-        "𝐴 has n linearly independent columns.",
-        "𝐴 has n linearly independent eigen vectors.",
-        "𝐴 has (n-1) linearly independent eigen vectors."
+        "A has linearly dependent eigen vectors.",
+        "A has n linearly independent columns.",
+        "A has n linearly independent eigen vectors.",
+        "A has (n-1) linearly independent eigen vectors."
       ],
       "answer": 0
     },
     {
-      "question": "For which value of 𝑘 the system of two equations 𝑥+ 𝑦= 1 2𝑥+ 2𝑦= 𝑘   has infinite solutions:",
+      "question": "For which value of k the system of two equations 𝑥+ 𝑦= 1 2𝑥+ 2𝑦= k   has infinite solutions:",
       "options": [
-        "𝑘= 0",
-        "𝑘= 1",
-        "𝑘= 2",
-        "any value of 𝑘≠1"
+        "k= 0",
+        "k= 1",
+        "k= 2",
+        "any value of k\\neq1"
       ],
       "answer": 0
     },
     {
-      "question": "The eigen values of  𝐴= [3 2 3 8] are",
+      "question": "The eigen values of  A= $\\begin{bmatrix} 3 & 2 \\\\ 3 & 8 \\end{bmatrix}$ are",
       "options": [
         "7,4",
         "9,2",
@@ -1126,7 +1126,7 @@
       "answer": 0
     },
     {
-      "question": "Spectrum of the matrix [ 1 0 0 0 2 0 0 0 3 ]  is:",
+      "question": "Spectrum of the matrix $\\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{bmatrix}$  is:",
       "options": [
         "{ 3, 2, 1}",
         "{1, 3, 1}",
@@ -1136,7 +1136,7 @@
       "answer": 0
     },
     {
-      "question": "Let 𝐴= [ 8 −6 2 −6 7 −4 2 −4 3 ] and 𝐵= [ −2 2 −3 2 1 −6 −1 −2 0 ], then 𝑡𝑟(𝐴+ 𝐵) is",
+      "question": "Let A= $\\begin{bmatrix} 8 & -6 & 2 \\\\ -6 & 7 & -4 \\\\ 2 & -4 & 3 \\end{bmatrix}$ and B= $\\begin{bmatrix} -2 & 2 & -3 \\\\ 2 & 1 & -6 \\\\ -1 & -2 & 0 \\end{bmatrix}$, then 𝑡𝑟(A+ B) is",
       "options": [
         "19",
         "17",
@@ -1146,7 +1146,7 @@
       "answer": 0
     },
     {
-      "question": "Which of the following statements are/is correct for the system 𝐴𝑋= 𝐵,   𝑤ℎ𝑒𝑛 𝐴 𝑖𝑠 𝑎  3 × 4 matrix of rank 2. I. Matrix 𝐴 has 2 non-pivot columns. II.System 𝐴𝑋= 𝐵 has 2 basic variables.",
+      "question": "Which of the following statements are/is correct for the system A𝑋= B,   𝑤ℎ𝑒𝑛 A 𝑖𝑠 𝑎  3 \\times 4 matrix of rank 2. I. Matrix A has 2 non-pivot columns. II.System A𝑋= B has 2 basic variables.",
       "options": [
         "Only I is correct",
         "Only II is correct",
@@ -1156,7 +1156,7 @@
       "answer": 0
     },
     {
-      "question": "If A is 3 × 4  matrix the maximum possible value of the rank A is",
+      "question": "If A is 3 \\times 4  matrix the maximum possible value of the rank A is",
       "options": [
         "4",
         "3",
@@ -1176,12 +1176,12 @@
       "answer": 0
     },
     {
-      "question": "The characteristic equation of the matrix   𝐴= [2 0 4 7] is:",
+      "question": "The characteristic equation of the matrix   A= $\\begin{bmatrix} 2 & 0 \\\\ 4 & 7 \\end{bmatrix}$ is:",
       "options": [
-        "𝜆2 −9𝜆+ 14 = 0",
-        "𝜆2 −14𝜆+ 9 = 0",
-        "𝜆2 −9𝜆−14 = 0",
-        "𝜆2 −14𝜆−9 = 0"
+        "\\lambda2 -9\\lambda+ 14 = 0",
+        "\\lambda2 -14\\lambda+ 9 = 0",
+        "\\lambda2 -9\\lambda-14 = 0",
+        "\\lambda2 -14\\lambda-9 = 0"
       ],
       "answer": 0
     },
@@ -1196,12 +1196,12 @@
       "answer": 0
     },
     {
-      "question": "If the LU factorization of a matrix A is A=LU where A=[ 2 5 −3 −4] then U is",
+      "question": "If the LU factorization of a matrix A is A=LU where A=$\\begin{bmatrix} 2 & 5 \\\\ -3 & -4 \\end{bmatrix}$ then U is",
       "options": [
-        "[2 5 0 7]",
-        "[ 1 4 −5 1]",
-        "[2 5 1 7]",
-        "[ 1 4 −7/2 1]"
+        "$\\begin{bmatrix} 2 & 5 \\\\ 0 & 7 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 4 \\\\ -5 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 2 & 5 \\\\ 1 & 7 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 4 \\\\ -7/2 & 1 \\end{bmatrix}$"
       ],
       "answer": 0
     },
@@ -1216,17 +1216,17 @@
       "answer": 0
     },
     {
-      "question": "The value of h for which the augmented matrix     − − − 7 2 3 5 1 h of a linear system is inconsistent",
+      "question": "The value of h for which the augmented matrix     - - - 7 2 3 5 1 h of a linear system is inconsistent",
       "options": [
-        "ℎ= −15",
-        "ℎ≠ −15",
+        "ℎ= -15",
+        "ℎ\\neq -15",
         "ℎ= 5",
-        "ℎ= −1"
+        "ℎ= -1"
       ],
       "answer": 0
     },
     {
-      "question": "Number of pivot columns in the matrix  [ 0 0 1 0 2 0 1 0 1 0 0 0 ] is:",
+      "question": "Number of pivot columns in the matrix  $\\begin{bmatrix} 0 & 0 & 1 & 0 \\\\ 2 & 0 & 1 & 0 \\\\ 1 & 0 & 0 & 0 \\end{bmatrix}$ is:",
       "options": [
         "1",
         "2",
@@ -1236,12 +1236,12 @@
       "answer": 0
     },
     {
-      "question": "Which of the following vector is an eigen vector of the matrix [ 1 2 −1 4] ∶",
+      "question": "Which of the following vector is an eigen vector of the matrix $\\begin{bmatrix} 1 & 2 \\\\ -1 & 4 \\end{bmatrix}$ |",
       "options": [
-        "[1 1]",
-        "[1 2]",
-        "[0 0]",
-        "[0 1] UNIT II"
+        "$\\begin{bmatrix} 1 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 2 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & 0 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & 1 \\end{bmatrix}$ UNIT II"
       ],
       "answer": 0
     },
@@ -1256,7 +1256,7 @@
       "answer": 0
     },
     {
-      "question": "The row space of an 𝑚× 𝑛 matrix A is a subspace of",
+      "question": "The row space of an 𝑚\\times 𝑛 matrix A is a subspace of",
       "options": [
         "𝑅𝑛",
         "A",
@@ -1286,7 +1286,7 @@
       "answer": 0
     },
     {
-      "question": "Let 𝑇: 𝑅4 →𝑅4be the linear transformation with null space of T={(0,0,0,0)} . Then nullity of T is",
+      "question": "Let 𝑇: 𝑅4 \\rightarrow𝑅4be the linear transformation with null space of T={(0,0,0,0)} . Then nullity of T is",
       "options": [
         "0",
         "1",
@@ -1296,7 +1296,7 @@
       "answer": 0
     },
     {
-      "question": "The dimension of the subspace of 𝑅3 spanned by {(2,0,1), (5,2,1), (1,2, −1)} is",
+      "question": "The dimension of the subspace of 𝑅3 spanned by {(2,0,1), (5,2,1), (1,2, -1)} is",
       "options": [
         "3",
         "2",
@@ -1306,7 +1306,7 @@
       "answer": 0
     },
     {
-      "question": "Let 𝑇: 𝑅3 →𝑅3 be the linear transformation with nullity of T is 1 then rank of T is",
+      "question": "Let 𝑇: 𝑅3 \\rightarrow𝑅3 be the linear transformation with nullity of T is 1 then rank of T is",
       "options": [
         "1",
         "2",
@@ -1316,12 +1316,12 @@
       "answer": 0
     },
     {
-      "question": "If 𝑇: 𝑉→𝑊 is a linear transformation, which of the following statements  is not true?",
+      "question": "If 𝑇: 𝑉\\rightarrow𝑊 is a linear transformation, which of the following statements  is not true?",
       "options": [
-        "𝑇(𝑥𝑦) = 𝑇(𝑥)𝑇(𝑦)∀𝑥, 𝑦∈𝑉",
-        "𝑇(−𝑥) = −𝑇(𝑥)∀𝑥∈𝑉",
-        "𝑇(0) = 0 𝑓𝑜𝑟 0 ∈𝑉",
-        "𝑇(2𝑥) = 2𝑇(𝑥)∀𝑥∈𝑉"
+        "𝑇(𝑥𝑦) = 𝑇(𝑥)𝑇(𝑦)∀𝑥, 𝑦\\in𝑉",
+        "𝑇(-𝑥) = -𝑇(𝑥)∀𝑥\\in𝑉",
+        "𝑇(0) = 0 𝑓𝑜𝑟 0 \\in𝑉",
+        "𝑇(2𝑥) = 2𝑇(𝑥)∀𝑥\\in𝑉"
       ],
       "answer": 0
     },
@@ -1336,7 +1336,7 @@
       "answer": 0
     },
     {
-      "question": "If 𝑢= [1 2] , 𝑣= [−5 7 ] then inner product of 𝑢and 𝑣 is",
+      "question": "If 𝑢= $\\begin{bmatrix} 1 & 2 \\end{bmatrix}$ , 𝑣= $\\begin{bmatrix} -5 & 7 \\end{bmatrix}$ then inner product of 𝑢and 𝑣 is",
       "options": [
         "9",
         "19",
@@ -1346,27 +1346,27 @@
       "answer": 0
     },
     {
-      "question": "A system of equation 𝐴𝑋= 𝑏 has solution if and only if",
+      "question": "A system of equation A𝑋= 𝑏 has solution if and only if",
       "options": [
-        "𝑏 ∈𝐶𝑜𝑙(𝐴)",
-        "𝑏 ∈𝑅𝑜𝑤(𝐴)",
-        "𝑏 ∈𝑁𝑢𝑙𝑙(𝐴)",
-        "𝑏 ∈𝐶𝑜𝑙(𝐴) and  𝑏 ∈𝑅𝑜𝑤(𝐴)"
+        "𝑏 \\in𝐶𝑜𝑙(A)",
+        "𝑏 \\in𝑅𝑜𝑤(A)",
+        "𝑏 \\in𝑁𝑢𝑙𝑙(A)",
+        "𝑏 \\in𝐶𝑜𝑙(A) and  𝑏 \\in𝑅𝑜𝑤(A)"
       ],
       "answer": 0
     },
     {
-      "question": "Let 𝑇: 𝑅2 →𝑅2 be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0), then the matrix of linear transformation with respect to standard basis is",
+      "question": "Let 𝑇: 𝑅2 \\rightarrow𝑅2 be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0), then the matrix of linear transformation with respect to standard basis is",
       "options": [
-        "[0 1 0 1]",
-        "[0 −1 0 1 ]",
-        "[1 0 0 0]",
-        "[1 0 0 1]"
+        "$\\begin{bmatrix} 0 & 1 \\\\ 0 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & -1 \\\\ 0 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 0 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$"
       ],
       "answer": 0
     },
     {
-      "question": "Which of the following statement is not true if 𝑇: 𝑈→𝑉is a  linear transformation",
+      "question": "Which of the following statement is not true if 𝑇: 𝑈\\rightarrow𝑉is a  linear transformation",
       "options": [
         "Range space of T is a subspace of V",
         "Null space of T is a subspace of U",
@@ -1380,13 +1380,13 @@
       "options": [
         "𝑢. 𝑣= 𝑣. 𝑢",
         "𝑢. 𝑣= 1 6",
-        "𝑢. 𝑣≥0",
+        "𝑢. 𝑣\\geq0",
         "𝒖. 𝒗= 𝟎"
       ],
       "answer": 0
     },
     {
-      "question": "If 𝑢= [ 2 3 −5 ] , 𝑣= [ 2 0 −3 ]then inner product of 𝑢and 𝑣 is",
+      "question": "If 𝑢= $\\begin{bmatrix} 2 & 3 \\\\ -5 \\end{bmatrix}$ , 𝑣= $\\begin{bmatrix} 2 & 0 \\\\ -3 \\end{bmatrix}$then inner product of 𝑢and 𝑣 is",
       "options": [
         "-5",
         "-11",
@@ -1406,17 +1406,17 @@
       "answer": 0
     },
     {
-      "question": "If 𝑣= [1 1 1 −1]𝑇 then normalized form of 𝑣 is",
+      "question": "If 𝑣= $\\begin{bmatrix} 1 & 1 \\\\ 1 & -1 \\end{bmatrix}$𝑇 then normalized form of 𝑣 is",
       "options": [
-        "[ 1 √2 1 √2 1 √2 −1 √2] 𝑇",
-        "[ 1 √3 1 √3 1 √3 −1 √3] 𝑇",
-        "[ 1 2 1 2 1 2 −1 2 ] 𝑇",
-        "[1 1 1 1]𝑇"
+        "$\\begin{bmatrix} 1 & √2 & 1 & √2 \\\\ 1 & √2 & -1 & √2 \\end{bmatrix}$ 𝑇",
+        "$\\begin{bmatrix} 1 & √3 & 1 & √3 \\\\ 1 & √3 & -1 & √3 \\end{bmatrix}$ 𝑇",
+        "$\\begin{bmatrix} 1 & 2 & 1 & 2 \\\\ 1 & 2 & -1 & 2 \\end{bmatrix}$ 𝑇",
+        "$\\begin{bmatrix} 1 & 1 \\\\ 1 & 1 \\end{bmatrix}$𝑇"
       ],
       "answer": 0
     },
     {
-      "question": "Let 𝑇: 𝑅2 →𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0). The null space of T is",
+      "question": "Let 𝑇: 𝑅2 \\rightarrow𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0). The null space of T is",
       "options": [
         "{(x, 0)}",
         "{(0, y)}",
@@ -1426,7 +1426,7 @@
       "answer": 0
     },
     {
-      "question": "The set of all solution to the homogeneous equation system 𝐴𝑋= 0, where A be an 𝑚× 𝑛 matrix is",
+      "question": "The set of all solution to the homogeneous equation system A𝑋= 0, where A be an 𝑚\\times 𝑛 matrix is",
       "options": [
         "Null space of A",
         "Column space of A",
@@ -1446,12 +1446,12 @@
       "answer": 0
     },
     {
-      "question": "Let 𝑇: 𝑅2 →𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (0, 𝑦).Then matrix of linear transformation with respect to standard basis is",
+      "question": "Let 𝑇: 𝑅2 \\rightarrow𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (0, 𝑦).Then matrix of linear transformation with respect to standard basis is",
       "options": [
-        "[0 0 0 1]",
-        "[0 −1 0 −1]",
-        "[1 0 0 0]",
-        "[−1 0 0 0]"
+        "$\\begin{bmatrix} 0 & 0 \\\\ 0 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & -1 \\\\ 0 & -1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 0 \\end{bmatrix}$",
+        "$\\begin{bmatrix} -1 & 0 \\\\ 0 & 0 \\end{bmatrix}$"
       ],
       "answer": 0
     },
@@ -1466,7 +1466,7 @@
       "answer": 0
     },
     {
-      "question": "Let 𝑇: 𝑅4 →𝑅4be the linear transformation defined by 𝑇(𝑥1, 𝑥2, 𝑥3, 𝑥4) = (𝑥2, 𝑥3, 0,0). Then null space of T consist of vectors of the form",
+      "question": "Let 𝑇: 𝑅4 \\rightarrow𝑅4be the linear transformation defined by 𝑇(𝑥1, 𝑥2, 𝑥3, 𝑥4) = (𝑥2, 𝑥3, 0,0). Then null space of T consist of vectors of the form",
       "options": [
         "(0,0, 𝑥2, 𝑥3)",
         "(𝑥1, 0,0,0)",
@@ -1476,7 +1476,7 @@
       "answer": 0
     },
     {
-      "question": "The quadratic form 3𝑥1 2 −4𝑥1𝑥2 + 6𝑥2 2 is",
+      "question": "The quadratic form 3𝑥1 2 -4𝑥1𝑥2 + 6𝑥2 2 is",
       "options": [
         "Positive definite",
         "Positive semi definite",
@@ -1496,12 +1496,12 @@
       "answer": 0
     },
     {
-      "question": "The matrix of the quadratic form 𝑄(𝑋) = 5𝑥1 2 + 5𝑥2 2 −4𝑥1𝑥2 is",
+      "question": "The matrix of the quadratic form 𝑄(𝑋) = 5𝑥1 2 + 5𝑥2 2 -4𝑥1𝑥2 is",
       "options": [
-        "[ 5 −2 −2 5 ]",
-        "[5 2 2 5]",
-        "[5 4 4 5]",
-        "[ 5 −4 −4 5 ]"
+        "$\\begin{bmatrix} 5 & -2 \\\\ -2 & 5 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 5 & 2 \\\\ 2 & 5 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 5 & 4 \\\\ 4 & 5 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 5 & -4 \\\\ -4 & 5 \\end{bmatrix}$"
       ],
       "answer": 0
     },
@@ -1536,31 +1536,31 @@
       "answer": 0
     },
     {
-      "question": "The matrix of the quadratic form 4𝑥1𝑥2 + 6𝑥1𝑥3 −8𝑥2𝑥3 8",
+      "question": "The matrix of the quadratic form 4𝑥1𝑥2 + 6𝑥1𝑥3 -8𝑥2𝑥3 8",
       "options": [
-        "[ 0 2 2 2 0 −4 2 −4 0 ]",
-        "[ 0 1 3 2 0 −4 3 −4 0 ]",
-        "[ 1 2 3 2 1 −4 3 −4 1 ]",
-        "[ 0 2 3 2 0 −4 3 −4 0 ]"
+        "$\\begin{bmatrix} 0 & 2 & 2 \\\\ 2 & 0 & -4 \\\\ 2 & -4 & 0 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & 1 & 3 \\\\ 2 & 0 & -4 \\\\ 3 & -4 & 0 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 2 & 3 \\\\ 2 & 1 & -4 \\\\ 3 & -4 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & 2 & 3 \\\\ 2 & 0 & -4 \\\\ 3 & -4 & 0 \\end{bmatrix}$"
       ],
       "answer": 0
     },
     {
       "question": "A quadratic form Q(x) is semi positive definite if",
       "options": [
-        "𝑄(𝑥) > 0 for all 𝑥≠0",
-        "𝑄(𝑥) ≥0 for all x",
-        "𝑄(𝑥) < 0 for all 𝑥≠0",
-        "𝑄(𝑥) ≤0 for all 𝑥"
+        "𝑄(𝑥) > 0 for all 𝑥\\neq0",
+        "𝑄(𝑥) \\geq0 for all x",
+        "𝑄(𝑥) < 0 for all 𝑥\\neq0",
+        "𝑄(𝑥) \\leq0 for all 𝑥"
       ],
       "answer": 0
     },
     {
-      "question": "and 𝑥= [𝑥1 𝑥2], then 𝑥𝑇𝐴𝑥 is",
+      "question": "and 𝑥= $\\begin{bmatrix} 𝑥1 & 𝑥2 \\end{bmatrix}$, then 𝑥𝑇A𝑥 is",
       "options": [
         "4𝑥1 2 + 3𝑥2 2",
         "2𝑥1 2 + 3𝑥2 2 + 7𝑥1𝑥2",
-        "2𝑥1 2 + 3𝑥2 2 −7𝑥1𝑥2",
+        "2𝑥1 2 + 3𝑥2 2 -7𝑥1𝑥2",
         "2𝑥1 2 + 3𝑥2 2"
       ],
       "answer": 0
@@ -1788,7 +1788,7 @@
       "answer": 2
     },
     {
-      "question": "You are given an array: [3, 9, 2, 1, 4, 8]. After building a max-heap from this array, what will be the root element?",
+      "question": "You are given an array: $\\begin{bmatrix} 3, & 9, & 2, \\\\ 1, & 4, & 8 \\end{bmatrix}$. After building a max-heap from this array, what will be the root element?",
       "options": [
         "1",
         "9",
@@ -2838,7 +2838,7 @@
       "options": [
         "Determinant of A = Determinant of X",
         "Determinant of A = 0",
-        "Determinant of A ≠ 0",
+        "Determinant of A \\neq 0",
         "Rank of A = n"
       ],
       "answer": 1
@@ -2858,7 +2858,7 @@
       "options": [
         "Rank[A] = Rank[A|B] = number of unknowns",
         "Rank[A] = Rank[A|B] < number of unknowns",
-        "Rank[A] ≠ Rank[A|B]",
+        "Rank[A] \\neq Rank[A|B]",
         "Rank[A] = Rank[A|B] > number of unknowns"
       ],
       "answer": 1
@@ -2884,7 +2884,7 @@
       "answer": 1
     },
     {
-      "question": "An n×n matrix A is diagonalizable if and only if",
+      "question": "An n\\timesn matrix A is diagonalizable if and only if",
       "options": [
         "A has n distinct eigen values",
         "A has repeated eigen vectors",
@@ -2894,7 +2894,7 @@
       "answer": 3
     },
     {
-      "question": "If A is 3×4 matrix the maximum possible value of the rank A is",
+      "question": "If A is 3\\times4 matrix the maximum possible value of the rank A is",
       "options": [
         "3",
         "4",
@@ -2954,7 +2954,7 @@
       "answer": 1
     },
     {
-      "question": "The row space of an m × n matrix A is a subspace of",
+      "question": "The row space of an m \\times n matrix A is a subspace of",
       "options": [
         "Rᵐ",
         "Rⁿ",
@@ -2984,7 +2984,7 @@
       "answer": 2
     },
     {
-      "question": "Let T: R⁴ → R⁴ be the linear transformation with null space of T = {(0,0,0,0)}. Then nullity of T is",
+      "question": "Let T: R⁴ \\rightarrow R⁴ be the linear transformation with null space of T = {(0,0,0,0)}. Then nullity of T is",
       "options": [
         "0",
         "1",
@@ -3004,7 +3004,7 @@
       "answer": 2
     },
     {
-      "question": "The column space of an m × n matrix is a subspace of",
+      "question": "The column space of an m \\times n matrix is a subspace of",
       "options": [
         "Rⁿ",
         "Rᵐ",
@@ -3014,7 +3014,7 @@
       "answer": 1
     },
     {
-      "question": "Let T: R³ → R³ be the linear transformation with nullity of T = 1, then rank of T is",
+      "question": "Let T: R³ \\rightarrow R³ be the linear transformation with nullity of T = 1, then rank of T is",
       "options": [
         "1",
         "2",
@@ -3024,17 +3024,17 @@
       "answer": 1
     },
     {
-      "question": "If T: V → W is a linear transformation, which of the following statements is not true?",
+      "question": "If T: V \\rightarrow W is a linear transformation, which of the following statements is not true?",
       "options": [
-        "T(0) = 0 for 0 ∈ V",
-        "T(-x) = -T(x) for x ∈ V",
-        "T(2x) = 2T(x) for x ∈ V",
+        "T(0) = 0 for 0 \\in V",
+        "T(-x) = -T(x) for x \\in V",
+        "T(2x) = 2T(x) for x \\in V",
         "T(x+y) = T(x) - T(y)"
       ],
       "answer": 3
     },
     {
-      "question": "The set W = {(a, b, 0): a, b ∈ R} is a subspace of",
+      "question": "The set W = {(a, b, 0): a, b \\in R} is a subspace of",
       "options": [
         "R²",
         "R(R)",
@@ -3046,20 +3046,20 @@
     {
       "question": "A system of equation AX = b has solution if and only if",
       "options": [
-        "b ∈ Null(A)",
-        "b ∈ Row(A)",
-        "b ∈ Col(A)",
-        "b ∈ R"
+        "b \\in Null(A)",
+        "b \\in Row(A)",
+        "b \\in Col(A)",
+        "b \\in R"
       ],
       "answer": 2
     },
     {
-      "question": "Let T: R² → R² be the linear transformation defined by T(x,y) = (x, 0). Then the matrix of linear transformation with respect to standard basis is",
+      "question": "Let T: R² \\rightarrow R² be the linear transformation defined by T(x,y) = (x, 0). Then the matrix of linear transformation with respect to standard basis is",
       "options": [
-        "[[1,0],[0,1]]",
-        "[[1,0],[0,0]]",
-        "[[0,0],[0,1]]",
-        "[[0,1],[1,0]]"
+        "[$\\begin{bmatrix} 1,0 \\end{bmatrix}$,$\\begin{bmatrix} 0,1 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 1,0 \\end{bmatrix}$,$\\begin{bmatrix} 0,0 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 0,0 \\end{bmatrix}$,$\\begin{bmatrix} 0,1 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 0,1 \\end{bmatrix}$,$\\begin{bmatrix} 1,0 \\end{bmatrix}$]"
       ],
       "answer": 1
     },
@@ -3068,7 +3068,7 @@
       "options": [
         "u·v = 1",
         "u·v = 0",
-        "u×v = 0",
+        "u\\timesv = 0",
         "u+v = 0"
       ],
       "answer": 1
@@ -3084,7 +3084,7 @@
       "answer": 2
     },
     {
-      "question": "The set of all solutions to the homogeneous equation system AX = 0, where A is an m × n matrix is",
+      "question": "The set of all solutions to the homogeneous equation system AX = 0, where A is an m \\times n matrix is",
       "options": [
         "Row space of A",
         "Column space of A",
@@ -3094,12 +3094,12 @@
       "answer": 2
     },
     {
-      "question": "Let T: R² → R² be the linear transformation defined by T(x,y) = (0, y). Then matrix of linear transformation with respect to standard basis is",
+      "question": "Let T: R² \\rightarrow R² be the linear transformation defined by T(x,y) = (0, y). Then matrix of linear transformation with respect to standard basis is",
       "options": [
-        "[[1,0],[0,1]]",
-        "[[0,0],[0,1]]",
-        "[[1,0],[0,0]]",
-        "[[0,1],[1,0]]"
+        "[$\\begin{bmatrix} 1,0 \\end{bmatrix}$,$\\begin{bmatrix} 0,1 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 0,0 \\end{bmatrix}$,$\\begin{bmatrix} 0,1 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 1,0 \\end{bmatrix}$,$\\begin{bmatrix} 0,0 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 0,1 \\end{bmatrix}$,$\\begin{bmatrix} 1,0 \\end{bmatrix}$]"
       ],
       "answer": 1
     },
@@ -3126,10 +3126,10 @@
     {
       "question": "The matrix of linear transformation T(x, y) = (y, x) with respect to the standard basis is",
       "options": [
-        "[[1,0],[0,1]]",
-        "[[0,1],[1,0]]",
-        "[[1,1],[0,0]]",
-        "[[0,0],[1,1]]"
+        "[$\\begin{bmatrix} 1,0 \\end{bmatrix}$,$\\begin{bmatrix} 0,1 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 0,1 \\end{bmatrix}$,$\\begin{bmatrix} 1,0 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 1,1 \\end{bmatrix}$,$\\begin{bmatrix} 0,0 \\end{bmatrix}$]",
+        "[$\\begin{bmatrix} 0,0 \\end{bmatrix}$,$\\begin{bmatrix} 1,1 \\end{bmatrix}$]"
       ],
       "answer": 1
     },
