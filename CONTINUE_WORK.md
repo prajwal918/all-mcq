@@ -17,10 +17,14 @@
    - Maths Unit 2 (37 MCQs)
 3. MP Unit 2 REMOVED (PDF only had essay questions, NO MCQs)
 
-## ❌ What Needs to be Done
-1. **Fix Matrix Display** - Maths questions have matrices that show as flat text like `[1 2 3 4]` instead of proper 2D grid
-2. **Use KaTeX** - For beautiful math rendering (already added to index.html)
-3. **Re-extract from PDFs** - Get proper text with correct formatting
+## ✅ COMPLETED (2026-04-04)
+1. **Fixed Matrix Display** - All Maths matrices now use proper LaTeX `\begin{bmatrix}` format
+2. **KaTeX Integrated** - Beautiful math rendering working
+3. **37 Maths Unit 2 questions** - All properly formatted with matrices
+
+## ❌ What's Left (Optional)
+1. Add more Unit 1 questions if needed
+2. Add DAA Unit 1 (currently empty)
 
 ## 📁 Source Files in Repo (origin/main branch)
 ```
