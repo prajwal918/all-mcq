@@ -2814,374 +2814,304 @@
   ],
   "maths_unit2": [
     {
-      "question": "Rank of an identity matrix of order $d$ is ___",
+      "question": "A subset $S$ of vector space $V$ over field $F$ is a basis of $V$ if $S$ is linearly independent and",
+      "options": [
+        "$\\text{Span}(S) = F$",
+        "$\\text{Span}(V) = S$",
+        "$\\text{Span}(S) = V$",
+        "$\\text{Span}(S) = S$"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If $\\{u_1, u_2, ..., u_n\\}$ is linearly independent set, then $c_1u_1 + c_2u_2 + ... + c_nu_n = 0$ has",
+      "options": [
+        "Infinitely many solutions",
+        "Unique nonzero solution",
+        "Unique zero solution",
+        "Both B and C are possible"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The row space of an $m \\times n$ matrix $A$ is a subspace of",
+      "options": [
+        "$\\mathbb{R}^n$",
+        "$A$",
+        "$\\mathbb{R}^m$",
+        "$\\mathbb{R}$"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In two dimensional Euclidean space identity element with respect to vector addition is",
+      "options": [
+        "$(1,1)$",
+        "$(0,0)$",
+        "$(-1,-1)$",
+        "Doesn't exist"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In three dimensional Euclidean space inverse of $(-2,-2,0)$ with respect to vector addition is",
+      "options": [
+        "$(0,0,0)$",
+        "$(2,2,2)$",
+        "$(2,2,-2)$",
+        "$(2,2,0)$"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Let $T: \\mathbb{R}^4 \\rightarrow \\mathbb{R}^4$ be the linear transformation with null space of $T = \\{(0,0,0,0)\\}$. Then nullity of $T$ is",
       "options": [
         "0",
         "1",
-        "$d$",
-        "$d-1$"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "System of equations $AX = B$ has solutions if",
-      "options": [
-        "$\\text{Rank}[A] = $ number of unknowns",
-        "$\\text{Rank}[A] = \\text{Rank}[A|B]$",
-        "$\\text{Rank}[A] > \\text{Rank}[A|B]$",
-        "$\\text{Rank}[A] < $ number of unknowns"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "System $AX = 0$ has nontrivial solution if and only if",
-      "options": [
-        "Determinant of $A$ = Determinant of $X$",
-        "Determinant of $A = 0$",
-        "Determinant of $A \\neq 0$",
-        "Rank of $A = n$"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "Which of the following statements is incorrect about Rank of a matrix?",
-      "options": [
-        "Rank of a matrix $A$ is the number of nonzero rows in its echelon form",
-        "Rank of a matrix $A$ is equal to number of pivot columns in it",
-        "Rank is always greater than number of rows",
-        "Rank of a matrix $A$ is number of basic variables in the system $AX = B$"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "If $[A:B] = \\begin{bmatrix} 2 & 3 & -1 & | & 5 \\\\ 0 & 1 & 3 & | & -1 \\\\ 0 & 0 & k & 3-6 & | & 5 \\end{bmatrix}$ then the value of $k$ for which the system is inconsistent is___",
-      "options": [
-        "18",
-        "-18",
-        "6",
-        "-6"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "System of equations $AX = B$ has infinite number of solutions if",
-      "options": [
-        "$\\text{Rank}[A] = \\text{Rank}[A|B] = $ number of unknowns",
-        "$\\text{Rank}[A] = \\text{Rank}[A|B] < $ number of unknowns",
-        "$\\text{Rank}[A] \\neq \\text{Rank}[A|B]$",
-        "$\\text{Rank}[A] = \\text{Rank}[A|B] > $ number of unknowns"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "If $A = \\begin{bmatrix} -1 & 1 \\\\ 2 & 4 \\end{bmatrix}$ then $\\text{tr}(AA^T)$ is",
-      "options": [
-        "21",
-        "22",
-        "3",
-        "26"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "In the LU factorization of $A = \\begin{bmatrix} 3 & -7 & -2 \\\\ -3 & 5 & 1 \\\\ 6 & -4 & 0 \\end{bmatrix}$, the matrix $U$ is",
-      "options": [
-        "$\\begin{bmatrix} 3 & 7 & 2 \\\\ 0 & -2 & -1 \\\\ 0 & 0 & -1 \\end{bmatrix}$",
-        "$\\begin{bmatrix} 3 & -7 & -2 \\\\ 0 & -2 & 2 \\\\ 0 & 0 & -1 \\end{bmatrix}$",
-        "$\\begin{bmatrix} 3 & -7 & -2 \\\\ 0 & -2 & -1 \\\\ 0 & 0 & -1 \\end{bmatrix}$",
-        "$\\begin{bmatrix} 3 & -7 & -2 \\\\ 0 & 5 & 1 \\\\ 0 & 0 & 0 \\end{bmatrix}$"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "The eigen values of $A = \\begin{bmatrix} 5 & 6 & 17 \\\\ 0 & -19 & 23 \\\\ 0 & 0 & 37 \\end{bmatrix}$ are",
-      "options": [
-        "-19, 37, 5",
-        "2, -3, 72",
-        "5, 19, 37",
-        "0, 5, 17"
-      ],
-      "answer": 0
-    },
-    {
-      "question": "The eigen values of $A = \\begin{bmatrix} 2 & 4 & -6 \\\\ 0 & 3 & 6 \\\\ 0 & 0 & 3 \\end{bmatrix}$ are",
-      "options": [
-        "2, 2, 4",
-        "2, 3, 2",
-        "1, 3, 4",
-        "2, 3, 3"
-      ],
-      "answer": 3
-    },
-    {
-      "question": "An $n \\times n$ matrix $A$ is diagonalizable if and only if",
-      "options": [
-        "$A$ has $n$ distinct eigen values",
-        "$A$ has repeated eigen vectors",
-        "$A$ has repeated eigen values",
-        "$A$ has $n$ linearly independent eigen vectors"
-      ],
-      "answer": 3
-    },
-    {
-      "question": "If $A = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\end{bmatrix}$, $B = \\begin{bmatrix} 5 & 2 \\\\ -1 & 3 \\end{bmatrix}$ then $\\text{tr}(B^{-1}AB)$ is",
-      "options": [
         "4",
-        "5",
-        "10",
-        "8"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "If $A = \\begin{bmatrix} -1 & 2 \\\\ 3 & -3 \\end{bmatrix}$ then $\\text{tr}(AA^T)$ is",
-      "options": [
-        "23",
-        "10",
-        "1",
-        "22"
+        "2"
       ],
       "answer": 0
     },
     {
-      "question": "Eigen values of a triangular matrix $A$ are",
-      "options": [
-        "Off-diagonal elements",
-        "Diagonal elements",
-        "Determinant of $A$",
-        "Trace of $A$"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "Eigen values of $A = \\begin{bmatrix} 4 & 1 \\\\ 1 & 4 \\end{bmatrix}$ are",
-      "options": [
-        "3, -3",
-        "-3, -5",
-        "3, 5",
-        "5, 0"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "Let $A = \\begin{bmatrix} 3 & 10 & 5 \\\\ -2 & -3 & -4 \\\\ 3 & 5 & 7 \\end{bmatrix}$, the eigen values $\\lambda_1 = 2$, $\\lambda_2 = 3$ and $\\lambda_3 = $ ___",
+      "question": "The dimension of the subspace of $\\mathbb{R}^3$ spanned by $\\{(2,0,1), (5,2,1), (1,2,-1)\\}$ is",
       "options": [
         "3",
         "2",
-        "5",
-        "7"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "The eigen vectors of the matrix $A$ is the nontrivial solution of the equation",
-      "options": [
-        "$AX = 0$",
-        "$AX = B$",
-        "$AX = \\lambda X$",
-        "None"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "If $A = \\begin{bmatrix} 1 & 3 & 2 \\\\ 5 & 6 & -1 \\\\ 2 & -2 & 3 \\end{bmatrix}$, $B = \\begin{bmatrix} -6 & 2 & 5 \\\\ 2 & 1 & 8 \\\\ 4 & -2 & 2 \\end{bmatrix}$ then $\\text{tr}(A-B)$ is",
-      "options": [
         "1",
-        "12",
-        "13",
-        "7"
-      ],
-      "answer": 3
-    },
-    {
-      "question": "If $A$ is a square matrix, then $\\det(A) =$",
-      "options": [
-        "Sum of the eigen values of $A$",
-        "Product of the eigen values of $A$",
-        "Product of diagonal elements of $A$",
-        "Sum of diagonal elements of $A$"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "The sum of the eigen values of $\\begin{bmatrix} 1 & 1 & 3 \\\\ 1 & 5 & 1 \\\\ 3 & -1 & -1 \\end{bmatrix}$ is",
-      "options": [
-        "-2",
-        "3",
-        "6",
-        "5"
-      ],
-      "answer": 3
-    },
-    {
-      "question": "Let $A = \\begin{bmatrix} 2 & 1 & 1 \\\\ 1 & 2 & 1 \\\\ 0 & 0 & 1 \\end{bmatrix}$, then eigen values of $A$ are $\\lambda_1 = 1$, $\\lambda_2 = 3$ and $\\lambda_3 = $ ___",
-      "options": [
-        "-2",
-        "1",
-        "2",
-        "-1"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "Let $A$ be an $n \\times n$ matrix, then $A$ is diagonalizable if and only if",
-      "options": [
-        "$A$ has linearly dependent eigen vectors",
-        "$A$ has $n$ linearly independent columns",
-        "$A$ has $n$ linearly independent eigen vectors",
-        "$A$ has $(n-1)$ linearly independent eigen vectors"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "For which value of $k$ the system of two equations $x + y = 1$, $2x + 2y = k$ has infinite solutions:",
-      "options": [
-        "$k = 0$",
-        "$k = 1$",
-        "$k = 2$",
-        "Any value of $k \\neq 1$"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "The eigen values of $A = \\begin{bmatrix} 3 & 2 \\\\ 3 & 8 \\end{bmatrix}$ are",
-      "options": [
-        "7, 4",
-        "9, 2",
-        "8, 3",
-        "6, 5"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "Spectrum of the matrix $\\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{bmatrix}$ is:",
-      "options": [
-        "$\\{3, 2, 1\\}$",
-        "$\\{1, 3, 1\\}$",
-        "$\\{0, 0, 6\\}$",
-        "$\\{2, 3, 0\\}$"
-      ],
-      "answer": 0
-    },
-    {
-      "question": "Let $A = \\begin{bmatrix} 8 & -6 & 2 \\\\ -6 & 7 & -4 \\\\ 2 & -4 & 3 \\end{bmatrix}$ and $B = \\begin{bmatrix} -2 & 2 & -3 \\\\ 2 & 1 & -6 \\\\ -1 & -2 & 0 \\end{bmatrix}$, then $\\text{tr}(A+B)$ is",
-      "options": [
-        "19",
-        "17",
-        "20",
-        "21"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "Which of the following statements is correct for the system $AX = B$, when $A$ is a $3 \\times 4$ matrix of rank 2?\nI. Matrix $A$ has 2 non-pivot columns.\nII. System $AX = B$ has 2 basic variables.",
-      "options": [
-        "Only I is correct",
-        "Only II is correct",
-        "Both are correct",
-        "Both are not true"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "If $A$ is $3 \\times 4$ matrix the maximum possible value of the rank $A$ is",
-      "options": [
-        "4",
-        "3",
-        "2",
         "0"
       ],
       "answer": 1
     },
     {
-      "question": "If a matrix $A$ is reduced to row echelon form, then rank of the matrix is",
+      "question": "The column space of an $m \\times n$ matrix is a subspace of",
       "options": [
-        "Number of zero rows",
-        "Number of non-zero rows",
-        "Total number of rows",
-        "Total number of columns"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "The characteristic equation of the matrix $A = \\begin{bmatrix} 2 & 0 \\\\ 4 & 7 \\end{bmatrix}$ is:",
-      "options": [
-        "$\\lambda^2 - 9\\lambda + 14 = 0$",
-        "$\\lambda^2 - 14\\lambda + 9 = 0$",
-        "$\\lambda^2 - 9\\lambda - 14 = 0$",
-        "$\\lambda^2 - 14\\lambda - 9 = 0$"
+        "$\\mathbb{R}^m$",
+        "$\\mathbb{R}^n$",
+        "$\\mathbb{R}^{mn}$",
+        "$\\mathbb{R}^{m+n}$"
       ],
       "answer": 0
     },
     {
-      "question": "If $3x + 2y + z = 0$, $x + 4y + z = 0$, $2x + y + 4z = 0$ be a system of equations, then",
-      "options": [
-        "It is inconsistent",
-        "It has only the trivial solution $x = 0, y = 0, z = 0$",
-        "It can be reduced to a single equation",
-        "Determinant of the matrix of coefficient is zero"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "Which of the following statement is correct?\nI. Trace of the square matrix is equal to product of eigenvalues\nII. Trace of the square matrix is equal to sum of diagonal entries of the matrix.",
-      "options": [
-        "Only I is true",
-        "Only II is true",
-        "Both I and II are true",
-        "Neither I nor II is true"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "If the LU factorization of a matrix $A$ is $A = LU$ where $A = \\begin{bmatrix} 2 & 5 \\\\ -3 & -4 \\end{bmatrix}$ then $U$ is",
-      "options": [
-        "$\\begin{bmatrix} 2 & 5 \\\\ 0 & 7 \\end{bmatrix}$",
-        "$\\begin{bmatrix} 1 & 4 \\\\ -5 & 1 \\end{bmatrix}$",
-        "$\\begin{bmatrix} 2 & 5 \\\\ 1 & 7 \\end{bmatrix}$",
-        "$\\begin{bmatrix} 1 & 4 \\\\ -7/2 & 1 \\end{bmatrix}$"
-      ],
-      "answer": 0
-    },
-    {
-      "question": "Which of the following method is not used to find the solution of the system of equations:",
-      "options": [
-        "Gauss elimination method",
-        "Gauss seidel method",
-        "Rayleigh's power method",
-        "LU decomposition method"
-      ],
-      "answer": 2
-    },
-    {
-      "question": "Which of the following is not a valid elementary operation?",
-      "options": [
-        "$R_i \\leftrightarrow R_j$",
-        "$kR_i + R_j \\rightarrow R_i$",
-        "$kR_i \\rightarrow R_i$",
-        "$kR_i + R_i \\rightarrow 1$"
-      ],
-      "answer": 3
-    },
-    {
-      "question": "The value of $h$ for which the augmented matrix $\\begin{bmatrix} 1 & -3 & -1 \\\\ 5 & h & 7 \\end{bmatrix}$ of a linear system is inconsistent",
-      "options": [
-        "$h = -15$",
-        "$h \\neq -15$",
-        "$h = 5$",
-        "$h = -1$"
-      ],
-      "answer": 0
-    },
-    {
-      "question": "Number of pivot columns in the matrix $\\begin{bmatrix} 0 & 0 & 1 & 0 \\\\ 2 & 0 & 1 & 0 \\\\ 1 & 0 & 0 & 0 \\end{bmatrix}$ is:",
+      "question": "Let $T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3$ be the linear transformation with nullity of $T$ is 1, then rank of $T$ is",
       "options": [
         "1",
         "2",
         "3",
         "4"
       ],
+      "answer": 1
+    },
+    {
+      "question": "If $T: V \\rightarrow W$ is a linear transformation, which of the following statements is not true?",
+      "options": [
+        "$T(xy) = T(x)T(y)$ for all $x, y \\in V$",
+        "$T(-x) = -T(x)$ for all $x \\in V$",
+        "$T(0) = 0$ for $0 \\in V$",
+        "$T(2x) = 2T(x)$ for all $x \\in V$"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The set $W = \\{(a, 0, 0): a, b \\in \\mathbb{R}\\}$ is a subspace of",
+      "options": [
+        "$\\mathbb{R}^2$",
+        "$\\mathbb{R}$",
+        "$\\mathbb{R}^3$",
+        "$\\mathbb{R}^4$"
+      ],
       "answer": 2
+    },
+    {
+      "question": "If $T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^3$ is a linear transformation such that $T(1,0) = (2,3,1)$, $T(0,1) = (3,0,2)$ then which of the following is true?",
+      "options": [
+        "$T(x,y) = (x+y, 2x+3y, 3x-2y)$",
+        "$T(x,y) = (2x+3y, 3x, x+2y)$",
+        "$T(x,y) = (2x-y, 3x+3y, x-y)$",
+        "$T(x,y) = (x-y, 2x-3y, 3x+3y)$"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If $u = \\begin{bmatrix} 1 \\\\ 2 \\end{bmatrix}$, $v = \\begin{bmatrix} -5 \\\\ 7 \\end{bmatrix}$ then inner product of $u$ and $v$ is",
+      "options": [
+        "9",
+        "19",
+        "-3",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A system of equation $AX = b$ has solution if and only if",
+      "options": [
+        "$b \\in \\text{Col}(A)$",
+        "$b \\in \\text{Row}(A)$",
+        "$b \\in \\text{Null}(A)$",
+        "$b \\in \\text{Col}(A)$ and $b \\in \\text{Row}(A)$"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let $T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2$ be the linear transformation defined by $T(x, y) = (x, 0)$, then the matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "$\\begin{bmatrix} 0 & 1 \\\\ 0 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & -1 \\\\ 0 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 0 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statement is not true if $T: U \\rightarrow V$ is a linear transformation",
+      "options": [
+        "Range space of $T$ is a subspace of $V$",
+        "Null space of $T$ is a subspace of $U$",
+        "$V$ is always the range of $T$",
+        "None"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Two vectors $u$ and $v$ in $\\mathbb{R}^n$ are orthogonal if",
+      "options": [
+        "$u \\cdot v = v \\cdot u$",
+        "$u \\cdot v = 1$",
+        "$u \\cdot v \\geq 0$",
+        "$u \\cdot v = 0$"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If $u = \\begin{bmatrix} 2 \\\\ 3 \\\\ -5 \\end{bmatrix}$, $v = \\begin{bmatrix} 2 \\\\ 0 \\\\ -3 \\end{bmatrix}$ then inner product of $u$ and $v$ is",
+      "options": [
+        "-5",
+        "-11",
+        "19",
+        "11"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following set of vectors is not orthogonal",
+      "options": [
+        "$\\{\\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}, \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix}\\}$",
+        "$\\{\\begin{bmatrix} -2 \\\\ 2 \\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}\\}$",
+        "$\\{\\begin{bmatrix} 1 \\\\ -1 \\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}\\}$",
+        "$\\{\\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}\\}$"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If a basis of a vector space has 3 elements, then dimension of the vector space is",
+      "options": [
+        "Less than 4",
+        "Greater than 3",
+        "3",
+        "0"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If $v = [1 \\; 1 \\; 1 \\; -1]^T$ then normalized form of $v$ is",
+      "options": [
+        "$[\\frac{1}{\\sqrt{2}} \\; \\frac{1}{\\sqrt{2}} \\; \\frac{1}{\\sqrt{2}} \\; \\frac{-1}{\\sqrt{2}}]^T$",
+        "$[\\frac{1}{\\sqrt{3}} \\; \\frac{1}{\\sqrt{3}} \\; \\frac{1}{\\sqrt{3}} \\; \\frac{-1}{\\sqrt{3}}]^T$",
+        "$[\\frac{1}{2} \\; \\frac{1}{2} \\; \\frac{1}{2} \\; \\frac{-1}{2}]^T$",
+        "$[1 \\; 1 \\; 1 \\; 1]^T$"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The coordinate of $v = (1,2,4)$ relative to the standard basis of $\\mathbb{R}^3$ is",
+      "options": [
+        "$(1,2,0)$",
+        "$(1,0,0)$",
+        "$(1,2,4)$",
+        "$(0,2,4)$"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Let $T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2$ be the linear transformation defined by $T(x, y) = (x, 0)$. The null space of $T$ is",
+      "options": [
+        "$\\{(x, 0)\\}$",
+        "$\\{(0, y)\\}$",
+        "$\\{(0, x)\\}$",
+        "$\\{(0, 0)\\}$"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The set of all solutions to the homogeneous equation system $AX = 0$, where $A$ is an $m \\times n$ matrix is",
+      "options": [
+        "Null space of $A$",
+        "Column space of $A$",
+        "Row space of $A$",
+        "Null space of $A$ and column space of $A$"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following are linear combination of $u = (0,-2,2)$ and $v = (1,3,-1)$?",
+      "options": [
+        "$(1,0,0)$",
+        "$(2,2,2)$",
+        "Both (a) & (b)",
+        "Neither (a) nor (b)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Let $T: \\mathbb{R}^2 \\rightarrow \\mathbb{R}^2$ be the linear transformation defined by $T(x, y) = (0, y)$. Then matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "$\\begin{bmatrix} 0 & 0 \\\\ 0 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & -1 \\\\ 0 & -1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 0 \\end{bmatrix}$",
+        "$\\begin{bmatrix} -1 & 0 \\\\ 0 & 0 \\end{bmatrix}$"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If $S = \\{v_1, v_2, ..., v_n\\}$ is a set of vectors in a finite dimension vector space $V$, then $S$ is called a basis for $V$ if",
+      "options": [
+        "$S$ spans $V$",
+        "$S$ is linearly independent",
+        "Either (a) or (b)",
+        "Both (a) and (b)"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Let $T: \\mathbb{R}^4 \\rightarrow \\mathbb{R}^4$ be the linear transformation defined by $T(x_1, x_2, x_3, x_4) = (x_2, x_3, 0, 0)$. Then null space of $T$ consists of vectors of the form",
+      "options": [
+        "$(0, 0, x_2, x_3)$",
+        "$(x_1, 0, 0, 0)$",
+        "$(x_1, 0, 0, x_4)$",
+        "$(x_1, x_1, x_3, 0)$"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the inner product of two vectors is zero then they are called",
+      "options": [
+        "Orthogonal vectors",
+        "Null vectors",
+        "Unit vectors",
+        "Dependent vectors"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The matrix of linear transformation $T(x, y) = (y, x)$ with respect to the standard basis is",
+      "options": [
+        "$\\begin{bmatrix} 0 & 1 \\\\ 1 & 2 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & 1 \\\\ 1 & 1 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & 1 \\\\ 0 & 0 \\end{bmatrix}$",
+        "$\\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \\end{bmatrix}$"
+      ],
+      "answer": 3
     }
   ]
 }
