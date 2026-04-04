@@ -3113,5 +3113,407 @@
       ],
       "answer": 3
     }
+  ],
+  "mp_unit2": [
+    {
+      "question": "What is the purpose of the RET instruction in modular programming?",
+      "options": [
+        "Loads a value into a register",
+        "Returns control to the calling procedure",
+        "Halts the execution of the program",
+        "Calls another procedure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is NOT an advantage of modular programming?",
+      "options": [
+        "Code reusability",
+        "Easier debugging",
+        "Increased execution time",
+        "Better program organization"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statements about the CALL instruction is true?",
+      "options": [
+        "CALL pushes the return address onto the stack",
+        "CALL cannot be used to call subroutines",
+        "CALL directly modifies the IP register",
+        "CALL clears the stack"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which instruction saves the current value of the flags register before calling a procedure?",
+      "options": [
+        "PUSH AX",
+        "PUSHF",
+        "POPF",
+        "MOV FLAGS, AX"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which instruction is used to extend a signed byte into a word?",
+      "options": [
+        "CBW (Convert Byte to Word)",
+        "CWD (Convert Word to Doubleword)",
+        "DAA (Decimal Adjust after Addition)",
+        "AAA (ASCII Adjust after Addition)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which BIOS interrupt is used to read a key from the keyboard buffer?",
+      "options": [
+        "INT 10H",
+        "INT 16H, AH = 00H",
+        "INT 21H, AH = 01H",
+        "INT 13H"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "To move the cursor position on the screen, which BIOS interrupt is used?",
+      "options": [
+        "INT 10H, AH = 02H",
+        "INT 21H, AH = 02H",
+        "INT 16H, AH = 00H",
+        "INT 13H"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which function of INT 16H checks if a key is available?",
+      "options": [
+        "AH = 00H",
+        "AH = 01H",
+        "AH = 02H",
+        "AH = 10H"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which interrupt is used to set video mode in 8086?",
+      "options": [
+        "INT 10H, AH = 00H",
+        "INT 16H, AH = 00H",
+        "INT 21H, AH = 01H",
+        "INT 13H"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which instruction is commonly used to convert a hexadecimal digit to its ASCII representation in the 8086 microprocessors?",
+      "options": [
+        "MOV",
+        "ADD",
+        "OR",
+        "AND"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the ASCII value of the hexadecimal digit 0x9?",
+      "options": [
+        "0x39",
+        "0x49",
+        "0x09",
+        "0x1001"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the ASCII value 0x41 (character 'A') is stored in the AL register, what will be the hexadecimal value after conversion?",
+      "options": [
+        "0x1",
+        "0xA",
+        "0x41",
+        "0x4A"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the hexadecimal value of the ASCII character 0x35 (character '5')?",
+      "options": [
+        "0x5",
+        "0x35",
+        "0x0101",
+        "0x15"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which DOS interrupt is used to create sub directory?",
+      "options": [
+        "AH=39h, INT21H",
+        "AH=39h, INT16H",
+        "AH=30h, INT 21H",
+        "INT 21H"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Set time interrupt from DOS interrupt will store the hour information in which register?",
+      "options": [
+        "CH",
+        "CL",
+        "DH",
+        "DL"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the use of AAM instruction in Hexa to ASCII conversion?",
+      "options": [
+        "ASCII multiplication",
+        "Convert packed BCD to unpacked BCD number",
+        "Convert unpacked to packed",
+        "ASCII adjust after multiplication"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "BIOS interrupt to set the cursor on the monitor?",
+      "options": [
+        "AH=02H, INT 10H",
+        "AH=02H, INT 16H",
+        "AH=02H, INT 21H",
+        "AH=01H, INT 10H"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In a program, a Macro is being called 'n' times. Then how many times is the machine code generated for the same?",
+      "options": [
+        "1 time",
+        "'n' times",
+        "'n-1' times",
+        "'n+1' times"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The process of assigning a label or macroname to the string is called",
+      "options": [
+        "initializing macro",
+        "initializing string macro",
+        "defining a string macro",
+        "defining a macro"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which directive is used to define a procedure in 8086 assembly language?",
+      "options": [
+        "FUNC",
+        "PROC",
+        "DEF",
+        "CALL"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the primary design philosophy of ARM embedded systems?",
+      "options": [
+        "Complex Instruction Set Computing (CISC)",
+        "Reduced Instruction Set Computing (RISC)",
+        "Very Long Instruction Word (VLIW)",
+        "Superscalar Processing"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a feature of the ARM processor?",
+      "options": [
+        "Symmetric multiprocessing",
+        "Harvard architecture",
+        "High power consumption",
+        "Scalar data types only"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which register in ARM holds the flags indicating the status of the processor?",
+      "options": [
+        "General-purpose register",
+        "Program Counter (PC)",
+        "Stack Pointer (SP)",
+        "Program Status Register (PSR)"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is the function of the pinMode() function in Embedded C programming?",
+      "options": [
+        "Initializes serial communication",
+        "Sets a digital pin as input or output",
+        "Creates a delay in execution",
+        "Reads analog input"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which IDE is commonly used for programming Arduino microcontrollers?",
+      "options": [
+        "Keil uVision",
+        "Arduino IDE",
+        "MPLAB X",
+        "Eclipse"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the size of the general-purpose registers in ARM processors?",
+      "options": [
+        "8 bits",
+        "16 bits",
+        "32 bits",
+        "64 bits"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which function is used to generate a delay in Embedded C?",
+      "options": [
+        "pinMode()",
+        "delay()",
+        "digitalWrite()",
+        "Serial.begin()"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How does the 7-segment display represent numbers?",
+      "options": [
+        "Using rows and columns of LEDs",
+        "By turning on specific segments of LEDs",
+        "Through alphanumeric LCD cells",
+        "By activating relays"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following peripherals can be interfaced with a microcontroller?",
+      "options": [
+        "LED",
+        "Registers",
+        "Segment",
+        "diode"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the main purpose of the Arduino Due microcontroller board?",
+      "options": [
+        "High-performance desktop computing",
+        "General-purpose embedded applications",
+        "High-speed graphics rendering",
+        "Quantum computing"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is the primary advantage of using ARM-based microcontrollers in embedded systems?",
+      "options": [
+        "High power consumption",
+        "Support for only digital peripherals",
+        "Low power consumption with high performance",
+        "Limited peripheral interfacing options"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which built-in Arduino function is used for serial communication?",
+      "options": [
+        "digitalWrite()",
+        "Serial.begin()",
+        "analogRead()",
+        "pinMode()"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the typical clock speed of an ARM Cortex-M microcontroller?",
+      "options": [
+        "1MHz",
+        "50 to 100 MHz",
+        "1.5GHz",
+        "1 GHz"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Embedded C, what does the function digitalWrite() do?",
+      "options": [
+        "Sets a digital pin as input",
+        "Reads the state of a digital pin",
+        "Writes a HIGH or LOW value to a digital pin",
+        "Configures PWM on a pin"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the resolution of the ADC on the Arduino Due?",
+      "options": [
+        "8-bit",
+        "10-bit",
+        "12-bit",
+        "16-bit"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following displays supports scrolling and flickering?",
+      "options": [
+        "Seven-segment display",
+        "16x2 LCD",
+        "OLED",
+        "VGA monitor"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How does a stepper motor differ from a DC motor?",
+      "options": [
+        "It operates on AC power",
+        "It moves in discrete steps",
+        "It has no rotor",
+        "It cannot reverse direction"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which Arduino board pin is used for analog input?",
+      "options": [
+        "D0-D7",
+        "A0-A5",
+        "PWM",
+        "Vin"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the typical use of a 4x4 keypad in embedded systems?",
+      "options": [
+        "Memory storage",
+        "Input device for user interaction",
+        "Power regulation",
+        "Debugging tool"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which ARM instruction type is most commonly used for data transfer?",
+      "options": [
+        "Branch instructions",
+        "Load/Store instructions",
+        "Arithmetic instructions",
+        "Logical instructions"
+      ],
+      "answer": 1
+    }
   ]
 }
