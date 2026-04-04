@@ -173,22 +173,3235 @@ table.mtx td{padding:1px 6px;font-family:'Courier New',monospace;font-size:.85re
     </div>
 </div>
 <script>
-const SUBJECTS={"daa":[],"dbms":[{"question":"Which of the following best describes a database?","options":["A collection of unrelated data","A structured collection of related data stored for retrieval","A set of tables without any relationships","A file system"],"answer":1},{"question":"Which of the following is a benefit of using a database system?","options":["Data redundancy increases","Data sharing is not possible","Ensures data consistency","Higher dependency on files"],"answer":2},{"question":"Which of the following is not a characteristic of a database approach?","options":["Data abstraction","Program-data independence","Multiple View","Dependent file formats"],"answer":3},{"question":"What does the three-schema architecture help achieve?","options":["Data redundancy","Data independence","Faster database access","Improved file handling"],"answer":1},{"question":"Which level of the three-schema architecture provides a user’s view of the database?","options":["Internal level","Conceptual level","External level","Physical level"],"answer":2},{"question":"Which type of independence is achieved when changes in the physical schema do not affect the logical schema?","options":["Logical independence","Physical independence","Data independence","None of the above"],"answer":1},{"question":"In ER-to-Relational mapping, what does each entity type translate into?","options":["A relationship","A foreign key","A table","A schema"],"answer":2},{"question":"What does a multi-valued attribute in ER model translate to in a relational model?","options":["A single table column","A separate table","A foreign key","A derived attribute"],"answer":1},{"question":"In a database system, what is meant by “concurrency control”?","options":["Preventing data redundancy","Ensuring simultaneous access to data without conflicts","Backing up data regularly","Controlling user permissions"],"answer":1},{"question":"Which key is used to establish a relationship between two tables in a relational model?","options":["Primary key","Foreign key","Composite key","Surrogate key"],"answer":1},{"question":"What does an ER diagram represent?","options":["Relationships between files in a database","Data and relationships in a database","Hardware architecture of a database","The software used in a database"],"answer":1},{"question":"Which type of attribute cannot be divided into smaller parts?","options":["Composite attribute","Derived attribute","Multivalued attribute","Simple attribute"],"answer":3},{"question":"How are multi-valued attributes represented in an ER diagram?","options":["Ellipse","Double ellipse","Dashed ellipse","Rectangle"],"answer":1},{"question":"Which of the following attributes is a derived attribute?","options":["Date of birth","Age","Name","Address"],"answer":1},{"question":"Which attribute in an ER diagram is unique for every entity?","options":["Foreign key","Primary key","Composite attribute","Multi-valued attribute"],"answer":1},{"question":"Which of the following is an example of a many-to-many relationship?","options":["A teacher teaches one class","A student enrolls in multiple courses, and a course has multiple students","A customer buys one product","A manager supervises one employee"],"answer":1},{"question":"Which one of the following uniquely identifies the elements in the relation?","options":["Secondary Key","Primary key","Foreign key","Composite key"],"answer":1},{"question":"______ is a special type of integrity constraint that relates two relations & maintains consistency across the relations.","options":["Entity Integrity Constraints","Referential Integrity Constraints","Domain Integrity Constraints","Domain Constraints"],"answer":1},{"question":"Foreign key is the one in which the ________ of one relation is referenced by  another relation.","options":["Foreign key","Primary key","References","Check constraint"],"answer":1},{"question":"For each attribute of a relation, there is a set of permitted values, called the ________ of that attribute.","options":["Domain","Relation","Set","Schema"],"answer":0},{"question":"The tuples of the relations can be of ________ order.","options":["Any","Same","Sorted","Constant"],"answer":0},{"question":"Let X(a, b, c, d) and Y(p,q r, s) be two relations in which a is foreign key of X that refers to primary key of Y. Which of the following operation causes referential integrity constraint violation?","options":["insert into Y","Delete from X","insert into X","All above"],"answer":2},{"question":"Which of the following operation do not violates domain constraints?","options":["Insert operation","Delete operation","Update operation","All above"],"answer":1},{"question":"Which one of the following is a set of one or more attributes taken collectively to uniquely identify a record?","options":["Candidate key","Sub key","Super key","Foreign key"],"answer":2},{"question":"Which of the following is a correct statement regarding a relational schema?","options":["It defines the structure of data and the relationships between tables.","It only stores data, not metadata.","It refers to the actual data stored in the database.","It cannot include any constraints."],"answer":0},{"question":"Which of the following is a violation of a referential integrity constraint?","options":["Attempting to insert a duplicate value in a primary key column","Inserting a value into a foreign key column that does not exist in the primary key column of the referenced table","Updating a value in a foreign key column","All of the above"],"answer":1},{"question":"Which of the following statements is true about a primary key constraint?","options":["It allows duplicate values but ensures that each value is unique within the table.","It ensures that no two rows in a table can have the same value for the primary key attribute(s).","It can be null.","It can be created on any non-key column."],"answer":1},{"question":"Which of the following operations are part of relational update operations?","options":["Insert","Delete","Update","All of the above"],"answer":3},{"question":"Which of the following is NOT a fundamental concept of the Relational Model?","options":["Relations","Tuples","Keys","Objects"],"answer":3},{"question":"The relational algebra query language is ___.","options":["Analytical","Procedural","Symmetrical","Instrumental"],"answer":1},{"question":"In Relational Algebra, queries are performed using ___.","options":["Entities","Relationships","Operators","Objects"],"answer":2},{"question":"For select operation the ________ appear in the subscript and the ___________ argument appears in the parenthesis after the sigma.","options":["Predicates, relation","Relation, Predicates","Operation, Predicates","Relation, Operation"],"answer":0},{"question":"The select, project and rename operations are called____","options":["Binary operations","Ternary Operations","Unary operations","None of the above."],"answer":2},{"question":"If in the JOIN operation, the conditions of JOIN operation are not satisfied then the results of the operation is","options":["0","1","2","3"],"answer":0},{"question":"The DIVISION operation can be applied to two relations A and B such as R(A)  ÷  R(B) where as","options":["A does not belong to B","A must be added to B","A belongs or equal to B","A must be subtracted from B"],"answer":2},{"question":"The operation which allows to process relationships from multiple relations rather than single relation is classified as","options":["division operation","relation operation","square operation","join operation"],"answer":3},{"question":"The kind of operation by which one tuple can be created with the help of combining tuples from two relations is classified as","options":["square operation","join operation","division operation","relation operation"],"answer":1},{"question":"The ________ clause is used to list the attributes desired in the result of a query.","options":["Where","Select","From","Distinct"],"answer":1},{"question":"Which of the following statements contains an error?","options":["Select * from emp where empid = 10003;","Select empid from emp where empid = 10006;","Select empid from emp;","Select empid where empid = 1009 and lastname = ‘GELLER’;"],"answer":3},{"question":"Which of the following is a key concept of the Relational Model?","options":["Data is stored in hierarchical structure","Data is organized in tables (relations)","Data is stored in linked lists","Data is represented as objects"],"answer":1}],"sepm":[{"question":"Choose the correct option in terms of Issues related to professional responsibility","options":["Confidentiality","Intellectual property rights","Both Confidentiality & Intellectual property rights","Managing Client Relationships"],"answer":2},{"question":"“Software engineers should not use their technical skills to misuse other people’s computers.” Here the term misuse refers to:","options":["Unauthorized access to computer material","Unauthorized modification of computer material","Dissemination of viruses or other malware","All of the mentioned"],"answer":3},{"question":"Explain what is meant by PRODUCT with reference to one of the eight principles as per the ACM/IEEE Code of Ethics ?","options":["The product should be easy to use","Software engineers shall ensure that their products and related modifications meet the highest professional standards possible","Software engineers shall ensure that their products and related modifications satisfy the client","It means that the product designed /created should be easily available"],"answer":1},{"question":"Identify an ethical dilemma from the situations mentioned below:","options":["Your employer releases a safety-critical system without finishing the testing of the system","Refusing to undertake a project","Agreement in principle with the policies of senior management","All of the mentioned"],"answer":0},{"question":"Identify the correct statement: “Software engineers shall","options":["act in a manner that is in the best interests of his expertise and favour.”","act consistently with the public interest.”","ensure that their products only meet the SRS.”","all of the mentioned"],"answer":1},{"question":"Select the incorrect statement: “Software engineers should","options":["not knowingly accept work that is outside your competence.”","not use your technical skills to misuse other people’s computers.”","be dependent on their colleagues.”","maintain integrity and independence in their professional judgment.”"],"answer":2},{"question":"Efficiency in a software product does not include","options":["responsiveness","licensing","memory utilization","processing time"],"answer":1},{"question":"As per an IBM report, “31% of the project get cancelled before they are completed, 53% overrun their cost estimates by an average of 189% and for every 100 projects, there are 94 restarts”. What is the reason for these statistics?","options":["Lack of adequate training in software engineering","Lack of software ethics and understanding","Management issues in the company","All of the mentioned"],"answer":0},{"question":"Which of the following property does not correspond to a good Software Requirements Specification (SRS) ?","options":["Verifiable","Ambiguous","Complete","Traceable"],"answer":1},{"question":"Which one of the following is a functional requirement ?","options":["Maintainability","Portability","Robustness","Operations of the system"],"answer":3},{"question":"_______requirements capture the intended behavior of the system.","options":["Functional","Non-functional","Emergent","Quality"],"answer":0},{"question":"The SRS document is also known as ____specification.","options":["black-box","white-box","grey-box","green-box"],"answer":0},{"question":"Requirements should specify ___but not ‘how’.","options":["‘what’","‘how’","‘why’","‘which’"],"answer":0},{"question":"Requirements Analysis is an ____Process.","options":["Iterative","Non-Iterative","Sequential","Unidirectional"],"answer":0},{"question":"SDLC stands for","options":["Software Development Life Cycle","System Development Life cycle","Software Design Life Cycle","System Design Life Cycle"],"answer":0},{"question":"The spiral model was originally proposed by","options":["IBM","Barry Boehm","Pressman","Royce"],"answer":1},{"question":"Compilers, Editors software come under which type of software?","options":["System software","Application software","Scientific software","Business Software"],"answer":0},{"question":"Which of the following is not defined in a good Software Requirement Specification (SRS) document?","options":["Functional Requirement.","Nonfunctional Requirement.","Goals of implementation.","Algorithm for software implementation."],"answer":3},{"question":"Requirement engineering process includes which of these steps?","options":["Feasibility study","Requirement Gathering","Software Requirement specification & Validation","All choices are correct"],"answer":3},{"question":"If requirements are easily understandable and defined then which model is best suited?","options":["Spiral model","Waterfall model","Prototyping model","Incremental"],"answer":1},{"question":"Software is defined as \t.","options":["Instructions","Data Structures","Documents","All choices are correct"],"answer":3},{"question":"What is the meaning of requirement elicitation in software engineering?","options":["Gathering of requirement.","Understanding of requirement.","Getting the requirements from client.","All choices are correct"],"answer":3},{"question":"Which is not a step of Requirement Engineering?","options":["Requirements elicitation","Requirements analysis","Requirements design","Requirements documentation"],"answer":2},{"question":"Find out which phase is not available in SDLC?","options":["Coding","Testing","Maintenance","Abstraction"],"answer":3},{"question":"Which of the following is/are considered stakeholder in the software process?","options":["Customers","End-users","Project managers","All choices are correct"],"answer":3},{"question":"The process together the software requirements from Client, Analyze and Document is known as____.","options":["Requirement engineering process","Requirement elicitation process","User interface requirements","Software system analyst"],"answer":0},{"question":"For the best Software model suitable for the project, in which of the phase the developers decide a roadmap for project plan?","options":["Software Design","System Analysis","Coding","Testing"],"answer":1},{"question":"Which of these primary objectives have to be achieved for the requirement model?","options":["To describe what the customer requires","To establish a basis for the creation of a software design","To define a set of requirements that can be validated","All choices are correct"],"answer":3},{"question":"Design phase is followed by \t.","options":["Coding","Testing","Maintenance","Analysis"],"answer":0},{"question":"Project risk factor is considered in which model?","options":["Spiral model.","Waterfall model.","Prototyping model","Incremental"],"answer":0},{"question":"Abbreviate the term SRS.","options":["Software Requirement Specification","Software Refining Solution","Software Resource Source","Software Service"],"answer":0},{"question":"An SRS","options":["establishes the basis for agreement between client and the supplier.","provides a reference for validation of the final product.","is a prerequisite to high quality software.","All choices are correct"],"answer":3},{"question":"Main aim of software engineering is to produce","options":["program","software","within budget","software within budget in the given schedule"],"answer":3},{"question":"Reliability of software is directly dependent on","options":["quality of the design","number of errors present","software engineers experience","user requirement"],"answer":1},{"question":"Working software is not available until late in the process in","options":["Waterfall model","Prototyping model","Incremental model","Evolutionary Development model"],"answer":0},{"question":"The major shortcoming of waterfall model is","options":["the difficulty in accommodating changes after requirement analysis.","the difficult in accommodating changes after feasibility analysis.","the system testing.","the maintenance of system."],"answer":0},{"question":"Which of the following is not included in waterfall model ?","options":["Requirement analysis","Risk analysis","Design","Coding"],"answer":1},{"question":"Software Engineering is an engineering discipline that is concerned with:","options":["how computer systems work","theories and methods that underlie computers and software systems","all aspects of software production","all aspects of computer-based systems development, including hardware, software and process engineering"],"answer":2},{"question":"Which process model is also called as classic life cycle model?","options":["Waterfall model","RAD model","Prototyping model","Incremental model"],"answer":0},{"question":"Requirements prioritization and negotiation belongs to :","options":["Requirements validation","Requirements elicitation","Feasibility study","Requirements reviews"],"answer":1},{"question":"Select the most appropriate statement about software engineering.","options":[".\tHas been around as a discipline since the early 50’s",".\tIs a set of rules about developing software products",".\tNone of these choices",".\tIs an engineering discipline concerned with all the aspects of software production"],"answer":3},{"question":"Who proposed the spiral model?","options":["Barry Boehm","Pressman","Royce","IBM"],"answer":0},{"question":"Which of the following document contains the user system requirements?","options":["SRD","DDD","SDD","SRS"],"answer":3},{"question":"Software engineering is intended to support \tsoftware development.","options":["professional","individual programming","personal programming","unstructured"],"answer":0},{"question":"Good software should deliver the required ___ and___ to the user and should be maintainable, dependable, and usable.","options":["non-functionality and performance","functionality and performance","unreliable and underperformance","functionality and non-availability"],"answer":1},{"question":"______, where customers and engineers define the software that is to be produced and the constraints on its operation.","options":["Software development","Software validation","Software specification","Software evolution"],"answer":2},{"question":"The waterfall model is an example of a  process__in principle, you must plan and schedule all of the process activities before starting work on them.","options":["incremental","non plan-driven","unstructured","plan-driven"],"answer":3},{"question":"By developing the software ___, it is cheaper and easier to make changes in the software as it is being developed.","options":["incrementally","non concurrently","structured","plan-driven"],"answer":0}],"maths":[{"question":"Rank of an identity matrix of order 4 is___________________","options":["4","3","1","0"],"answer":0},{"question":"System of equations AX=B has solutions if","options":["Rank[A] = number of unknowns","Rank[A] = Rank[A│B]≤ number of unknowns","Rank[A] ≠ number of unknowns","Rank[A] ≠ Rank[A│B]"],"answer":0},{"question":"System AX=0 has nontrivial solution if and only if","options":["Determinant of A=Determinant of X","Determinant of A =0","Rank[A] ≠ Rank[A│B]","Determinant of A ≠ 0"],"answer":0},{"question":"Which of the following statements is incorrect?","options":["Rank of a matrix A is the number of nonzero rows in its echelon form","Rank of a matrix A is equal to number of pivot columns in it.","Rank of a matrix A is number of free variables in the system AX=B","Rank of a matrix A is number of basic variables in the system AX=B"],"answer":0},{"question":"If [𝐴: 𝐵] = [ 2 3 −1 ∶ 5 0 1 3  ∶−1 0 0 𝑘 3 −6 ∶ 5 ]  then the value of k  for which the system is inconsistent is___________","options":["18","-18","6","-6"],"answer":0},{"question":"System of equations AX=B has infinite number of solutions if","options":["Rank[A] = Rank[A│B] = number of unknowns","Rank[A] = Rank[A│B] < number of unknowns","Rank[A] ≠ Rank[A│B]","Rank[A] = Rank[A│B] > number of unknowns"],"answer":0},{"question":"then 𝑡𝑟(𝐴𝐴𝑇) is","options":["21","22","3","26"],"answer":0},{"question":"In the LU factorization of 𝐴= [ 3 −7 −2 −3 5 1 6 −4 0 ], the matrix U is","options":["𝐴= [ 3 7 2 0 −2 −1 0 0 −1 ]","𝐴= [ 3 −7 −2 0 −2 2 0 0 −1 ]","𝐴= [ 3 −7 −2 0 −2 −1 0 0 −1 ]","𝐴= [ 3 −7 −2 0 5 1 0 0 0 ]"],"answer":0},{"question":"The eigen values of 𝐴= [ 5 6 17 0 −19 23 0 0 37 ]are","options":["-19, 37, 5","2, −3,7 2","5, 19, 37","0, 5 ,17"],"answer":0},{"question":"The eigen values of 𝐴= [ 2 4 −6 0 3 6 0 0 3 ] are","options":["2,2,4","2,3,2","1,3,4","2,3,3"],"answer":0},{"question":"A 𝑛× 𝑛 matrix A is diagonalizable if and only if","options":["A has n distinct eigen values","A has repeated eigen vectors","A has repeated eigen values","A has linearly independent eigen vectors"],"answer":0},{"question":"If  𝐴= [1 2 3 4] , 𝐵= [ 5 2 −1 3]then  𝑡𝑟(𝐵−1𝐴𝐵) is","options":["4","5","10","8"],"answer":0},{"question":"If  𝐴= [−1 2 3 −3]then 𝑡𝑟(𝐴𝐴𝑇) is","options":["23","10","1","22"],"answer":0},{"question":"Eigen value of a triangular matrix A are","options":["diagonal element of A","sum of diagonal element of A","Determinant of A","Trace of A"],"answer":0},{"question":"Eigen values of  A= [4 1 1 4] are","options":["3,-3","-3,-5","3,5","5,0"],"answer":0},{"question":"Let 𝐴= [ 3 10 5 −2 −3 −4 3 5 7 ], the eigen value 𝜆1 = 2, 𝜆2 = 3 and 𝜆3 = ___________","options":["3","2","5","7"],"answer":0},{"question":"The eigen vectors of the matrix A is the nontrivial solution of the equation ________________","options":["𝐴𝑋= 0","𝐴𝑋= 𝐵","𝐴𝑋= 𝜆𝑋","none"],"answer":0},{"question":"If  𝐴= [ 1 3 2 5 6 −1 2 −2 3 ]  𝐵= [ −6 2 5 2 1 8 4 −2 2 ] then tr(A-B) is","options":["1","12","13","7"],"answer":0},{"question":"If A is a square matrix, then det (A)=","options":["sum of the eigen values of A","product of eigen values of A","product of diagonal elements of A","sum of diagonal elements of A"],"answer":0},{"question":"The sum of the eigen  values  of    [ 1 1 3 1 5 1 3 −1 −1 ] is","options":["-2","3","6","5 3"],"answer":0},{"question":"Let 𝐴= [ 2 1 1 1 2 1 0 0 1 ], then eigen values of A are  𝜆1 = 1, 𝜆2 = 3 and 𝜆3 = ___________","options":["-2","1","2","-1"],"answer":0},{"question":"Let 𝐴 be an 𝑛× 𝑛 matrix, then 𝐴 is diagonalizable if and only if","options":["𝐴 has linearly dependent eigen vectors.","𝐴 has n linearly independent columns.","𝐴 has n linearly independent eigen vectors.","𝐴 has (n-1) linearly independent eigen vectors."],"answer":0},{"question":"For which value of 𝑘 the system of two equations 𝑥+ 𝑦= 1 2𝑥+ 2𝑦= 𝑘   has infinite solutions:","options":["𝑘= 0","𝑘= 1","𝑘= 2","any value of 𝑘≠1"],"answer":0},{"question":"The eigen values of  𝐴= [3 2 3 8] are","options":["7,4","9,2","8,3","6,5"],"answer":0},{"question":"Spectrum of the matrix [ 1 0 0 0 2 0 0 0 3 ]  is:","options":["{ 3, 2, 1}","{1, 3, 1}","{0, 0, 6}","{2, 3, 0}"],"answer":0},{"question":"Let 𝐴= [ 8 −6 2 −6 7 −4 2 −4 3 ] and 𝐵= [ −2 2 −3 2 1 −6 −1 −2 0 ], then 𝑡𝑟(𝐴+ 𝐵) is","options":["19","17","20","21"],"answer":0},{"question":"Which of the following statements are/is correct for the system 𝐴𝑋= 𝐵,   𝑤ℎ𝑒𝑛 𝐴 𝑖𝑠 𝑎  3 × 4 matrix of rank 2. I. Matrix 𝐴 has 2 non-pivot columns. II.System 𝐴𝑋= 𝐵 has 2 basic variables.","options":["Only I is correct","Only II is correct","Both are correct","Both are not true"],"answer":0},{"question":"If A is 3 × 4  matrix the maximum possible value of the rank A is","options":["4","3","2","0"],"answer":0},{"question":"If a matrix A is reduced to row echelon form, then rank of the matrix is","options":["number of zero rows","number of non-zero rows","total number of rows","total number of columns"],"answer":0},{"question":"The characteristic equation of the matrix   𝐴= [2 0 4 7] is:","options":["𝜆2 −9𝜆+ 14 = 0","𝜆2 −14𝜆+ 9 = 0","𝜆2 −9𝜆−14 = 0","𝜆2 −14𝜆−9 = 0"],"answer":0},{"question":"Which of the following statement is correct I.  Trace of the square matrix is equal to product of eigenvalues II. Trace of the square matrix is equal to sum of diagonal entries of the matrix.","options":["only I is true","only II is true","both I and II are true","neither I nor II is true."],"answer":0},{"question":"If the LU factorization of a matrix A is A=LU where A=[ 2 5 −3 −4] then U is","options":["[2 5 0 7]","[ 1 4 −5 1]","[2 5 1 7]","[ 1 4 −7/2 1]"],"answer":0},{"question":"Which of the following method is not used to find the solution of the system of equations:","options":["Gauss elimination method","Gauss seidel method","Rayleigh’s power method","LU decomposition method"],"answer":0},{"question":"The value of h for which the augmented matrix     − − − 7 2 3 5 1 h of a linear system is inconsistent","options":["ℎ= −15","ℎ≠ −15","ℎ= 5","ℎ= −1"],"answer":0},{"question":"Number of pivot columns in the matrix  [ 0 0 1 0 2 0 1 0 1 0 0 0 ] is:","options":["1","2","3","4"],"answer":0},{"question":"Which of the following vector is an eigen vector of the matrix [ 1 2 −1 4] ∶","options":["[1 1]","[1 2]","[0 0]","[0 1] UNIT II"],"answer":0},{"question":"If {𝑢1, 𝑢2, . . . . . . . . . , 𝑢𝑛}is linearly independent  set, then 𝑐1𝑢1 + 𝑐2𝑢2+. . . . . . +𝑐𝑛𝑢𝑛= 0   has","options":["infinitely many solutions","unique nonzero solution","unique zero solution","both B and C are possible"],"answer":0},{"question":"The row space of an 𝑚× 𝑛 matrix A is a subspace of","options":["𝑅𝑛","A","𝑅𝑚","R"],"answer":0},{"question":"In two dimensional Euclidean space identity element with respect to vector addition is","options":["(1,1)","(0,0)","(-1,-1)","doesn’t exists 5"],"answer":0},{"question":"In three dimensional Euclidean space inverse of (-2,-2,0) with respect to vector addition is","options":["(0,0,0)","(2,2,2)","(2,2,-2)","(2,2,0)"],"answer":0},{"question":"Let 𝑇: 𝑅4 →𝑅4be the linear transformation with null space of T={(0,0,0,0)} . Then nullity of T is","options":["0","1","4","2"],"answer":0},{"question":"The dimension of the subspace of 𝑅3 spanned by {(2,0,1), (5,2,1), (1,2, −1)} is","options":["3","2","1","0"],"answer":0},{"question":"Let 𝑇: 𝑅3 →𝑅3 be the linear transformation with nullity of T is 1 then rank of T is","options":["1","2","3","4"],"answer":0},{"question":"If 𝑇: 𝑉→𝑊 is a linear transformation, which of the following statements  is not true?","options":["𝑇(𝑥𝑦) = 𝑇(𝑥)𝑇(𝑦)∀𝑥, 𝑦∈𝑉","𝑇(−𝑥) = −𝑇(𝑥)∀𝑥∈𝑉","𝑇(0) = 0 𝑓𝑜𝑟 0 ∈𝑉","𝑇(2𝑥) = 2𝑇(𝑥)∀𝑥∈𝑉"],"answer":0},{"question":"The set 𝑊= {(𝑎, 0,0): 𝑎, 𝑏 𝜖𝑅} is  a subspace of .","options":["𝑅2(𝑅)","𝑅(𝑅)","𝑅3(𝑅)","𝑅4(𝑅)"],"answer":0},{"question":"If 𝑢= [1 2] , 𝑣= [−5 7 ] then inner product of 𝑢and 𝑣 is","options":["9","19","-3","3"],"answer":0},{"question":"A system of equation 𝐴𝑋= 𝑏 has solution if and only if","options":["𝑏 ∈𝐶𝑜𝑙(𝐴)","𝑏 ∈𝑅𝑜𝑤(𝐴)","𝑏 ∈𝑁𝑢𝑙𝑙(𝐴)","𝑏 ∈𝐶𝑜𝑙(𝐴) and  𝑏 ∈𝑅𝑜𝑤(𝐴)"],"answer":0},{"question":"Let 𝑇: 𝑅2 →𝑅2 be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0), then the matrix of linear transformation with respect to standard basis is","options":["[0 1 0 1]","[0 −1 0 1 ]","[1 0 0 0]","[1 0 0 1]"],"answer":0},{"question":"Which of the following statement is not true if 𝑇: 𝑈→𝑉is a  linear transformation","options":["Range space of T is a subspace of V","Null space of T is a subspace of U","V is always the range of T","None"],"answer":0},{"question":"Two vectors 𝑢 and 𝑣  in 𝑅𝑛 are orthogonal if","options":["𝑢. 𝑣= 𝑣. 𝑢","𝑢. 𝑣= 1 6","𝑢. 𝑣≥0","𝒖. 𝒗= 𝟎"],"answer":0},{"question":"If 𝑢= [ 2 3 −5 ] , 𝑣= [ 2 0 −3 ]then inner product of 𝑢and 𝑣 is","options":["-5","-11","19","11"],"answer":0},{"question":"If a basis of a vector space has 3 elements, then dimension of the vector space is_______","options":["less than 4","greater than 3","3","0"],"answer":0},{"question":"If 𝑣= [1 1 1 −1]𝑇 then normalized form of 𝑣 is","options":["[ 1 √2 1 √2 1 √2 −1 √2] 𝑇","[ 1 √3 1 √3 1 √3 −1 √3] 𝑇","[ 1 2 1 2 1 2 −1 2 ] 𝑇","[1 1 1 1]𝑇"],"answer":0},{"question":"Let 𝑇: 𝑅2 →𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0). The null space of T is","options":["{(x, 0)}","{(0, y)}","{(0, x)}","{(0, 0)}"],"answer":0},{"question":"The set of all solution to the homogeneous equation system 𝐴𝑋= 0, where A be an 𝑚× 𝑛 matrix is","options":["Null space of A","Column space of A","Row space of A","Null space of A and column space of A"],"answer":0},{"question":"Which of the following are linear combination of u= (0,-2,2) and v=(1,3,-1)?","options":["(1,0,0)","(2,2,2)","both (a) &(b)","neither (a) nor (b)"],"answer":0},{"question":"Let 𝑇: 𝑅2 →𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (0, 𝑦).Then matrix of linear transformation with respect to standard basis is","options":["[0 0 0 1]","[0 −1 0 −1]","[1 0 0 0]","[−1 0 0 0]"],"answer":0},{"question":"If   nv v v S ,... , 2 1 = is a set of vectors in a finite dimension vector space V , then S is called a basis for V if","options":["S  spans  V","S is linearly independent","either (a) or (b)","both (a) and (b)"],"answer":0},{"question":"Let 𝑇: 𝑅4 →𝑅4be the linear transformation defined by 𝑇(𝑥1, 𝑥2, 𝑥3, 𝑥4) = (𝑥2, 𝑥3, 0,0). Then null space of T consist of vectors of the form","options":["(0,0, 𝑥2, 𝑥3)","(𝑥1, 0,0,0)","(𝑥1, 0,0, 𝑥4)","(𝑥1, 𝑥1, 𝑥3, 0)"],"answer":0},{"question":"The quadratic form 3𝑥1 2 −4𝑥1𝑥2 + 6𝑥2 2 is","options":["Positive definite","Positive semi definite","Negative definite","Neither negative definite nor positive definite"],"answer":0},{"question":"In QR factorization of matrix A, Q is a matrix whose columns form an orthonormal basis for","options":["Col A","Null(A)","Row(A)","both Null(A) and Row(A)"],"answer":0},{"question":"The matrix of the quadratic form 𝑄(𝑋) = 5𝑥1 2 + 5𝑥2 2 −4𝑥1𝑥2 is","options":["[ 5 −2 −2 5 ]","[5 2 2 5]","[5 4 4 5]","[ 5 −4 −4 5 ]"],"answer":0},{"question":"The quadratic form  3𝑥2 + 5𝑦2 + 𝑧2 is","options":["Positive definite","Negative definite","Negative semi definite","Positive semi definite"],"answer":0},{"question":"In PCA, what are the principal components","options":["Features of the data set","Eigen values of the covariance matrix","Eigen vectors","Data points in the data set"],"answer":0},{"question":"In PCA, what is the relationship between the first principal component and the second principal component","options":["They are orthogonal to each other","They are positively correlated","They are negatively correlated","There is no defined relationship between them"],"answer":0},{"question":"The matrix of the quadratic form 4𝑥1𝑥2 + 6𝑥1𝑥3 −8𝑥2𝑥3 8","options":["[ 0 2 2 2 0 −4 2 −4 0 ]","[ 0 1 3 2 0 −4 3 −4 0 ]","[ 1 2 3 2 1 −4 3 −4 1 ]","[ 0 2 3 2 0 −4 3 −4 0 ]"],"answer":0},{"question":"A quadratic form Q(x) is semi positive definite if","options":["𝑄(𝑥) > 0 for all 𝑥≠0","𝑄(𝑥) ≥0 for all x","𝑄(𝑥) < 0 for all 𝑥≠0","𝑄(𝑥) ≤0 for all 𝑥"],"answer":0},{"question":"and 𝑥= [𝑥1 𝑥2], then 𝑥𝑇𝐴𝑥 is","options":["4𝑥1 2 + 3𝑥2 2","2𝑥1 2 + 3𝑥2 2 + 7𝑥1𝑥2","2𝑥1 2 + 3𝑥2 2 −7𝑥1𝑥2","2𝑥1 2 + 3𝑥2 2"],"answer":0}],"daa_u2":[{"question":"What is the primary idea behind the 'Decrease and Conquer' technique?","options":["Increase the problem size incrementally","Solve the entire problem in one step","Reduce the problem size at each step and solve it recursively","Divide the problem into multiple subproblems of equal size"],"answer":2},{"question":"Which of the following is a characteristic of the 'Decrease and Conquer' method?","options":["It always involves dividing the problem into two equal parts","It solves the problem by repeatedly reducing it to a smaller subproblem","It uses dynamic programming to store intermediate results","It is only applicable to sorting problems"],"answer":1},{"question":"In Insertion Sort, the problem size is reduced by:","options":["Splitting the array into two parts of equal size","Sorting only the largest element in each iteration","Sorting a single element at a time","Exchanging adjacent elements"],"answer":2},{"question":"Which algorithm uses a variable-size decrease approach?","options":["Exponentiation by squaring","Binary search","Euclid's algorithm","Insertion sort"],"answer":2},{"question":"Binary Search is a classic example of which variation of Decrease and Conquer?","options":["Decrease by a constant","Decrease by a constant factor","Decrease by one","Divide and conquer"],"answer":1},{"question":"What type of data structure is used in Depth-First Search (DFS)?","options":["Queue","Stack","Priority Queue","Heap"],"answer":1},{"question":"DFS is more suitable than BFS for which of the following?","options":["Finding the shortest path in an unweighted graph","Exploring all vertices in a level-by-level manner","Detecting cycles in a graph","Solving shortest path problems in weighted graphs"],"answer":2},{"question":"What is the key difference between BFS and DFS in their approach?","options":["BFS uses a stack; DFS uses a queue","BFS explores neighbors level by level; DFS explores as deep as possible along one branch","BFS works only on trees; DFS works only on graphs","BFS is recursive; DFS is iterative"],"answer":1},{"question":"Which of the following is true for BFS?","options":["It always uses recursion","It can handle graphs with cycles by avoiding revisits using a 'visited' array","It cannot be used to check graph connectivity","It is suitable only for weighted graphs"],"answer":1},{"question":"Which of the following problems can be solved using DFS?","options":["Finding connected components in a graph","Finding the shortest path in an unweighted graph","Topological sorting of a directed acyclic graph (DAG)","Both a and c"],"answer":3},{"question":"What is the primary application of topological sorting?","options":["Finding the shortest path in a graph","Sorting a list of elements in ascending order","Ordering the vertices of a directed acyclic graph (DAG) such that for every edge (u,v), vertex u comes before vertex v","Finding the minimum spanning tree of a graph"],"answer":2},{"question":"Which of the following is a necessary condition for a graph to have a topological sorting?","options":["The graph must be a tree","The graph must be a DAG","The graph must be a complete graph","The graph must be a bipartite graph"],"answer":1},{"question":"What is the time complexity of the topological sorting algorithm using Kahn's algorithm?","options":["O(V + E)","O(V * E)","O(E^2)","O(V^2)"],"answer":0},{"question":"Which of the following is a correct statement about topological sorting?","options":["Topological sorting is only possible for graphs with a single source vertex","Topological sorting is only possible for graphs with a single sink vertex","Topological sorting can be performed on any DAG","Topological sorting can only be performed on graphs with a single cycle"],"answer":2},{"question":"What happens if a graph has a cycle and we try to perform topological sorting on it?","options":["The algorithm will produce a correct topological sorting","The algorithm will produce an incorrect topological sorting","The algorithm will detect the cycle and report an error","The algorithm will go into an infinite loop"],"answer":2},{"question":"Which of the following is an example of the Transform and Conquer method?","options":["Merge Sort","Binary search","Matrix multiplication","Heap sort"],"answer":3},{"question":"What operation is performed on an AVL tree when the balance factor of a node becomes greater than 1 or less than -1?","options":["Rotation","Deletion","Insertion","Search"],"answer":0},{"question":"What is the condition for a binary search tree to be considered an AVL tree?","options":["The height of the left subtree and the right subtree of every node differs by at most 2","The height of the left subtree and the right subtree of every node differs by at most 1","The height of the left subtree and the right subtree of every node is always equal","The height of the left subtree and the right subtree of every node differs by at least 1"],"answer":1},{"question":"What is the time complexity of search, insert, and delete operations in a 2-3 tree?","options":["O(log n)","O(n)","O(nlogn)","O(2^n)"],"answer":0},{"question":"What happens when a node in a 2-3 tree is split due to the insertion of a new key?","options":["The node is replaced by two new nodes, each with one key","The node is replaced by three new nodes, each with one key","The node is not split, and the new key is added to the existing node","The node is replaced by two new nodes, each with one or two keys"],"answer":3},{"question":"In a max-heap, which of the following is true?","options":["The parent node is smaller than its child nodes","The parent node is greater than or equal to its child nodes","The tree is a binary search tree","The elements are stored in ascending order"],"answer":1},{"question":"What is the time complexity to build and heapify a heap of n elements?","options":["O(n log n)","O(log n)","O(n)","O(n²)"],"answer":2},{"question":"You are given an array: [3, 9, 2, 1, 4, 8]. After building a max-heap from this array, what will be the root element?","options":["1","9","2","8"],"answer":1},{"question":"Which of the following applications is a heap NOT suited for?","options":["Implementing a priority queue","Finding the median of a data stream","Sorting data in ascending order","Depth-first search of a graph"],"answer":3},{"question":"Which of the following is NOT true about heap sort?","options":["It is an in-place sorting algorithm","It is a stable sorting algorithm","It has a time complexity of O(n log n)","It uses the heap data structure"],"answer":1},{"question":"What makes Counting Sort a distribution-based algorithm?","options":["It uses element frequencies to determine sorted positions","It divides the array into smaller subarrays","It recursively splits and merges data","It compares each pair of elements to sort the array"],"answer":0},{"question":"Which sorting algorithm explicitly trades off space for time by using extra space to count occurrences of elements?","options":["Merge Sort","Bubble sort","Sorting by counting","Quick sort"],"answer":2},{"question":"What is the time complexity of distribution counting sort?","options":["Θ(n²)","Θ(n)","O(n)","O(n²)"],"answer":1},{"question":"What is the time complexity of comparison counting sort?","options":["Θ(n²)","O(n)","O(n²)","Θ(n)"],"answer":0},{"question":"Sorting by counting trades off space for time efficiency by:","options":["Using recursion to divide the array into smaller parts","Allocating extra memory for the frequency and cumulative arrays","Avoiding comparisons between elements","Reducing the overall size of the input array"],"answer":1},{"question":"In Horspool's algorithm, when the last character of the pattern does not match the text, what action does the algorithm take?","options":["Shift the pattern by 1 character to the right","Perform a full re-check from the beginning of the pattern","Shift the pattern by the value stored for the text character in the shift table","Abort the search"],"answer":2},{"question":"In Horspool's algorithm, when does the algorithm perform a full comparison of the pattern with the text?","options":["Every time a mismatch occurs","Only when a match is found","Only when the shift table suggests no shift","Initially, when the first character in the pattern is compared with the first character of the text"],"answer":2},{"question":"In Horspool's algorithm, what is the primary purpose of the shift table?","options":["To store the indices of pattern matches","To store the positions of all characters in the pattern","To store the number of shifts required for each character in the pattern","To store the hash values of pattern characters"],"answer":2},{"question":"In Horspool's algorithm, which table is used to store the shift values for the pattern matching process?","options":["Shift Table","Hash Table","Match Table","Character Table"],"answer":0},{"question":"What is the primary advantage of Horspool's algorithm over the naive string matching algorithm?","options":["It guarantees finding all occurrences in linear time","It uses a precomputed shift table to skip unnecessary comparisons","It always matches patterns in fewer comparisons than the naive algorithm","It works in constant space"],"answer":1},{"question":"Which of the following is an example of a problem that can be solved using dynamic programming?","options":["Binary search","Knapsack problem","Merge sort","Depth First Search"],"answer":1},{"question":"In dynamic programming, the solution to a problem is built up from:","options":["A single recursive call","A series of overlapping subproblems","A greedy approach","A divide and conquer method"],"answer":1},{"question":"When solving a problem using dynamic programming, what is the role of 'optimal substructure'?","options":["It ensures that solving subproblems will always result in the correct solution for the entire problem","It guarantees that the problem can be solved in constant time","It allows for efficient recursion without overlapping subproblems","It simplifies the problem by eliminating unnecessary subproblems"],"answer":0},{"question":"What is the time complexity of solving the 0/1 knapsack problem using dynamic programming with an array-based approach?","options":["O(n²)","O(n * W) where n is the number of items and W is the maximum weight","O(W)","O(n)"],"answer":1},{"question":"What does the term 'overlapping subproblems' refer to in dynamic programming?","options":["Problems that can be solved using greedy algorithms","Subproblems that appear multiple times in the recursive solution","Subproblems that are completely independent","Subproblems that cannot be solved independently"],"answer":1},{"question":"What is the primary purpose of the Floyd-Warshall algorithm?","options":["Finding the shortest path between two specific nodes","Finding the shortest paths between all pairs of nodes in a graph","Finding the minimum spanning tree of a graph","Finding the longest path in a weighted graph"],"answer":1},{"question":"Which type of graph is required for the Floyd-Warshall algorithm?","options":["Directed or undirected weighted graphs","Only directed weighted graphs","Only undirected graphs","Only acyclic graphs"],"answer":0},{"question":"How does the Floyd-Warshall algorithm handle negative weight cycles?","options":["It detects them and stops execution","It ignores them and continues finding shortest paths","It gives incorrect results","It runs indefinitely"],"answer":0},{"question":"Which technique is used to solve the 0/1 Knapsack problem efficiently?","options":["Greedy algorithm","Divide and conquer","Dynamic programming","Depth-first search"],"answer":2},{"question":"What does the Floyd-Warshall algorithm store in its intermediate matrix?","options":["Edge weights only","Shortest path distances","Number of edges in the shortest path","The longest path in the graph"],"answer":1},{"question":"Which of the following is a major limitation of the Floyd-Warshall algorithm?","options":["Cannot handle negative weights","High space complexity","Cannot find shortest paths for undirected graphs","Cannot find shortest paths for large graphs efficiently"],"answer":3},{"question":"What is the space complexity of the Floyd-Warshall algorithm?","options":["O(V)","O(V²)","O(V³)","O(V log V)"],"answer":1},{"question":"What is the Knapsack problem primarily used for?","options":["Finding the shortest path in a graph","Maximizing the value of items in a knapsack without exceeding its capacity","Sorting a list of items","Finding the minimum spanning tree"],"answer":1},{"question":"Which of the following is true about memory function?","options":["It is a top-down approach","It is a bottom-up approach","It does not use recursion","It is only applicable to sorting algorithms"],"answer":0},{"question":"Which of the following problems can be solved using memory function?","options":["0/1 Knapsack algorithms","Travelling salesman problem","Job assignment","All of the above"],"answer":3}],"dbms_u2":[{"question":"What SQL statement would you use to create SQL database named Test?","options":["CREATE DBT Test;","CREATE Test","CREATE DATABASE Test;","MAKE DATABASE Test;"],"answer":2},{"question":"Which SQL statement is used to retrieve data from a database?","options":["Update","select","insert","Delete"],"answer":1},{"question":"Identify the error in \"ALTER TABLE Students DROP COLUMN DateOfBirth date;\"","options":["ALTER TABLE","DROP COLUMN","DateOfBirth","date"],"answer":3},{"question":"Which of the following is not a class of constraint in SQL Server?","options":["NOT NULL","CHECK","NULL","UNIQUE"],"answer":2},{"question":"Purpose of foreign key constraint in SQL Server is __________","options":["FOREIGN KEY constraints identify and enforce the relationships between tables","A foreign key in one table points to a candidate key in another table","You cannot insert a row with a foreign key value, except NULL, if there is no candidate key with that value","Foreign keys allow for NULL as one of the unique values"],"answer":0},{"question":"Which of the constraint can be enforced one per table?","options":["primary key constraint","Not Null constraint","Foreign Key constraint","Check constraint"],"answer":0},{"question":"______ is a special type of integrity constraint that relates two relations & maintains consistency across the relations.","options":["Entity Integrity Constraints","Referential Integrity Constraints","Domain Integrity Constraints","Domain Constraints"],"answer":1},{"question":"Drop Table cannot be used to drop a table referenced by a _________ constraint.","options":["Local Key","Primary Key","Composite Key","Foreign Key"],"answer":3},{"question":"How many Primary keys can have in a table?","options":["Only 1","Only 2","Depends on no of Columns.","Depends on DBA"],"answer":0},{"question":"Which of the following is true about the SQL AS clause?","options":["The AS clause in SQL is used to change the column name in the output or assign a name to a derived column","The SQL AS clause can only be used with the JOIN clause.","The AS clause in SQL is used to defines a search condition.","AS clause is used to change the values in all rows"],"answer":0},{"question":"How can you change \"Thomas\" into \"Michel\" in the \"LastName\" column in the Users table?","options":["UPDATE User SET LastName = 'Thomas' INTO LastName = 'Michel'","MODIFY Users SET LastName = 'Michel' WHERE LastName = 'Thomas'","MODIFY Users SET LastName = 'Thomas' INTO LastName = 'Michel'","UPDATE Users SET LastName = 'Michel' WHERE LastName = 'Thomas'"],"answer":3},{"question":"Which command is used to change the definition of a table in SQL?","options":["CREATE","UPDATE","ALTER","SELECT"],"answer":2},{"question":"What keyword in SQL is used to check for a null value?","options":["=","IS NULL","IS NOT NULL","< >"],"answer":1},{"question":"What does the IN operator do in SQL?","options":["Returns rows that match a specified value","Filters rows that do not match a specified value","Compares a value to a list of specified values","Compares columns of two tables"],"answer":2},{"question":"What is the result of the query SELECT COUNT (DISTINCT Salary) FROM EMPLOYEE;?","options":["Total number of employees","Total number of unique salaries","Total number of salaries greater than a specified value","Average salary of employees"],"answer":1},{"question":"What is the meaning of “HAVING” clause in MySQL?","options":["To filter out the row values","To filter out the column values","To filter out the row and column values","None of the mentioned"],"answer":0},{"question":"Which operator is used to check the existence of a record in a subquery?","options":["In","Exists","Check","For"],"answer":1},{"question":"How many records must be matched with the given criteria to return TRUE from EXISTS condition in SQL?","options":["One","Two","Three","Four"],"answer":0},{"question":"EXISTS operator is used with WHICH of the following clause(s)?","options":["Select","In","Where","Group by"],"answer":2},{"question":"What is the basic syntax of EXISTS operator in SQL?","options":["SELECT column_list FROM TABLE_NAME WHERE COLUMN EXISTS (subquery);","SELECT column_list FROM TABLE_NAME WHERE EXISTS (subquery);","SELECT column_list FROM TABLE_NAME WHERE TABLE_NAME EXISTS (subquery);","SELECT column_list FROM TABLE_NAME COLUMN EXISTS (subquery); FROM TABLE_NAME WHERE EXISTS (subquery);"],"answer":1},{"question":"The ________Clause is an additional filter that is applied to the result set in a SQL statement.","options":["Group by","Order by","Having","Select"],"answer":2},{"question":"What does the EXISTS keyword do in SQL?","options":["Checks if a value exists in a table","Verifies if a nested query returns at least one row","Ensures a column is not null","Combines results of multiple queries"],"answer":1},{"question":"What is the primary use of a SQL view?","options":["To store permanent data in the database","To create a virtual table from a SQL query","To create relationships between tables","To perform database migrations"],"answer":1},{"question":"Which SQL command is used to create a view?","options":["CREATE TABLE","CREATE VIEW","ALTER VIEW","SELECT INTO"],"answer":1},{"question":"You can delete a view with ___________ command.","options":["drop view","delete view","remove view","truncate view"],"answer":0},{"question":"What is a trigger in SQL?","options":["A stored procedure that executes automatically in response to an event","A command to backup data","A query to create new views","A temporary table for transaction logs"],"answer":0},{"question":"Which of the following can activate a trigger?","options":["A user login event","A SELECT query","An INSERT, UPDATE, or DELETE operation","A schema modification"],"answer":2},{"question":"Which SQL command is used to modify the structure of an existing table?","options":["update table","modify table","alter table","change table"],"answer":2},{"question":"What happens when DROP TABLE CASCADE is executed?","options":["Only the table structure is removed","The table and its dependent objects are removed","The table data is cleared, but the structure is preserved","The table is locked for further operations"],"answer":1},{"question":"What happens if you execute DROP TABLE table_name; in SQL?","options":["The table structure is removed, but the data is retained","Both the table structure and data are removed","Only the table relationships are deleted","The table is temporarily hidden"],"answer":1},{"question":"What is the main goal of informal design guidelines for relation schemas?","options":["Improve efficiency of queries","Reduce anomalies and redundancies","Simplify database architecture","Increase the size of the database"],"answer":1},{"question":"A relation schema is said to have good design if it avoids which of the following?","options":["Foreign keys","Redundancy and null values","Composite attributes","Views"],"answer":1},{"question":"Which of the following is NOT a type of functional dependency?","options":["Full functional dependency","Partial functional dependency","Transitive functional dependency","Reflexive functional dependency"],"answer":3},{"question":"Which dependency violates 3NF?","options":["Transitive dependency","Partial dependency Partial dependency","Candidate key dependency","FP-Growth uses a horizontal data format"],"answer":0},{"question":"Which of the following algorithms is commonly used for schema decomposition in relational databases?","options":["Algorithm for Lossless Decomposition","BCNF Decomposition Algorithm","Dependency Closure Algorithm","Minimal Cover Algorithm"],"answer":1},{"question":"Which property is NOT a characteristic of a good relational decomposition?","options":["Lossless join property","Dependency preservation","Minimization of redundancy","Elimination of derived attributes"],"answer":3},{"question":"What is a candidate key in a relation?","options":["Any subset of attributes","A super key that has no proper subset as a super key","A primary key with additional attributes","An attribute that is functionally dependent"],"answer":1},{"question":"Which of the following is true for a schema in 3NF?","options":["It is in 2NF and every non-prime attribute is fully functionally dependent on the primary key","It is in BCNF","It contains transitive dependencies","It has minimal redundancy primary key"],"answer":0},{"question":"Which of the following decompositions is always guaranteed to be lossless?","options":["Decomposition into BCNF","Decomposition based on a candidate key","Decomposition into 2NF","Decomposition preserving dependencies"],"answer":1},{"question":"What is the closure of an attribute set in functional dependency theory?","options":["All attributes in the relation","The set of all attributes that can be functionally determined by the attribute set","All possible super keys","The smallest key for the relation set =================================================="],"answer":1}],"maths_u2":[{"question":"Rank of an identity matrix of order 4 is","options":["4","3","1","0"],"answer":0},{"question":"System of equations AX=B has solutions if","options":["Rank[A] = number of unknowns","Rank[A] = Rank[A│B] ≤ number of unknowns","Rank[A] ≠ number of unknowns","Rank[A] ≠ Rank[A│B]"],"answer":1},{"question":"System AX=0 has nontrivial solution if and only if","options":["Determinant of A = Determinant of X","Determinant of A = 0","Rank[A] ≠ Rank[A│B]","Determinant of A ≠ 0"],"answer":1},{"question":"Which of the following statements is incorrect?","options":["Rank of a matrix A is the number of nonzero rows in its echelon form","Rank of a matrix A is equal to number of pivot columns in it","Rank of a matrix A is number of free variables in the system AX=B","Rank of a matrix A is number of basic variables in the system AX=B"],"answer":2},{"question":"System of equations AX=B has infinite number of solutions if","options":["Rank[A] = Rank[A│B] = number of unknowns","Rank[A] = Rank[A│B] < number of unknowns","Rank[A] ≠ Rank[A│B]","Rank[A] = Rank[A│B] > number of unknowns"],"answer":1},{"question":"A n×n matrix A is diagonalizable if and only if","options":["A has n distinct eigen values","A has repeated eigen vectors","A has repeated eigen values","A has linearly independent eigen vectors"],"answer":3},{"question":"Eigen value of a triangular matrix A are","options":["Diagonal element of A","Sum of diagonal element of A","Determinant of A","Trace of A"],"answer":0},{"question":"Eigen values of A = [[4,1],[1,4]] are","options":["3, -3","-3, -5","3, 5","5, 0"],"answer":2},{"question":"The eigen vectors of the matrix A is the nontrivial solution of the equation","options":["AX = 0","AX = B","AX = λX","None"],"answer":2},{"question":"If A is a square matrix, then det(A) =","options":["Sum of the eigen values of A","Product of eigen values of A","Product of diagonal elements of A","Sum of diagonal elements of A"],"answer":1},{"question":"Let A be an n×n matrix, then A is diagonalizable if and only if","options":["A has linearly dependent eigen vectors","A has n linearly independent columns","A has n linearly independent eigen vectors","A has (n-1) linearly independent eigen vectors"],"answer":2},{"question":"For which value of k the system of two equations x+y=1, 2x+2y=k has infinite solutions:","options":["k = 0","k = 1","k = 2","Any value of k ≠ 1"],"answer":2},{"question":"The eigen values of A = [[3,2],[3,8]] are","options":["7, 4","9, 2","8, 3","6, 5"],"answer":1}],"maths_la_u2_img":[{"questionImg":"images/maths_unit2/q-4.png","qNum":39,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-4.png","qNum":40,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-4.png","qNum":41,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-4.png","qNum":42,"options":["A","B","C","D"],"answer":1},{"questionImg":"images/maths_unit2/q-5.png","qNum":43,"options":["A","B","C","D"],"answer":3},{"questionImg":"images/maths_unit2/q-5.png","qNum":44,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-5.png","qNum":45,"options":["A","B","C","D"],"answer":1},{"questionImg":"images/maths_unit2/q-5.png","qNum":46,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-5.png","qNum":47,"options":["A","B","C","D"],"answer":1},{"questionImg":"images/maths_unit2/q-5.png","qNum":48,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-5.png","qNum":49,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-5.png","qNum":50,"options":["A","B","C","D"],"answer":1},{"questionImg":"images/maths_unit2/q-5.png","qNum":51,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-5.png","qNum":52,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-5.png","qNum":53,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-5.png","qNum":54,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-5.png","qNum":55,"options":["A","B","C","D"],"answer":3},{"questionImg":"images/maths_unit2/q-6.png","qNum":56,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-6.png","qNum":57,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-6.png","qNum":58,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-6.png","qNum":59,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-6.png","qNum":60,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-6.png","qNum":61,"options":["A","B","C","D"],"answer":1},{"questionImg":"images/maths_unit2/q-6.png","qNum":62,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-6.png","qNum":63,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-6.png","qNum":64,"options":["A","B","C","D"],"answer":0},{"questionImg":"images/maths_unit2/q-6.png","qNum":65,"options":["A","B","C","D"],"answer":3},{"questionImg":"images/maths_unit2/q-6.png","qNum":66,"options":["A","B","C","D"],"answer":2},{"questionImg":"images/maths_unit2/q-6.png","qNum":67,"options":["A","B","C","D"],"answer":0}],"daa_unit2":[{"question":"What is the primary idea behind the 'Decrease and Conquer' technique?","options":["Increase the problem size incrementally","Solve the entire problem in one step","Reduce the problem size at each step and solve it recursively","Divide the problem into multiple subproblems of equal size"],"answer":2},{"question":"Which of the following is a characteristic of the 'Decrease and Conquer' method?","options":["It always involves dividing the problem into two equal parts","It solves the problem by repeatedly reducing it to a smaller subproblem","It uses dynamic programming to store intermediate results","It is only applicable to sorting problems"],"answer":1},{"question":"In Insertion Sort, the problem size is reduced by:","options":["Splitting the array into two parts of equal size","Sorting only the largest element in each iteration","Sorting a single element at a time","Exchanging adjacent elements"],"answer":2},{"question":"Which algorithm uses a variable-size decrease approach?","options":["Exponentiation by squaring","Binary search","Euclid's algorithm","Insertion sort"],"answer":2},{"question":"Binary Search is a classic example of which variation of Decrease and Conquer?","options":["Decrease by a constant","Decrease by a constant factor","Decrease by one","Divide and conquer"],"answer":1},{"question":"What type of data structure is used in Depth-First Search (DFS)?","options":["Queue","Stack","Priority Queue","Heap"],"answer":1},{"question":"DFS is more suitable than BFS for which of the following?","options":["Finding the shortest path in an unweighted graph","Exploring all vertices in a level-by-level manner","Detecting cycles in a graph","Solving shortest path problems in weighted graphs"],"answer":2},{"question":"What is the key difference between BFS and DFS in their approach?","options":["BFS uses a stack; DFS uses a queue","BFS explores neighbors level by level; DFS explores as deep as possible along one branch","BFS works only on trees; DFS works only on graphs","BFS is recursive; DFS is iterative"],"answer":1},{"question":"Which of the following is true for BFS?","options":["It always uses recursion","It can handle graphs with cycles by avoiding revisits using a 'visited' array","It cannot be used to check graph connectivity","It is suitable only for weighted graphs"],"answer":1},{"question":"Which of the following problems can be solved using DFS?","options":["Finding connected components in a graph","Finding the shortest path in an unweighted graph","Topological sorting of a directed acyclic graph (DAG)","Both a and c"],"answer":3},{"question":"What is the primary application of topological sorting?","options":["Finding the shortest path in a graph","Sorting a list of elements in ascending order","Ordering the vertices of a directed acyclic graph (DAG) such that for every edge (u,v), vertex u comes before vertex v","Finding the minimum spanning tree of a graph"],"answer":2},{"question":"Which of the following is a necessary condition for a graph to have a topological sorting?","options":["The graph must be a tree","The graph must be a DAG","The graph must be a complete graph","The graph must be a bipartite graph"],"answer":1},{"question":"What is the time complexity of the topological sorting algorithm using Kahn's algorithm?","options":["O(V + E)","O(V * E)","O(E^2)","O(V^2)"],"answer":0},{"question":"Which of the following is a correct statement about topological sorting?","options":["Topological sorting is only possible for graphs with a single source vertex","Topological sorting is only possible for graphs with a single sink vertex","Topological sorting can be performed on any DAG","Topological sorting can only be performed on graphs with a single cycle"],"answer":2},{"question":"What happens if a graph has a cycle and we try to perform topological sorting on it?","options":["The algorithm will produce a correct topological sorting","The algorithm will produce an incorrect topological sorting","The algorithm will detect the cycle and report an error","The algorithm will go into an infinite loop"],"answer":2},{"question":"Which of the following is an example of the Transform and Conquer method?","options":["Merge Sort","Binary search","Matrix multiplication","Heap sort"],"answer":3},{"question":"What operation is performed on an AVL tree when the balance factor of a node becomes greater than 1 or less than -1?","options":["Rotation","Deletion","Insertion","Search"],"answer":0},{"question":"What is the condition for a binary search tree to be considered an AVL tree?","options":["The height of the left subtree and the right subtree of every node differs by at most 2","The height of the left subtree and the right subtree of every node differs by at most 1","The height of the left subtree and the right subtree of every node is always equal","The height of the left subtree and the right subtree of every node differs by at least 1"],"answer":1},{"question":"What is the time complexity of search, insert, and delete operations in a 2-3 tree?","options":["O(log n)","O(n)","O(nlogn)","O(2^n)"],"answer":0},{"question":"What happens when a node in a 2-3 tree is split due to the insertion of a new key?","options":["The node is replaced by two new nodes, each with one key","The node is replaced by three new nodes, each with one key","The node is not split, and the new key is added to the existing node","The node is replaced by two new nodes, each with one or two keys"],"answer":3},{"question":"In a max-heap, which of the following is true?","options":["The parent node is smaller than its child nodes","The parent node is greater than or equal to its child nodes","The tree is a binary search tree","The elements are stored in ascending order"],"answer":1},{"question":"What is the time complexity to build and heapify a heap of n elements?","options":["O(n log n)","O(log n)","O(n)","O(n²)"],"answer":2},{"question":"You are given an array: [3, 9, 2, 1, 4, 8]. After building a max-heap from this array, what will be the root element?","options":["1","9","2","8"],"answer":1},{"question":"Which of the following applications is a heap NOT suited for?","options":["Implementing a priority queue","Finding the median of a data stream","Sorting data in ascending order","Depth-first search of a graph"],"answer":3},{"question":"Which of the following is NOT true about heap sort?","options":["It is an in-place sorting algorithm","It is a stable sorting algorithm","It has a time complexity of O(n log n)","It uses the heap data structure"],"answer":1},{"question":"What makes Counting Sort a distribution-based algorithm?","options":["It uses element frequencies to determine sorted positions","It divides the array into smaller subarrays","It recursively splits and merges data","It compares each pair of elements to sort the array"],"answer":0},{"question":"Which sorting algorithm explicitly trades off space for time by using extra space to count occurrences of elements?","options":["Merge Sort","Bubble sort","Counting Sort","Quick sort"],"answer":2},{"question":"What is the time complexity of distribution counting sort?","options":["Θ(n²)","Θ(n)","O(n)","O(n²)"],"answer":1},{"question":"What is the time complexity of comparison counting sort?","options":["Θ(n²)","O(n)","O(n²)","Θ(n)"],"answer":0},{"question":"Sorting by counting trades off space for time efficiency by:","options":["Using recursion to divide the array into smaller parts","Allocating extra memory for the frequency and cumulative arrays","Avoiding comparisons between elements","Reducing the overall size of the input array"],"answer":1},{"question":"In Horspool's algorithm, when the last character of the pattern does not match the text, what action does the algorithm take?","options":["Shift the pattern by 1 character to the right","Perform a full re-check from the beginning of the pattern","Shift the pattern by the value stored for the text character in the shift table","Abort the search"],"answer":2},{"question":"In Horspool's algorithm, when does the algorithm perform a full comparison of the pattern with the text?","options":["Every time a mismatch occurs","Only when a match is found","Only when the shift table suggests no shift","Initially, when the first character in the pattern is compared with the first character of the text"],"answer":1},{"question":"In Horspool's algorithm, what is the primary purpose of the shift table?","options":["To store the indices of pattern matches","To store the positions of all characters in the pattern","To store the number of shifts required for each character in the pattern","To store the hash values of pattern characters"],"answer":2},{"question":"What is the primary advantage of Horspool's algorithm over the naive string matching algorithm?","options":["It guarantees finding all occurrences in linear time","It uses a precomputed shift table to skip unnecessary comparisons","It always matches patterns in fewer comparisons than the naive algorithm","It works in constant space"],"answer":1},{"question":"Which of the following is an example of a problem that can be solved using dynamic programming?","options":["Binary search","Knapsack problem","Merge sort","Depth First Search"],"answer":1},{"question":"In dynamic programming, the solution to a problem is built up from:","options":["A single recursive call","A series of overlapping subproblems","A greedy approach","A divide and conquer method"],"answer":1},{"question":"When solving a problem using dynamic programming, what is the role of 'optimal substructure'?","options":["It ensures that solving subproblems will always result in the correct solution for the entire problem","It guarantees that the problem can be solved in constant time","It allows for efficient recursion without overlapping subproblems","It simplifies the problem by eliminating unnecessary subproblems"],"answer":0},{"question":"What is the time complexity of solving the 0/1 knapsack problem using dynamic programming with an array-based approach?","options":["O(n²)","O(n * W) where n is the number of items and W is the maximum weight","O(W)","O(n)"],"answer":1},{"question":"What does the term 'overlapping subproblems' refer to in dynamic programming?","options":["Problems that can be solved using greedy algorithms","Subproblems that appear multiple times in the recursive solution","Subproblems that are completely independent","Subproblems that cannot be solved independently"],"answer":1},{"question":"What is the primary purpose of the Floyd-Warshall algorithm?","options":["Finding the shortest path between two specific nodes","Finding the shortest paths between all pairs of nodes in a graph","Finding the minimum spanning tree of a graph","Finding the longest path in a weighted graph"],"answer":1},{"question":"Which type of graph is required for the Floyd-Warshall algorithm?","options":["Directed or undirected weighted graphs","Only directed weighted graphs","Only undirected graphs","Only acyclic graphs"],"answer":0},{"question":"How does the Floyd-Warshall algorithm handle negative weight cycles?","options":["It detects them and stops execution","It ignores them and continues finding shortest paths","It gives incorrect results","It runs indefinitely"],"answer":2},{"question":"Which technique is used to solve the 0/1 Knapsack problem efficiently?","options":["Greedy algorithm","Divide and conquer","Dynamic programming","Depth-first search"],"answer":2},{"question":"What does the Floyd-Warshall algorithm store in its intermediate matrix?","options":["Edge weights only","Shortest path distances","Number of edges in the shortest path","The longest path in the graph"],"answer":1},{"question":"Which of the following is a major limitation of the Floyd-Warshall algorithm?","options":["Cannot handle negative weights","High space complexity","Cannot find shortest paths for undirected graphs","Cannot find shortest paths for large graphs efficiently"],"answer":1},{"question":"What is the space complexity of the Floyd-Warshall algorithm?","options":["O(V)","O(V²)","O(V³)","O(V log V)"],"answer":1},{"question":"What is the Knapsack problem primarily used for?","options":["Finding the shortest path in a graph","Maximizing the value of items in a knapsack without exceeding its capacity","Sorting a list of items","Finding the minimum spanning tree"],"answer":1},{"question":"Which of the following is true about memory function?","options":["It is a top-down approach","It is a bottom-up approach","It does not use recursion","It is only applicable to sorting algorithms"],"answer":0},{"question":"Which of the following problems can be solved using memory function?","options":["0/1 Knapsack algorithms","Travelling salesman problem","Job assignment","All of the above"],"answer":3}],"dbms_unit2":[{"question":"What SQL statement would you use to create SQL database named Test?","options":["CREATE DBT Test;","CREATE Test","CREATE DATABASE Test;","MAKE DATABASE Test;"],"answer":2},{"question":"Which SQL statement is used to retrieve data from a database?","options":["Update","SELECT","Insert","Delete"],"answer":1},{"question":"Identify the error in 'ALTER TABLE Students DROP COLUMN DateOfBirth date;'","options":["ALTER TABLE","DROP COLUMN","DateOfBirth","date"],"answer":3},{"question":"Which of the following is not a class of constraint in SQL Server?","options":["NOT NULL","CHECK","NULL","UNIQUE"],"answer":2},{"question":"Purpose of foreign key constraint in SQL Server is ___","options":["FOREIGN KEY constraints identify and enforce the relationships between tables","A foreign key in one table points to a candidate key in another table","You cannot insert a row with a foreign key value, except NULL, if there is no candidate key with that value","Foreign keys allow for NULL as one of the unique values"],"answer":0},{"question":"Which of the constraint can be enforced one per table?","options":["primary key constraint","Not Null constraint","Foreign Key constraint","Check constraint"],"answer":0},{"question":"___ is a special type of integrity constraint that relates two relations & maintains consistency across the relations.","options":["Entity Integrity Constraints","Referential Integrity Constraints","Domain Integrity Constraints","Domain Constraints"],"answer":1},{"question":"Drop Table cannot be used to drop a table referenced by a ___ constraint.","options":["Local Key","Primary Key","Composite Key","Foreign Key"],"answer":3},{"question":"How many Primary keys can have in a table?","options":["Only 1","Only 2","Depends on no of Columns","Depends on DBA"],"answer":0},{"question":"Which of the following is true about the SQL AS clause?","options":["The AS clause in SQL is used to change the column name in the output or assign a name to a derived column","The SQL AS clause can only be used with the JOIN clause","The AS clause in SQL is used to define a search condition","AS clause is used to change the values in all rows"],"answer":0},{"question":"How can you change 'Thomas' into 'Michel' in the 'LastName' column in the Users table?","options":["UPDATE User SET LastName = 'Thomas' INTO LastName = 'Michel'","MODIFY Users SET LastName = 'Michel' WHERE LastName = 'Thomas'","MODIFY Users SET LastName = 'Thomas' INTO LastName = 'Michel'","UPDATE Users SET LastName = 'Michel' WHERE LastName = 'Thomas'"],"answer":3},{"question":"Which command is used to change the definition of a table in SQL?","options":["CREATE","UPDATE","ALTER","SELECT"],"answer":2},{"question":"What keyword in SQL is used to check for a null value?","options":["=","IS NULL","IS NOT NULL","< >"],"answer":1},{"question":"What does the IN operator do in SQL?","options":["Returns rows that match a specified value","Filters rows that do not match a specified value","Compares a value to a list of specified values","Compares columns of two tables"],"answer":2},{"question":"What is the result of the query SELECT COUNT(DISTINCT Salary) FROM EMPLOYEE;?","options":["Total number of employees","Total number of unique salaries","Total number of salaries greater than a specified value","Average salary of employees"],"answer":1},{"question":"What is the meaning of 'HAVING' clause in MySQL?","options":["To filter out the row values","To filter out the column values","To filter out the row and column values","None of the mentioned"],"answer":0},{"question":"Which operator is used to check the existence of a record in a subquery?","options":["In","Exists","Check","For"],"answer":1},{"question":"How many records must be matched with the given criteria to return TRUE from EXISTS condition in SQL?","options":["One","Two","Three","Four"],"answer":0},{"question":"EXISTS operator is used with WHICH of the following clause(s)?","options":["Select","In","Where","Group by"],"answer":2},{"question":"What does the EXISTS keyword do in SQL?","options":["Checks if a value exists in a table","Verifies if a nested query returns at least one row","Ensures a column is not null","Combines results of multiple queries"],"answer":1},{"question":"What is the primary use of a SQL view?","options":["To store permanent data in the database","To create a virtual table from a SQL query","To create relationships between tables","To perform database migrations"],"answer":1},{"question":"Which SQL command is used to create a view?","options":["CREATE TABLE","CREATE VIEW","ALTER VIEW","SELECT INTO"],"answer":1},{"question":"You can delete a view with ___ command.","options":["drop view","delete view","remove view","truncate view"],"answer":0},{"question":"What is a trigger in SQL?","options":["A stored procedure that executes automatically in response to an event","A command to backup data","A query to create new views","A temporary table for transaction logs"],"answer":0},{"question":"Which of the following can activate a trigger?","options":["A user login event","A SELECT query","An INSERT, UPDATE, or DELETE operation","A schema modification"],"answer":2},{"question":"Which SQL command is used to modify the structure of an existing table?","options":["update table","modify table","alter table","change table"],"answer":2},{"question":"What happens when DROP TABLE CASCADE is executed?","options":["Only the table structure is removed","The table and its dependent objects are removed","The table data is cleared, but the structure is preserved","The table is locked for further operations"],"answer":1},{"question":"What happens if you execute DROP TABLE table_name; in SQL?","options":["The table structure is removed, but the data is retained","Both the table structure and data are removed","Only the table relationships are deleted","The table is temporarily hidden"],"answer":1},{"question":"What is the main goal of informal design guidelines for relation schemas?","options":["Improve efficiency of queries","Reduce anomalies and redundancies","Simplify database architecture","Increase the size of the database"],"answer":1},{"question":"A relation schema is said to have good design if it avoids which of the following?","options":["Foreign keys","Redundancy and null values","Composite attributes","Views"],"answer":1},{"question":"Which of the following can lead to redundancy in a relational schema?","options":["Storing derived attributes","Using foreign keys","Storing minimal data","Using primary keys"],"answer":0},{"question":"What is the term used to describe the splitting of a large table into smaller ones to improve design?","options":["Aggregation","Normalization","Generalization","Denormalization"],"answer":1},{"question":"Which of the following is a characteristic of functional dependency?","options":["It is a one-to-one mapping","It requires foreign keys","It is a constraint between two attributes","It ensures primary key uniqueness"],"answer":2},{"question":"Which of the following is NOT a type of functional dependency?","options":["Full functional dependency","Partial functional dependency","Transitive functional dependency","Reflexive functional dependency"],"answer":3},{"question":"In a relation, if attribute B is functionally dependent on attribute A, which of the following is true?","options":["Each value of A is associated with one value of B","Each value of B is associated with one value of A","There is no dependency between A and B","A and B must be the same attribute"],"answer":0},{"question":"Which normal form ensures that no non-prime attribute is dependent on a part of a candidate key?","options":["First Normal Form (1NF)","Second Normal Form (2NF)","Third Normal Form (3NF)","Boyce-Codd Normal Form (BCNF)"],"answer":1},{"question":"A relation is in 1NF if it ___","options":["Has no transitive dependencies","Has a candidate key","Contains only atomic values","Is free of all anomalies"],"answer":2},{"question":"In which normal form is every non-prime attribute non-transitively dependent on the primary key?","options":["1NF","2NF","3NF","BCNF"],"answer":2},{"question":"Which dependency violates 3NF?","options":["Transitive dependency","Partial dependency","Candidate key dependency","Full functional dependency"],"answer":0},{"question":"Relation is in BCNF if it is in 3NF and ___","options":["Every determinant is a candidate key","All attributes are dependent on the entire primary key","It has no transitive dependencies","It has no multivalued dependencies"],"answer":0},{"question":"BCNF is stricter than 3NF because it eliminates ___","options":["Functional dependencies","Multivalued dependencies","Dependencies where a non-candidate key attribute determines a candidate key","All transitive dependencies"],"answer":2},{"question":"What is a prime attribute in normalization?","options":["An attribute part of a candidate key","An attribute not part of any key","An attribute dependent on another attribute","An attribute used as a foreign key"],"answer":0},{"question":"Which of these is always true for BCNF?","options":["It eliminates all redundancies","Every determinant is a superkey","It is free of all anomalies","It allows partial dependencies"],"answer":1},{"question":"What type of dependency does 2NF aim to eliminate?","options":["Partial dependency","Transitive dependency","Candidate key dependency","Referential dependency"],"answer":0},{"question":"Which normal form is sufficient to handle most real-world database design requirements?","options":["1NF","2NF","3NF","BCNF"],"answer":2},{"question":"Which of the following is a set of inference rules used to derive all the functional dependencies on a relational database?","options":["Armstrong's Axioms","Boyce-Codd Axioms","Dependency Axioms","Relational Axioms"],"answer":0},{"question":"What is a minimal cover of a set of functional dependencies?","options":["A set of dependencies with redundant attributes","A minimal equivalent set of functional dependencies","A set of all possible keys for a relation","A reduced schema without any dependencies"],"answer":1},{"question":"Which property is essential for a decomposition to be considered lossless?","options":["Dependency preservation","Non-additive join property","Minimal redundancy","Full functional dependency"],"answer":1},{"question":"What does dependency preservation ensure in a relational decomposition?","options":["All functional dependencies are retained in decomposed relations","The schema is reduced to fewer attributes","No multivalued dependencies exist","All relations are in BCNF"],"answer":0},{"question":"What is the closure of an attribute set in functional dependency theory?","options":["All attributes in the relation","The set of all attributes that can be functionally determined by the attribute set","All possible super keys","The smallest key for the relation"],"answer":1}],"sepm_unit2":[{"question":"Aggregation represents ___.","options":["is_a relationship","part_of relationship","composed_of relationship","none of above"],"answer":2},{"question":"The feature of the object oriented paradigm which helps code reuse is ___.","options":["Object","Class","Inheritance","Aggregation"],"answer":2},{"question":"Which among these are the rules to be considered to form Class diagrams?","options":["Class symbols must have at least a name compartment","Compartment can be in random order","Attributes and operations can be listed at any suitable place","Class symbols must not have at least a name compartment"],"answer":0},{"question":"Object diagram is used to show the design ___ view of a system.","options":["static","dynamic","logical","process"],"answer":0},{"question":"Which of the following diagram is used to model the vocabulary of a system?","options":["Object Diagram","Activity Diagram","Class diagram","Interaction Diagram"],"answer":2},{"question":"The object-oriented development life cycle is which of the following?","options":["Analysis, design, and implementation steps in the given order and using the steps no more than one time","Analysis, design, and implementation steps in any order and using the steps no more than one time","Analysis, design, and implementation steps in any order and using multiple iterations","Analysis, design, and implementation steps in the given order and using multiple iterations"],"answer":3},{"question":"Composition is a stronger form of which of the following?","options":["Aggregation","Inheritance","Encapsulation","Generalization"],"answer":0},{"question":"Sequence of messages is emphasized by ___ diagram.","options":["state chart","sequence","activity","collaboration"],"answer":1},{"question":"Which model in system modeling depicts the dynamic behavior of the system?","options":["Context Model","Behavioral Model","Data Model","Object Model"],"answer":1},{"question":"The UML supports event-based modeling using ___ diagrams.","options":["Deployment","Collaboration","State","Class"],"answer":2},{"question":"___ allows us to infer that different members of classes have some common characteristics.","options":["Realization","Aggregation","Generalization","dependency"],"answer":2},{"question":"___ & ___ diagrams of UML represent Interaction modeling.","options":["Use Case, Sequence","Class, Object","Activity, State Chart","Class, State"],"answer":0},{"question":"Actual programming of software code is done during the ___ step in the SDLC.","options":["Maintenance and Evaluation","Design","Development","Testing"],"answer":2},{"question":"A scenario is ___.","options":["An instance of a use case","Same as a use case","Diagrammatic representation of a use case","A type of use case"],"answer":0},{"question":"Which one is not a UML diagram?","options":["Class Diagram","Component Diagram","Protocol state diagram","Entity diagram"],"answer":3},{"question":"Aggregation is ___.","options":["Weak association","Strong association","Required association","None"],"answer":0},{"question":"How many types of actor are there in use case diagram?","options":["2","3","4","5"],"answer":0},{"question":"In UML, operation signature consists of ___.","options":["Operation name and parameters","Return type and operation","Operation name","Operation name, return type"],"answer":0},{"question":"___ is not a type of relationship in a use case diagram.","options":["Association","Generalization","Extend","Collaboration"],"answer":3},{"question":"What is NOT a true benefit of UML class diagrams?","options":["Communicates design to developers","Provides blueprint for implementation","Represents real-world system being modeled","Shows execution flow"],"answer":3},{"question":"Activity diagram focuses on ___.","options":["Flow of activities","State changes","Object creation","Class relationships"],"answer":0},{"question":"Sequence diagrams model ___ behavior.","options":["Static","Dynamic","Structural","None"],"answer":1},{"question":"State diagram represents ___.","options":["State transitions of an object","Object relationships","Data flow","System architecture"],"answer":0},{"question":"___ diagram shows component dependencies.","options":["Class","Component","Deployment","Object"],"answer":1},{"question":"Deployment diagram shows ___.","options":["Software components","Hardware nodes","Class relationships","Use cases"],"answer":1}],"mp_unit2":[{"question":"What is the difference between a procedure and a macro in 8086?","options":["Procedures are faster, macros use less memory","Macros are expanded inline, procedures use CALL/RET","Procedures are expanded inline, macros use CALL/RET","There is no difference"],"answer":1},{"question":"Which interrupt is used to read a character from keyboard in 8086?","options":["INT 10H","INT 21H","INT 13H","INT 19H"],"answer":1},{"question":"The DOS function to create a file is available through which interrupt?","options":["INT 10H","INT 21H with AH=3CH","INT 13H","INT 21H with AH=4CH"],"answer":1},{"question":"In Arduino, pinMode() function is used to","options":["Read digital input","Write digital output","Configure a pin as INPUT or OUTPUT","Read analog input"],"answer":2},{"question":"The analogRead() function in Arduino returns a value in the range","options":["0 to 255","0 to 1023","0 to 4095","0 to 65535"],"answer":1},{"question":"digitalWrite() function in Arduino is used to","options":["Read digital value","Write HIGH or LOW to a digital pin","Configure pin mode","Read analog value"],"answer":1},{"question":"RISC stands for","options":["Reduced Instruction Set Computer","Random Instruction Set Computer","Rapid Instruction Set Computer","Regular Instruction Set Computer"],"answer":0},{"question":"CISC stands for","options":["Complete Instruction Set Computer","Complex Instruction Set Computer","Common Instruction Set Computer","Central Instruction Set Computer"],"answer":1},{"question":"Which of the following is a characteristic of RISC architecture?","options":["Variable length instructions","Many addressing modes","Fixed length instructions","Complex instructions"],"answer":2},{"question":"ARM processor uses which type of architecture?","options":["CISC","RISC","MISC","VLIW"],"answer":1},{"question":"The ARM processor has how many general purpose registers?","options":["8","13","16","32"],"answer":2},{"question":"The Program Status Register (PSR) in ARM contains","options":["Only condition flags","Only control bits","Condition flags and control bits","Only address information"],"answer":2},{"question":"In ARM, the link register (LR) is used to","options":["Store return address during subroutine call","Store stack pointer","Store program counter","Store status flags"],"answer":0},{"question":"ARM7 processor uses how many stage pipeline?","options":["2-stage","3-stage","5-stage","7-stage"],"answer":1},{"question":"The Arduino Due board uses which processor?","options":["ATmega328","ATmega2560","ARM Cortex-M3","ARM Cortex-A9"],"answer":2},{"question":"Serial.begin(9600) in Arduino sets the","options":["Pin mode","Baud rate for serial communication","Analog reference","Digital output"],"answer":1},{"question":"Serial.println() function in Arduino","options":["Reads data from serial port","Writes data followed by newline to serial port","Initializes serial communication","Closes serial communication"],"answer":1},{"question":"In 8086, the EXTRN directive is used to","options":["Define a variable","Declare a symbol defined in another module","End the program","Define a procedure"],"answer":1},{"question":"The OFFSET operator in 8086 assembly returns","options":["Segment address","Offset address of a variable","Physical address","Logical address"],"answer":1},{"question":"Which directive is used to include another file in 8086 assembly?","options":["EXTERN","IMPORT","INCLUDE","REQUIRE"],"answer":2},{"question":"INT 21H with AH=4CH is used to","options":["Read character","Write character","Terminate program","Open file"],"answer":2},{"question":"In embedded systems, GPIO stands for","options":["General Purpose Input/Output","Global Processor Input/Output","General Processor I/O","Graphics Processing Input/Output"],"answer":0},{"question":"PWM stands for","options":["Pulse Width Modification","Pulse Width Modulation","Power Width Modulation","Processor Width Modulation"],"answer":1},{"question":"In Arduino, analogWrite() uses PWM on pins marked with","options":["*","~","#","@"],"answer":1},{"question":"The delay() function in Arduino","options":["Pauses the program for specified milliseconds","Pauses the program for specified microseconds","Returns the time since program started","Sets a timer interrupt"],"answer":0},{"question":"millis() function in Arduino returns","options":["Current time in seconds","Time since program started in milliseconds","Delay time","Clock frequency"],"answer":1},{"question":"In ARM architecture, the Stack Pointer register is","options":["R13","R14","R15","R0"],"answer":0},{"question":"The Program Counter in ARM is register","options":["R13","R14","R15","R0"],"answer":2},{"question":"AMBA in ARM stands for","options":["Advanced Microprocessor Bus Architecture","Advanced Microcontroller Bus Architecture","ARM Microcontroller Bus Architecture","Advanced Memory Bus Architecture"],"answer":1},{"question":"Which of the following is NOT a feature of embedded systems?","options":["Real-time operation","Low power consumption","Dedicated functionality","General purpose computing"],"answer":3}],"maths_unit2":[{"question":"Rank of an identity matrix of order d is ___","options":["0","1","d","d-1"],"answer":2},{"question":"System of equations AX = B has solutions if","options":["Rank[A] = number of unknowns","Rank[A] = Rank[A|B]","Rank[A] > Rank[A|B]","Rank[A] < number of unknowns"],"answer":1},{"question":"System AX = 0 has nontrivial solution if and only if","options":["Determinant of A = Determinant of X","Determinant of A = 0","Determinant of A ≠ 0","Rank of A = n"],"answer":1},{"question":"Which of the following statements is incorrect about Rank of a matrix?","options":["Rank of a matrix A is the number of nonzero rows in its echelon form","Rank of a matrix A is equal to number of pivot columns in it","Rank is always greater than number of rows","Rank of a matrix A is number of basic variables in the system AX = B"],"answer":2},{"question":"System of equations AX = B has infinite number of solutions if","options":["Rank[A] = Rank[A|B] = number of unknowns","Rank[A] = Rank[A|B] < number of unknowns","Rank[A] ≠ Rank[A|B]","Rank[A] = Rank[A|B] > number of unknowns"],"answer":1},{"question":"The eigen values of a triangular matrix A are","options":["Off-diagonal elements","Diagonal elements","Determinant of A","Trace of A"],"answer":1},{"question":"If A is a square matrix, then det(A) =","options":["Sum of the eigen values of A","Product of the eigen values of A","Product of diagonal elements of A","Sum of diagonal elements of A"],"answer":1},{"question":"An n×n matrix A is diagonalizable if and only if","options":["A has n distinct eigen values","A has repeated eigen vectors","A has repeated eigen values","A has n linearly independent eigen vectors"],"answer":3},{"question":"If A is 3×4 matrix the maximum possible value of the rank A is","options":["3","4","7","12"],"answer":0},{"question":"If a matrix A is reduced to row echelon form, then rank of the matrix is","options":["Number of non-zero rows","Number of zero rows","Total number of rows","Total number of columns"],"answer":0},{"question":"Which of the following method is not used to find the solution of the system of equations?","options":["Gauss elimination method","Gauss seidel method","Cramer's rule","LU decomposition method"],"answer":1},{"question":"Which of the following is not a valid elementary row operation?","options":["Interchange two rows","Multiply a row by a non-zero scalar","Add a multiple of one row to another","Multiply two rows together"],"answer":3},{"question":"A subset S of vector space V over field F is a basis of V if S is linearly independent and","options":["S is finite","Span(S) = V","S has n elements","Span(S) = S"],"answer":1},{"question":"If {u₁, u₂, ..., uₙ} is linearly independent set, then c₁u₁ + c₂u₂ + ... + cₙuₙ = 0 has","options":["Infinitely many solutions","Only trivial solution","No solution","Both B and C are possible"],"answer":1},{"question":"The row space of an m × n matrix A is a subspace of","options":["Rᵐ","Rⁿ","Rᵐˣⁿ","R"],"answer":1},{"question":"In two dimensional Euclidean space, identity element with respect to vector addition is","options":["(1, 1)","(0, 0)","(1, 0)","(0, 1)"],"answer":1},{"question":"In three dimensional Euclidean space, inverse of (-2, -2, 0) with respect to vector addition is","options":["(0, 0, 0)","(2, 2, 2)","(2, 2, 0)","(-2, -2, 0)"],"answer":2},{"question":"Let T: R⁴ → R⁴ be the linear transformation with null space of T = {(0,0,0,0)}. Then nullity of T is","options":["0","1","4","3"],"answer":0},{"question":"The dimension of the subspace of R³ spanned by {(2,0,1), (5,2,1), (1,2,-1)} is","options":["1","2","3","0"],"answer":2},{"question":"The column space of an m × n matrix is a subspace of","options":["Rⁿ","Rᵐ","Rᵐˣⁿ","R"],"answer":1},{"question":"Let T: R³ → R³ be the linear transformation with nullity of T = 1, then rank of T is","options":["1","2","3","0"],"answer":1},{"question":"If T: V → W is a linear transformation, which of the following statements is not true?","options":["T(0) = 0 for 0 ∈ V","T(-x) = -T(x) for x ∈ V","T(2x) = 2T(x) for x ∈ V","T(x+y) = T(x) - T(y)"],"answer":3},{"question":"The set W = {(a, b, 0): a, b ∈ R} is a subspace of","options":["R²","R(R)","R³","R⁴"],"answer":2},{"question":"A system of equation AX = b has solution if and only if","options":["b ∈ Null(A)","b ∈ Row(A)","b ∈ Col(A)","b ∈ R"],"answer":2},{"question":"Let T: R² → R² be the linear transformation defined by T(x,y) = (x, 0). Then the matrix of linear transformation with respect to standard basis is","options":["[[1,0],[0,1]]","[[1,0],[0,0]]","[[0,0],[0,1]]","[[0,1],[1,0]]"],"answer":1},{"question":"Two vectors u and v in Rⁿ are orthogonal if","options":["u·v = 1","u·v = 0","u×v = 0","u+v = 0"],"answer":1},{"question":"If a basis of a vector space has 3 elements, then dimension of the vector space is","options":["Less than 4","Greater than 3","3","Cannot be determined"],"answer":2},{"question":"The set of all solutions to the homogeneous equation system AX = 0, where A is an m × n matrix is","options":["Row space of A","Column space of A","Null space of A","Range of A"],"answer":2},{"question":"Let T: R² → R² be the linear transformation defined by T(x,y) = (0, y). Then matrix of linear transformation with respect to standard basis is","options":["[[1,0],[0,1]]","[[0,0],[0,1]]","[[1,0],[0,0]]","[[0,1],[1,0]]"],"answer":1},{"question":"If S = {v₁, v₂, ..., vₙ} is a set of vectors in a finite dimension vector space V, then S is called a basis for V if","options":["S spans V","S is linearly independent","Either (a) or (b)","S spans V and S is linearly independent"],"answer":3},{"question":"If the inner product of two vectors is zero then they are called","options":["Parallel vectors","Null vectors","Orthogonal vectors","Unit vectors"],"answer":2},{"question":"The matrix of linear transformation T(x, y) = (y, x) with respect to the standard basis is","options":["[[1,0],[0,1]]","[[0,1],[1,0]]","[[1,1],[0,0]]","[[0,0],[1,1]]"],"answer":1},{"question":"The quadratic form 3x₁² - 4x₁x₂ + 6x₂² is","options":["Positive definite","Positive semi-definite","Negative definite","Neither negative definite nor positive definite"],"answer":0},{"question":"In QR factorization of matrix A, Q is a matrix whose columns form an orthonormal basis for","options":["Null(A)","Col(A)","Row(A)","Both Null(A) and Row(A)"],"answer":1},{"question":"The quadratic form 3x² + 5y² + z² is","options":["Positive definite","Negative definite","Negative semi definite","Positive semi definite"],"answer":0},{"question":"In PCA, what are the principal components?","options":["Features of the data set","Eigen values of the covariance matrix","Eigen vectors of the covariance matrix","Data points in the data set"],"answer":2},{"question":"In PCA, what is the relationship between the first principal component and the second principal component?","options":["They are parallel","They are positively correlated","They are negatively correlated","They are orthogonal"],"answer":3}]};
-const CATALOG={
-    mp:{name:"Microprocessor & Embedded Systems",icon:"\u{1F5A5}\uFE0F",desc:"8086 Architecture, Addressing Modes & Instruction Set",unit:"UNIT 1"},
-    daa:{name:"Design & Analysis of Algorithms",icon:"\u26A1",desc:"Algorithm Analysis, Complexity & Divide-and-Conquer",unit:"UNIT 1"},
-    dbms:{name:"Database Management Systems",icon:"\u{1F5C4}\uFE0F",desc:"ER Model, Relational Algebra & SQL Fundamentals",unit:"UNIT 1"},
-    sepm:{name:"Software Engineering & Project Mgmt",icon:"\u{1F527}",desc:"Software Processes, SDLC Models & Requirements",unit:"UNIT 1"},
-    maths:{name:"Linear Algebra (Mathematics)",icon:"\u{1F4D0}",desc:"Matrices, Rank, Eigenvalues & Linear Transformations",unit:"UNIT 1"},
-    daa_unit2:{name:"DAA - Unit 2",icon:"⚡",desc:"Decrease & Conquer, DFS, BFS, Dynamic Programming",unit:"UNIT 2"},
-    dbms_unit2:{name:"DBMS - Unit 2",icon:"🗄️",desc:"SQL, Normalization, Functional Dependencies",unit:"UNIT 2"},
-    sepm_unit2:{name:"SEPM - Unit 2",icon:"🔧",desc:"UML Diagrams, Class Diagrams, Object Modeling",unit:"UNIT 2"},
-    mp_unit2:{name:"Microprocessor - Unit 2",icon:"🖥️",desc:"8086 Procedures, Macros, ARM, Arduino, Embedded Systems",unit:"UNIT 2"},
-    maths_unit2:{name:"Mathematics - Unit 2",icon:"📐",desc:"Vector Spaces, Linear Transformations, Eigenvalues, PCA",unit:"UNIT 2"},
-    daa_u2:{name:"DAA - Unit 2 (Old)",icon:"⚡",desc:"Decrease & Conquer, DFS, BFS, Dynamic Programming",unit:"UNIT 2"},
-    dbms_u2:{name:"DBMS - Unit 2 (Old)",icon:"🗄️",desc:"SQL, Normalization, Functional Dependencies",unit:"UNIT 2"},
-    maths_u2:{name:"Linear Algebra - Unit 2 (Old)",icon:"📐",desc:"Eigenvalues, Matrix Operations, Systems of Equations",unit:"UNIT 2"},
-    maths_la_u2_img:{name:"Maths LA Unit 2 (Images)",icon:"📊",desc:"Vector Spaces, Linear Transformations, Inner Products",unit:"UNIT 2"}
+const SUBJECTS = {
+  "dbms": [
+    {
+      "question": "Which of the following best describes a database?",
+      "options": [
+        "A collection of unrelated data",
+        "A structured collection of related data stored for retrieval",
+        "A set of tables without any relationships",
+        "A file system"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a benefit of using a database system?",
+      "options": [
+        "Data redundancy increases",
+        "Data sharing is not possible",
+        "Ensures data consistency",
+        "Higher dependency on files"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is not a characteristic of a database approach?",
+      "options": [
+        "Data abstraction",
+        "Program-data independence",
+        "Multiple View",
+        "Dependent file formats"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What does the three-schema architecture help achieve?",
+      "options": [
+        "Data redundancy",
+        "Data independence",
+        "Faster database access",
+        "Improved file handling"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which level of the three-schema architecture provides a user’s view of the database?",
+      "options": [
+        "Internal level",
+        "Conceptual level",
+        "External level",
+        "Physical level"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which type of independence is achieved when changes in the physical schema do not affect the logical schema?",
+      "options": [
+        "Logical independence",
+        "Physical independence",
+        "Data independence",
+        "None of the above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In ER-to-Relational mapping, what does each entity type translate into?",
+      "options": [
+        "A relationship",
+        "A foreign key",
+        "A table",
+        "A schema"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does a multi-valued attribute in ER model translate to in a relational model?",
+      "options": [
+        "A single table column",
+        "A separate table",
+        "A foreign key",
+        "A derived attribute"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In a database system, what is meant by “concurrency control”?",
+      "options": [
+        "Preventing data redundancy",
+        "Ensuring simultaneous access to data without conflicts",
+        "Backing up data regularly",
+        "Controlling user permissions"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which key is used to establish a relationship between two tables in a relational model?",
+      "options": [
+        "Primary key",
+        "Foreign key",
+        "Composite key",
+        "Surrogate key"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does an ER diagram represent?",
+      "options": [
+        "Relationships between files in a database",
+        "Data and relationships in a database",
+        "Hardware architecture of a database",
+        "The software used in a database"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which type of attribute cannot be divided into smaller parts?",
+      "options": [
+        "Composite attribute",
+        "Derived attribute",
+        "Multivalued attribute",
+        "Simple attribute"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "How are multi-valued attributes represented in an ER diagram?",
+      "options": [
+        "Ellipse",
+        "Double ellipse",
+        "Dashed ellipse",
+        "Rectangle"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following attributes is a derived attribute?",
+      "options": [
+        "Date of birth",
+        "Age",
+        "Name",
+        "Address"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which attribute in an ER diagram is unique for every entity?",
+      "options": [
+        "Foreign key",
+        "Primary key",
+        "Composite attribute",
+        "Multi-valued attribute"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is an example of a many-to-many relationship?",
+      "options": [
+        "A teacher teaches one class",
+        "A student enrolls in multiple courses, and a course has multiple students",
+        "A customer buys one product",
+        "A manager supervises one employee"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following uniquely identifies the elements in the relation?",
+      "options": [
+        "Secondary Key",
+        "Primary key",
+        "Foreign key",
+        "Composite key"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "______ is a special type of integrity constraint that relates two relations & maintains consistency across the relations.",
+      "options": [
+        "Entity Integrity Constraints",
+        "Referential Integrity Constraints",
+        "Domain Integrity Constraints",
+        "Domain Constraints"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Foreign key is the one in which the ________ of one relation is referenced by  another relation.",
+      "options": [
+        "Foreign key",
+        "Primary key",
+        "References",
+        "Check constraint"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "For each attribute of a relation, there is a set of permitted values, called the ________ of that attribute.",
+      "options": [
+        "Domain",
+        "Relation",
+        "Set",
+        "Schema"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The tuples of the relations can be of ________ order.",
+      "options": [
+        "Any",
+        "Same",
+        "Sorted",
+        "Constant"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let X(a, b, c, d) and Y(p,q r, s) be two relations in which a is foreign key of X that refers to primary key of Y. Which of the following operation causes referential integrity constraint violation?",
+      "options": [
+        "insert into Y",
+        "Delete from X",
+        "insert into X",
+        "All above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following operation do not violates domain constraints?",
+      "options": [
+        "Insert operation",
+        "Delete operation",
+        "Update operation",
+        "All above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following is a set of one or more attributes taken collectively to uniquely identify a record?",
+      "options": [
+        "Candidate key",
+        "Sub key",
+        "Super key",
+        "Foreign key"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is a correct statement regarding a relational schema?",
+      "options": [
+        "It defines the structure of data and the relationships between tables.",
+        "It only stores data, not metadata.",
+        "It refers to the actual data stored in the database.",
+        "It cannot include any constraints."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is a violation of a referential integrity constraint?",
+      "options": [
+        "Attempting to insert a duplicate value in a primary key column",
+        "Inserting a value into a foreign key column that does not exist in the primary key column of the referenced table",
+        "Updating a value in a foreign key column",
+        "All of the above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements is true about a primary key constraint?",
+      "options": [
+        "It allows duplicate values but ensures that each value is unique within the table.",
+        "It ensures that no two rows in a table can have the same value for the primary key attribute(s).",
+        "It can be null.",
+        "It can be created on any non-key column."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following operations are part of relational update operations?",
+      "options": [
+        "Insert",
+        "Delete",
+        "Update",
+        "All of the above"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is NOT a fundamental concept of the Relational Model?",
+      "options": [
+        "Relations",
+        "Tuples",
+        "Keys",
+        "Objects"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The relational algebra query language is ___.",
+      "options": [
+        "Analytical",
+        "Procedural",
+        "Symmetrical",
+        "Instrumental"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Relational Algebra, queries are performed using ___.",
+      "options": [
+        "Entities",
+        "Relationships",
+        "Operators",
+        "Objects"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For select operation the ________ appear in the subscript and the ___________ argument appears in the parenthesis after the sigma.",
+      "options": [
+        "Predicates, relation",
+        "Relation, Predicates",
+        "Operation, Predicates",
+        "Relation, Operation"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The select, project and rename operations are called____",
+      "options": [
+        "Binary operations",
+        "Ternary Operations",
+        "Unary operations",
+        "None of the above."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If in the JOIN operation, the conditions of JOIN operation are not satisfied then the results of the operation is",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The DIVISION operation can be applied to two relations A and B such as R(A)  ÷  R(B) where as",
+      "options": [
+        "A does not belong to B",
+        "A must be added to B",
+        "A belongs or equal to B",
+        "A must be subtracted from B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The operation which allows to process relationships from multiple relations rather than single relation is classified as",
+      "options": [
+        "division operation",
+        "relation operation",
+        "square operation",
+        "join operation"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The kind of operation by which one tuple can be created with the help of combining tuples from two relations is classified as",
+      "options": [
+        "square operation",
+        "join operation",
+        "division operation",
+        "relation operation"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The ________ clause is used to list the attributes desired in the result of a query.",
+      "options": [
+        "Where",
+        "Select",
+        "From",
+        "Distinct"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements contains an error?",
+      "options": [
+        "Select * from emp where empid = 10003;",
+        "Select empid from emp where empid = 10006;",
+        "Select empid from emp;",
+        "Select empid where empid = 1009 and lastname = ‘GELLER’;"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is a key concept of the Relational Model?",
+      "options": [
+        "Data is stored in hierarchical structure",
+        "Data is organized in tables (relations)",
+        "Data is stored in linked lists",
+        "Data is represented as objects"
+      ],
+      "answer": 1
+    }
+  ],
+  "sepm": [
+    {
+      "question": "Choose the correct option in terms of Issues related to professional responsibility",
+      "options": [
+        "Confidentiality",
+        "Intellectual property rights",
+        "Both Confidentiality & Intellectual property rights",
+        "Managing Client Relationships"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "“Software engineers should not use their technical skills to misuse other people’s computers.” Here the term misuse refers to:",
+      "options": [
+        "Unauthorized access to computer material",
+        "Unauthorized modification of computer material",
+        "Dissemination of viruses or other malware",
+        "All of the mentioned"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Explain what is meant by PRODUCT with reference to one of the eight principles as per the ACM/IEEE Code of Ethics ?",
+      "options": [
+        "The product should be easy to use",
+        "Software engineers shall ensure that their products and related modifications meet the highest professional standards possible",
+        "Software engineers shall ensure that their products and related modifications satisfy the client",
+        "It means that the product designed /created should be easily available"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Identify an ethical dilemma from the situations mentioned below:",
+      "options": [
+        "Your employer releases a safety-critical system without finishing the testing of the system",
+        "Refusing to undertake a project",
+        "Agreement in principle with the policies of senior management",
+        "All of the mentioned"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Identify the correct statement: “Software engineers shall",
+      "options": [
+        "act in a manner that is in the best interests of his expertise and favour.”",
+        "act consistently with the public interest.”",
+        "ensure that their products only meet the SRS.”",
+        "all of the mentioned"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Select the incorrect statement: “Software engineers should",
+      "options": [
+        "not knowingly accept work that is outside your competence.”",
+        "not use your technical skills to misuse other people’s computers.”",
+        "be dependent on their colleagues.”",
+        "maintain integrity and independence in their professional judgment.”"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Efficiency in a software product does not include",
+      "options": [
+        "responsiveness",
+        "licensing",
+        "memory utilization",
+        "processing time"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "As per an IBM report, “31% of the project get cancelled before they are completed, 53% overrun their cost estimates by an average of 189% and for every 100 projects, there are 94 restarts”. What is the reason for these statistics?",
+      "options": [
+        "Lack of adequate training in software engineering",
+        "Lack of software ethics and understanding",
+        "Management issues in the company",
+        "All of the mentioned"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following property does not correspond to a good Software Requirements Specification (SRS) ?",
+      "options": [
+        "Verifiable",
+        "Ambiguous",
+        "Complete",
+        "Traceable"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following is a functional requirement ?",
+      "options": [
+        "Maintainability",
+        "Portability",
+        "Robustness",
+        "Operations of the system"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "_______requirements capture the intended behavior of the system.",
+      "options": [
+        "Functional",
+        "Non-functional",
+        "Emergent",
+        "Quality"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The SRS document is also known as ____specification.",
+      "options": [
+        "black-box",
+        "white-box",
+        "grey-box",
+        "green-box"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Requirements should specify ___but not ‘how’.",
+      "options": [
+        "‘what’",
+        "‘how’",
+        "‘why’",
+        "‘which’"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Requirements Analysis is an ____Process.",
+      "options": [
+        "Iterative",
+        "Non-Iterative",
+        "Sequential",
+        "Unidirectional"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "SDLC stands for",
+      "options": [
+        "Software Development Life Cycle",
+        "System Development Life cycle",
+        "Software Design Life Cycle",
+        "System Design Life Cycle"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The spiral model was originally proposed by",
+      "options": [
+        "IBM",
+        "Barry Boehm",
+        "Pressman",
+        "Royce"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Compilers, Editors software come under which type of software?",
+      "options": [
+        "System software",
+        "Application software",
+        "Scientific software",
+        "Business Software"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is not defined in a good Software Requirement Specification (SRS) document?",
+      "options": [
+        "Functional Requirement.",
+        "Nonfunctional Requirement.",
+        "Goals of implementation.",
+        "Algorithm for software implementation."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Requirement engineering process includes which of these steps?",
+      "options": [
+        "Feasibility study",
+        "Requirement Gathering",
+        "Software Requirement specification & Validation",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If requirements are easily understandable and defined then which model is best suited?",
+      "options": [
+        "Spiral model",
+        "Waterfall model",
+        "Prototyping model",
+        "Incremental"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Software is defined as \t.",
+      "options": [
+        "Instructions",
+        "Data Structures",
+        "Documents",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is the meaning of requirement elicitation in software engineering?",
+      "options": [
+        "Gathering of requirement.",
+        "Understanding of requirement.",
+        "Getting the requirements from client.",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which is not a step of Requirement Engineering?",
+      "options": [
+        "Requirements elicitation",
+        "Requirements analysis",
+        "Requirements design",
+        "Requirements documentation"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Find out which phase is not available in SDLC?",
+      "options": [
+        "Coding",
+        "Testing",
+        "Maintenance",
+        "Abstraction"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is/are considered stakeholder in the software process?",
+      "options": [
+        "Customers",
+        "End-users",
+        "Project managers",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The process together the software requirements from Client, Analyze and Document is known as____.",
+      "options": [
+        "Requirement engineering process",
+        "Requirement elicitation process",
+        "User interface requirements",
+        "Software system analyst"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For the best Software model suitable for the project, in which of the phase the developers decide a roadmap for project plan?",
+      "options": [
+        "Software Design",
+        "System Analysis",
+        "Coding",
+        "Testing"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of these primary objectives have to be achieved for the requirement model?",
+      "options": [
+        "To describe what the customer requires",
+        "To establish a basis for the creation of a software design",
+        "To define a set of requirements that can be validated",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Design phase is followed by \t.",
+      "options": [
+        "Coding",
+        "Testing",
+        "Maintenance",
+        "Analysis"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Project risk factor is considered in which model?",
+      "options": [
+        "Spiral model.",
+        "Waterfall model.",
+        "Prototyping model",
+        "Incremental"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Abbreviate the term SRS.",
+      "options": [
+        "Software Requirement Specification",
+        "Software Refining Solution",
+        "Software Resource Source",
+        "Software Service"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An SRS",
+      "options": [
+        "establishes the basis for agreement between client and the supplier.",
+        "provides a reference for validation of the final product.",
+        "is a prerequisite to high quality software.",
+        "All choices are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Main aim of software engineering is to produce",
+      "options": [
+        "program",
+        "software",
+        "within budget",
+        "software within budget in the given schedule"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Reliability of software is directly dependent on",
+      "options": [
+        "quality of the design",
+        "number of errors present",
+        "software engineers experience",
+        "user requirement"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Working software is not available until late in the process in",
+      "options": [
+        "Waterfall model",
+        "Prototyping model",
+        "Incremental model",
+        "Evolutionary Development model"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The major shortcoming of waterfall model is",
+      "options": [
+        "the difficulty in accommodating changes after requirement analysis.",
+        "the difficult in accommodating changes after feasibility analysis.",
+        "the system testing.",
+        "the maintenance of system."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is not included in waterfall model ?",
+      "options": [
+        "Requirement analysis",
+        "Risk analysis",
+        "Design",
+        "Coding"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Software Engineering is an engineering discipline that is concerned with:",
+      "options": [
+        "how computer systems work",
+        "theories and methods that underlie computers and software systems",
+        "all aspects of software production",
+        "all aspects of computer-based systems development, including hardware, software and process engineering"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which process model is also called as classic life cycle model?",
+      "options": [
+        "Waterfall model",
+        "RAD model",
+        "Prototyping model",
+        "Incremental model"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Requirements prioritization and negotiation belongs to :",
+      "options": [
+        "Requirements validation",
+        "Requirements elicitation",
+        "Feasibility study",
+        "Requirements reviews"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Select the most appropriate statement about software engineering.",
+      "options": [
+        ".\tHas been around as a discipline since the early 50’s",
+        ".\tIs a set of rules about developing software products",
+        ".\tNone of these choices",
+        ".\tIs an engineering discipline concerned with all the aspects of software production"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Who proposed the spiral model?",
+      "options": [
+        "Barry Boehm",
+        "Pressman",
+        "Royce",
+        "IBM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following document contains the user system requirements?",
+      "options": [
+        "SRD",
+        "DDD",
+        "SDD",
+        "SRS"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Software engineering is intended to support \tsoftware development.",
+      "options": [
+        "professional",
+        "individual programming",
+        "personal programming",
+        "unstructured"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Good software should deliver the required ___ and___ to the user and should be maintainable, dependable, and usable.",
+      "options": [
+        "non-functionality and performance",
+        "functionality and performance",
+        "unreliable and underperformance",
+        "functionality and non-availability"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "______, where customers and engineers define the software that is to be produced and the constraints on its operation.",
+      "options": [
+        "Software development",
+        "Software validation",
+        "Software specification",
+        "Software evolution"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The waterfall model is an example of a  process__in principle, you must plan and schedule all of the process activities before starting work on them.",
+      "options": [
+        "incremental",
+        "non plan-driven",
+        "unstructured",
+        "plan-driven"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "By developing the software ___, it is cheaper and easier to make changes in the software as it is being developed.",
+      "options": [
+        "incrementally",
+        "non concurrently",
+        "structured",
+        "plan-driven"
+      ],
+      "answer": 0
+    }
+  ],
+  "maths": [
+    {
+      "question": "Rank of an identity matrix of order 4 is___________________",
+      "options": [
+        "4",
+        "3",
+        "1",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "System of equations AX=B has solutions if",
+      "options": [
+        "Rank[A] = number of unknowns",
+        "Rank[A] = Rank[A│B]≤ number of unknowns",
+        "Rank[A] ≠ number of unknowns",
+        "Rank[A] ≠ Rank[A│B]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "System AX=0 has nontrivial solution if and only if",
+      "options": [
+        "Determinant of A=Determinant of X",
+        "Determinant of A =0",
+        "Rank[A] ≠ Rank[A│B]",
+        "Determinant of A ≠ 0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statements is incorrect?",
+      "options": [
+        "Rank of a matrix A is the number of nonzero rows in its echelon form",
+        "Rank of a matrix A is equal to number of pivot columns in it.",
+        "Rank of a matrix A is number of free variables in the system AX=B",
+        "Rank of a matrix A is number of basic variables in the system AX=B"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If [𝐴: 𝐵] = [ 2 3 −1 ∶ 5 0 1 3  ∶−1 0 0 𝑘 3 −6 ∶ 5 ]  then the value of k  for which the system is inconsistent is___________",
+      "options": [
+        "18",
+        "-18",
+        "6",
+        "-6"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "System of equations AX=B has infinite number of solutions if",
+      "options": [
+        "Rank[A] = Rank[A│B] = number of unknowns",
+        "Rank[A] = Rank[A│B] < number of unknowns",
+        "Rank[A] ≠ Rank[A│B]",
+        "Rank[A] = Rank[A│B] > number of unknowns"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "then 𝑡𝑟(𝐴𝐴𝑇) is",
+      "options": [
+        "21",
+        "22",
+        "3",
+        "26"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In the LU factorization of 𝐴= [ 3 −7 −2 −3 5 1 6 −4 0 ], the matrix U is",
+      "options": [
+        "𝐴= [ 3 7 2 0 −2 −1 0 0 −1 ]",
+        "𝐴= [ 3 −7 −2 0 −2 2 0 0 −1 ]",
+        "𝐴= [ 3 −7 −2 0 −2 −1 0 0 −1 ]",
+        "𝐴= [ 3 −7 −2 0 5 1 0 0 0 ]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The eigen values of 𝐴= [ 5 6 17 0 −19 23 0 0 37 ]are",
+      "options": [
+        "-19, 37, 5",
+        "2, −3,7 2",
+        "5, 19, 37",
+        "0, 5 ,17"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The eigen values of 𝐴= [ 2 4 −6 0 3 6 0 0 3 ] are",
+      "options": [
+        "2,2,4",
+        "2,3,2",
+        "1,3,4",
+        "2,3,3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A 𝑛× 𝑛 matrix A is diagonalizable if and only if",
+      "options": [
+        "A has n distinct eigen values",
+        "A has repeated eigen vectors",
+        "A has repeated eigen values",
+        "A has linearly independent eigen vectors"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If  𝐴= [1 2 3 4] , 𝐵= [ 5 2 −1 3]then  𝑡𝑟(𝐵−1𝐴𝐵) is",
+      "options": [
+        "4",
+        "5",
+        "10",
+        "8"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If  𝐴= [−1 2 3 −3]then 𝑡𝑟(𝐴𝐴𝑇) is",
+      "options": [
+        "23",
+        "10",
+        "1",
+        "22"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Eigen value of a triangular matrix A are",
+      "options": [
+        "diagonal element of A",
+        "sum of diagonal element of A",
+        "Determinant of A",
+        "Trace of A"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Eigen values of  A= [4 1 1 4] are",
+      "options": [
+        "3,-3",
+        "-3,-5",
+        "3,5",
+        "5,0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝐴= [ 3 10 5 −2 −3 −4 3 5 7 ], the eigen value 𝜆1 = 2, 𝜆2 = 3 and 𝜆3 = ___________",
+      "options": [
+        "3",
+        "2",
+        "5",
+        "7"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The eigen vectors of the matrix A is the nontrivial solution of the equation ________________",
+      "options": [
+        "𝐴𝑋= 0",
+        "𝐴𝑋= 𝐵",
+        "𝐴𝑋= 𝜆𝑋",
+        "none"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If  𝐴= [ 1 3 2 5 6 −1 2 −2 3 ]  𝐵= [ −6 2 5 2 1 8 4 −2 2 ] then tr(A-B) is",
+      "options": [
+        "1",
+        "12",
+        "13",
+        "7"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If A is a square matrix, then det (A)=",
+      "options": [
+        "sum of the eigen values of A",
+        "product of eigen values of A",
+        "product of diagonal elements of A",
+        "sum of diagonal elements of A"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The sum of the eigen  values  of    [ 1 1 3 1 5 1 3 −1 −1 ] is",
+      "options": [
+        "-2",
+        "3",
+        "6",
+        "5 3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝐴= [ 2 1 1 1 2 1 0 0 1 ], then eigen values of A are  𝜆1 = 1, 𝜆2 = 3 and 𝜆3 = ___________",
+      "options": [
+        "-2",
+        "1",
+        "2",
+        "-1"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝐴 be an 𝑛× 𝑛 matrix, then 𝐴 is diagonalizable if and only if",
+      "options": [
+        "𝐴 has linearly dependent eigen vectors.",
+        "𝐴 has n linearly independent columns.",
+        "𝐴 has n linearly independent eigen vectors.",
+        "𝐴 has (n-1) linearly independent eigen vectors."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For which value of 𝑘 the system of two equations 𝑥+ 𝑦= 1 2𝑥+ 2𝑦= 𝑘   has infinite solutions:",
+      "options": [
+        "𝑘= 0",
+        "𝑘= 1",
+        "𝑘= 2",
+        "any value of 𝑘≠1"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The eigen values of  𝐴= [3 2 3 8] are",
+      "options": [
+        "7,4",
+        "9,2",
+        "8,3",
+        "6,5"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Spectrum of the matrix [ 1 0 0 0 2 0 0 0 3 ]  is:",
+      "options": [
+        "{ 3, 2, 1}",
+        "{1, 3, 1}",
+        "{0, 0, 6}",
+        "{2, 3, 0}"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝐴= [ 8 −6 2 −6 7 −4 2 −4 3 ] and 𝐵= [ −2 2 −3 2 1 −6 −1 −2 0 ], then 𝑡𝑟(𝐴+ 𝐵) is",
+      "options": [
+        "19",
+        "17",
+        "20",
+        "21"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statements are/is correct for the system 𝐴𝑋= 𝐵,   𝑤ℎ𝑒𝑛 𝐴 𝑖𝑠 𝑎  3 × 4 matrix of rank 2. I. Matrix 𝐴 has 2 non-pivot columns. II.System 𝐴𝑋= 𝐵 has 2 basic variables.",
+      "options": [
+        "Only I is correct",
+        "Only II is correct",
+        "Both are correct",
+        "Both are not true"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If A is 3 × 4  matrix the maximum possible value of the rank A is",
+      "options": [
+        "4",
+        "3",
+        "2",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If a matrix A is reduced to row echelon form, then rank of the matrix is",
+      "options": [
+        "number of zero rows",
+        "number of non-zero rows",
+        "total number of rows",
+        "total number of columns"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The characteristic equation of the matrix   𝐴= [2 0 4 7] is:",
+      "options": [
+        "𝜆2 −9𝜆+ 14 = 0",
+        "𝜆2 −14𝜆+ 9 = 0",
+        "𝜆2 −9𝜆−14 = 0",
+        "𝜆2 −14𝜆−9 = 0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statement is correct I.  Trace of the square matrix is equal to product of eigenvalues II. Trace of the square matrix is equal to sum of diagonal entries of the matrix.",
+      "options": [
+        "only I is true",
+        "only II is true",
+        "both I and II are true",
+        "neither I nor II is true."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the LU factorization of a matrix A is A=LU where A=[ 2 5 −3 −4] then U is",
+      "options": [
+        "[2 5 0 7]",
+        "[ 1 4 −5 1]",
+        "[2 5 1 7]",
+        "[ 1 4 −7/2 1]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following method is not used to find the solution of the system of equations:",
+      "options": [
+        "Gauss elimination method",
+        "Gauss seidel method",
+        "Rayleigh’s power method",
+        "LU decomposition method"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The value of h for which the augmented matrix     − − − 7 2 3 5 1 h of a linear system is inconsistent",
+      "options": [
+        "ℎ= −15",
+        "ℎ≠ −15",
+        "ℎ= 5",
+        "ℎ= −1"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Number of pivot columns in the matrix  [ 0 0 1 0 2 0 1 0 1 0 0 0 ] is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following vector is an eigen vector of the matrix [ 1 2 −1 4] ∶",
+      "options": [
+        "[1 1]",
+        "[1 2]",
+        "[0 0]",
+        "[0 1] UNIT II"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If {𝑢1, 𝑢2, . . . . . . . . . , 𝑢𝑛}is linearly independent  set, then 𝑐1𝑢1 + 𝑐2𝑢2+. . . . . . +𝑐𝑛𝑢𝑛= 0   has",
+      "options": [
+        "infinitely many solutions",
+        "unique nonzero solution",
+        "unique zero solution",
+        "both B and C are possible"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The row space of an 𝑚× 𝑛 matrix A is a subspace of",
+      "options": [
+        "𝑅𝑛",
+        "A",
+        "𝑅𝑚",
+        "R"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In two dimensional Euclidean space identity element with respect to vector addition is",
+      "options": [
+        "(1,1)",
+        "(0,0)",
+        "(-1,-1)",
+        "doesn’t exists 5"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In three dimensional Euclidean space inverse of (-2,-2,0) with respect to vector addition is",
+      "options": [
+        "(0,0,0)",
+        "(2,2,2)",
+        "(2,2,-2)",
+        "(2,2,0)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝑇: 𝑅4 →𝑅4be the linear transformation with null space of T={(0,0,0,0)} . Then nullity of T is",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "2"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The dimension of the subspace of 𝑅3 spanned by {(2,0,1), (5,2,1), (1,2, −1)} is",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝑇: 𝑅3 →𝑅3 be the linear transformation with nullity of T is 1 then rank of T is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If 𝑇: 𝑉→𝑊 is a linear transformation, which of the following statements  is not true?",
+      "options": [
+        "𝑇(𝑥𝑦) = 𝑇(𝑥)𝑇(𝑦)∀𝑥, 𝑦∈𝑉",
+        "𝑇(−𝑥) = −𝑇(𝑥)∀𝑥∈𝑉",
+        "𝑇(0) = 0 𝑓𝑜𝑟 0 ∈𝑉",
+        "𝑇(2𝑥) = 2𝑇(𝑥)∀𝑥∈𝑉"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The set 𝑊= {(𝑎, 0,0): 𝑎, 𝑏 𝜖𝑅} is  a subspace of .",
+      "options": [
+        "𝑅2(𝑅)",
+        "𝑅(𝑅)",
+        "𝑅3(𝑅)",
+        "𝑅4(𝑅)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If 𝑢= [1 2] , 𝑣= [−5 7 ] then inner product of 𝑢and 𝑣 is",
+      "options": [
+        "9",
+        "19",
+        "-3",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A system of equation 𝐴𝑋= 𝑏 has solution if and only if",
+      "options": [
+        "𝑏 ∈𝐶𝑜𝑙(𝐴)",
+        "𝑏 ∈𝑅𝑜𝑤(𝐴)",
+        "𝑏 ∈𝑁𝑢𝑙𝑙(𝐴)",
+        "𝑏 ∈𝐶𝑜𝑙(𝐴) and  𝑏 ∈𝑅𝑜𝑤(𝐴)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝑇: 𝑅2 →𝑅2 be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0), then the matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "[0 1 0 1]",
+        "[0 −1 0 1 ]",
+        "[1 0 0 0]",
+        "[1 0 0 1]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statement is not true if 𝑇: 𝑈→𝑉is a  linear transformation",
+      "options": [
+        "Range space of T is a subspace of V",
+        "Null space of T is a subspace of U",
+        "V is always the range of T",
+        "None"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Two vectors 𝑢 and 𝑣  in 𝑅𝑛 are orthogonal if",
+      "options": [
+        "𝑢. 𝑣= 𝑣. 𝑢",
+        "𝑢. 𝑣= 1 6",
+        "𝑢. 𝑣≥0",
+        "𝒖. 𝒗= 𝟎"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If 𝑢= [ 2 3 −5 ] , 𝑣= [ 2 0 −3 ]then inner product of 𝑢and 𝑣 is",
+      "options": [
+        "-5",
+        "-11",
+        "19",
+        "11"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If a basis of a vector space has 3 elements, then dimension of the vector space is_______",
+      "options": [
+        "less than 4",
+        "greater than 3",
+        "3",
+        "0"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If 𝑣= [1 1 1 −1]𝑇 then normalized form of 𝑣 is",
+      "options": [
+        "[ 1 √2 1 √2 1 √2 −1 √2] 𝑇",
+        "[ 1 √3 1 √3 1 √3 −1 √3] 𝑇",
+        "[ 1 2 1 2 1 2 −1 2 ] 𝑇",
+        "[1 1 1 1]𝑇"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝑇: 𝑅2 →𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (𝑥, 0). The null space of T is",
+      "options": [
+        "{(x, 0)}",
+        "{(0, y)}",
+        "{(0, x)}",
+        "{(0, 0)}"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The set of all solution to the homogeneous equation system 𝐴𝑋= 0, where A be an 𝑚× 𝑛 matrix is",
+      "options": [
+        "Null space of A",
+        "Column space of A",
+        "Row space of A",
+        "Null space of A and column space of A"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following are linear combination of u= (0,-2,2) and v=(1,3,-1)?",
+      "options": [
+        "(1,0,0)",
+        "(2,2,2)",
+        "both (a) &(b)",
+        "neither (a) nor (b)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝑇: 𝑅2 →𝑅2be the linear transformation defined by 𝑇(𝑥, 𝑦) = (0, 𝑦).Then matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "[0 0 0 1]",
+        "[0 −1 0 −1]",
+        "[1 0 0 0]",
+        "[−1 0 0 0]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If   nv v v S ,... , 2 1 = is a set of vectors in a finite dimension vector space V , then S is called a basis for V if",
+      "options": [
+        "S  spans  V",
+        "S is linearly independent",
+        "either (a) or (b)",
+        "both (a) and (b)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Let 𝑇: 𝑅4 →𝑅4be the linear transformation defined by 𝑇(𝑥1, 𝑥2, 𝑥3, 𝑥4) = (𝑥2, 𝑥3, 0,0). Then null space of T consist of vectors of the form",
+      "options": [
+        "(0,0, 𝑥2, 𝑥3)",
+        "(𝑥1, 0,0,0)",
+        "(𝑥1, 0,0, 𝑥4)",
+        "(𝑥1, 𝑥1, 𝑥3, 0)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The quadratic form 3𝑥1 2 −4𝑥1𝑥2 + 6𝑥2 2 is",
+      "options": [
+        "Positive definite",
+        "Positive semi definite",
+        "Negative definite",
+        "Neither negative definite nor positive definite"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In QR factorization of matrix A, Q is a matrix whose columns form an orthonormal basis for",
+      "options": [
+        "Col A",
+        "Null(A)",
+        "Row(A)",
+        "both Null(A) and Row(A)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The matrix of the quadratic form 𝑄(𝑋) = 5𝑥1 2 + 5𝑥2 2 −4𝑥1𝑥2 is",
+      "options": [
+        "[ 5 −2 −2 5 ]",
+        "[5 2 2 5]",
+        "[5 4 4 5]",
+        "[ 5 −4 −4 5 ]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The quadratic form  3𝑥2 + 5𝑦2 + 𝑧2 is",
+      "options": [
+        "Positive definite",
+        "Negative definite",
+        "Negative semi definite",
+        "Positive semi definite"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In PCA, what are the principal components",
+      "options": [
+        "Features of the data set",
+        "Eigen values of the covariance matrix",
+        "Eigen vectors",
+        "Data points in the data set"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In PCA, what is the relationship between the first principal component and the second principal component",
+      "options": [
+        "They are orthogonal to each other",
+        "They are positively correlated",
+        "They are negatively correlated",
+        "There is no defined relationship between them"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The matrix of the quadratic form 4𝑥1𝑥2 + 6𝑥1𝑥3 −8𝑥2𝑥3 8",
+      "options": [
+        "[ 0 2 2 2 0 −4 2 −4 0 ]",
+        "[ 0 1 3 2 0 −4 3 −4 0 ]",
+        "[ 1 2 3 2 1 −4 3 −4 1 ]",
+        "[ 0 2 3 2 0 −4 3 −4 0 ]"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A quadratic form Q(x) is semi positive definite if",
+      "options": [
+        "𝑄(𝑥) > 0 for all 𝑥≠0",
+        "𝑄(𝑥) ≥0 for all x",
+        "𝑄(𝑥) < 0 for all 𝑥≠0",
+        "𝑄(𝑥) ≤0 for all 𝑥"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "and 𝑥= [𝑥1 𝑥2], then 𝑥𝑇𝐴𝑥 is",
+      "options": [
+        "4𝑥1 2 + 3𝑥2 2",
+        "2𝑥1 2 + 3𝑥2 2 + 7𝑥1𝑥2",
+        "2𝑥1 2 + 3𝑥2 2 −7𝑥1𝑥2",
+        "2𝑥1 2 + 3𝑥2 2"
+      ],
+      "answer": 0
+    }
+  ],
+  "daa_unit2": [
+    {
+      "question": "What is the primary idea behind the 'Decrease and Conquer' technique?",
+      "options": [
+        "Increase the problem size incrementally",
+        "Solve the entire problem in one step",
+        "Reduce the problem size at each step and solve it recursively",
+        "Divide the problem into multiple subproblems of equal size"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is a characteristic of the 'Decrease and Conquer' method?",
+      "options": [
+        "It always involves dividing the problem into two equal parts",
+        "It solves the problem by repeatedly reducing it to a smaller subproblem",
+        "It uses dynamic programming to store intermediate results",
+        "It is only applicable to sorting problems"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Insertion Sort, the problem size is reduced by:",
+      "options": [
+        "Splitting the array into two parts of equal size",
+        "Sorting only the largest element in each iteration",
+        "Sorting a single element at a time",
+        "Exchanging adjacent elements"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which algorithm uses a variable-size decrease approach?",
+      "options": [
+        "Exponentiation by squaring",
+        "Binary search",
+        "Euclid's algorithm",
+        "Insertion sort"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Binary Search is a classic example of which variation of Decrease and Conquer?",
+      "options": [
+        "Decrease by a constant",
+        "Decrease by a constant factor",
+        "Decrease by one",
+        "Divide and conquer"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What type of data structure is used in Depth-First Search (DFS)?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Priority Queue",
+        "Heap"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "DFS is more suitable than BFS for which of the following?",
+      "options": [
+        "Finding the shortest path in an unweighted graph",
+        "Exploring all vertices in a level-by-level manner",
+        "Detecting cycles in a graph",
+        "Solving shortest path problems in weighted graphs"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the key difference between BFS and DFS in their approach?",
+      "options": [
+        "BFS uses a stack; DFS uses a queue",
+        "BFS explores neighbors level by level; DFS explores as deep as possible along one branch",
+        "BFS works only on trees; DFS works only on graphs",
+        "BFS is recursive; DFS is iterative"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is true for BFS?",
+      "options": [
+        "It always uses recursion",
+        "It can handle graphs with cycles by avoiding revisits using a 'visited' array",
+        "It cannot be used to check graph connectivity",
+        "It is suitable only for weighted graphs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following problems can be solved using DFS?",
+      "options": [
+        "Finding connected components in a graph",
+        "Finding the shortest path in an unweighted graph",
+        "Topological sorting of a directed acyclic graph (DAG)",
+        "Both a and c"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is the primary application of topological sorting?",
+      "options": [
+        "Finding the shortest path in a graph",
+        "Sorting a list of elements in ascending order",
+        "Ordering the vertices of a directed acyclic graph (DAG) such that for every edge (u,v), vertex u comes before vertex v",
+        "Finding the minimum spanning tree of a graph"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is a necessary condition for a graph to have a topological sorting?",
+      "options": [
+        "The graph must be a tree",
+        "The graph must be a DAG",
+        "The graph must be a complete graph",
+        "The graph must be a bipartite graph"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the time complexity of the topological sorting algorithm using Kahn's algorithm?",
+      "options": [
+        "O(V + E)",
+        "O(V * E)",
+        "O(E^2)",
+        "O(V^2)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is a correct statement about topological sorting?",
+      "options": [
+        "Topological sorting is only possible for graphs with a single source vertex",
+        "Topological sorting is only possible for graphs with a single sink vertex",
+        "Topological sorting can be performed on any DAG",
+        "Topological sorting can only be performed on graphs with a single cycle"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What happens if a graph has a cycle and we try to perform topological sorting on it?",
+      "options": [
+        "The algorithm will produce a correct topological sorting",
+        "The algorithm will produce an incorrect topological sorting",
+        "The algorithm will detect the cycle and report an error",
+        "The algorithm will go into an infinite loop"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is an example of the Transform and Conquer method?",
+      "options": [
+        "Merge Sort",
+        "Binary search",
+        "Matrix multiplication",
+        "Heap sort"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What operation is performed on an AVL tree when the balance factor of a node becomes greater than 1 or less than -1?",
+      "options": [
+        "Rotation",
+        "Deletion",
+        "Insertion",
+        "Search"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the condition for a binary search tree to be considered an AVL tree?",
+      "options": [
+        "The height of the left subtree and the right subtree of every node differs by at most 2",
+        "The height of the left subtree and the right subtree of every node differs by at most 1",
+        "The height of the left subtree and the right subtree of every node is always equal",
+        "The height of the left subtree and the right subtree of every node differs by at least 1"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the time complexity of search, insert, and delete operations in a 2-3 tree?",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(nlogn)",
+        "O(2^n)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What happens when a node in a 2-3 tree is split due to the insertion of a new key?",
+      "options": [
+        "The node is replaced by two new nodes, each with one key",
+        "The node is replaced by three new nodes, each with one key",
+        "The node is not split, and the new key is added to the existing node",
+        "The node is replaced by two new nodes, each with one or two keys"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In a max-heap, which of the following is true?",
+      "options": [
+        "The parent node is smaller than its child nodes",
+        "The parent node is greater than or equal to its child nodes",
+        "The tree is a binary search tree",
+        "The elements are stored in ascending order"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the time complexity to build and heapify a heap of n elements?",
+      "options": [
+        "O(n log n)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "You are given an array: [3, 9, 2, 1, 4, 8]. After building a max-heap from this array, what will be the root element?",
+      "options": [
+        "1",
+        "9",
+        "2",
+        "8"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following applications is a heap NOT suited for?",
+      "options": [
+        "Implementing a priority queue",
+        "Finding the median of a data stream",
+        "Sorting data in ascending order",
+        "Depth-first search of a graph"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is NOT true about heap sort?",
+      "options": [
+        "It is an in-place sorting algorithm",
+        "It is a stable sorting algorithm",
+        "It has a time complexity of O(n log n)",
+        "It uses the heap data structure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What makes Counting Sort a distribution-based algorithm?",
+      "options": [
+        "It uses element frequencies to determine sorted positions",
+        "It divides the array into smaller subarrays",
+        "It recursively splits and merges data",
+        "It compares each pair of elements to sort the array"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which sorting algorithm explicitly trades off space for time by using extra space to count occurrences of elements?",
+      "options": [
+        "Merge Sort",
+        "Bubble sort",
+        "Counting Sort",
+        "Quick sort"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the time complexity of distribution counting sort?",
+      "options": [
+        "Θ(n²)",
+        "Θ(n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the time complexity of comparison counting sort?",
+      "options": [
+        "Θ(n²)",
+        "O(n)",
+        "O(n²)",
+        "Θ(n)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Sorting by counting trades off space for time efficiency by:",
+      "options": [
+        "Using recursion to divide the array into smaller parts",
+        "Allocating extra memory for the frequency and cumulative arrays",
+        "Avoiding comparisons between elements",
+        "Reducing the overall size of the input array"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Horspool's algorithm, when the last character of the pattern does not match the text, what action does the algorithm take?",
+      "options": [
+        "Shift the pattern by 1 character to the right",
+        "Perform a full re-check from the beginning of the pattern",
+        "Shift the pattern by the value stored for the text character in the shift table",
+        "Abort the search"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In Horspool's algorithm, when does the algorithm perform a full comparison of the pattern with the text?",
+      "options": [
+        "Every time a mismatch occurs",
+        "Only when a match is found",
+        "Only when the shift table suggests no shift",
+        "Initially, when the first character in the pattern is compared with the first character of the text"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Horspool's algorithm, what is the primary purpose of the shift table?",
+      "options": [
+        "To store the indices of pattern matches",
+        "To store the positions of all characters in the pattern",
+        "To store the number of shifts required for each character in the pattern",
+        "To store the hash values of pattern characters"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the primary advantage of Horspool's algorithm over the naive string matching algorithm?",
+      "options": [
+        "It guarantees finding all occurrences in linear time",
+        "It uses a precomputed shift table to skip unnecessary comparisons",
+        "It always matches patterns in fewer comparisons than the naive algorithm",
+        "It works in constant space"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is an example of a problem that can be solved using dynamic programming?",
+      "options": [
+        "Binary search",
+        "Knapsack problem",
+        "Merge sort",
+        "Depth First Search"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In dynamic programming, the solution to a problem is built up from:",
+      "options": [
+        "A single recursive call",
+        "A series of overlapping subproblems",
+        "A greedy approach",
+        "A divide and conquer method"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When solving a problem using dynamic programming, what is the role of 'optimal substructure'?",
+      "options": [
+        "It ensures that solving subproblems will always result in the correct solution for the entire problem",
+        "It guarantees that the problem can be solved in constant time",
+        "It allows for efficient recursion without overlapping subproblems",
+        "It simplifies the problem by eliminating unnecessary subproblems"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the time complexity of solving the 0/1 knapsack problem using dynamic programming with an array-based approach?",
+      "options": [
+        "O(n²)",
+        "O(n * W) where n is the number of items and W is the maximum weight",
+        "O(W)",
+        "O(n)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does the term 'overlapping subproblems' refer to in dynamic programming?",
+      "options": [
+        "Problems that can be solved using greedy algorithms",
+        "Subproblems that appear multiple times in the recursive solution",
+        "Subproblems that are completely independent",
+        "Subproblems that cannot be solved independently"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the primary purpose of the Floyd-Warshall algorithm?",
+      "options": [
+        "Finding the shortest path between two specific nodes",
+        "Finding the shortest paths between all pairs of nodes in a graph",
+        "Finding the minimum spanning tree of a graph",
+        "Finding the longest path in a weighted graph"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which type of graph is required for the Floyd-Warshall algorithm?",
+      "options": [
+        "Directed or undirected weighted graphs",
+        "Only directed weighted graphs",
+        "Only undirected graphs",
+        "Only acyclic graphs"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How does the Floyd-Warshall algorithm handle negative weight cycles?",
+      "options": [
+        "It detects them and stops execution",
+        "It ignores them and continues finding shortest paths",
+        "It gives incorrect results",
+        "It runs indefinitely"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which technique is used to solve the 0/1 Knapsack problem efficiently?",
+      "options": [
+        "Greedy algorithm",
+        "Divide and conquer",
+        "Dynamic programming",
+        "Depth-first search"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does the Floyd-Warshall algorithm store in its intermediate matrix?",
+      "options": [
+        "Edge weights only",
+        "Shortest path distances",
+        "Number of edges in the shortest path",
+        "The longest path in the graph"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a major limitation of the Floyd-Warshall algorithm?",
+      "options": [
+        "Cannot handle negative weights",
+        "High space complexity",
+        "Cannot find shortest paths for undirected graphs",
+        "Cannot find shortest paths for large graphs efficiently"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the space complexity of the Floyd-Warshall algorithm?",
+      "options": [
+        "O(V)",
+        "O(V²)",
+        "O(V³)",
+        "O(V log V)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the Knapsack problem primarily used for?",
+      "options": [
+        "Finding the shortest path in a graph",
+        "Maximizing the value of items in a knapsack without exceeding its capacity",
+        "Sorting a list of items",
+        "Finding the minimum spanning tree"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is true about memory function?",
+      "options": [
+        "It is a top-down approach",
+        "It is a bottom-up approach",
+        "It does not use recursion",
+        "It is only applicable to sorting algorithms"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following problems can be solved using memory function?",
+      "options": [
+        "0/1 Knapsack algorithms",
+        "Travelling salesman problem",
+        "Job assignment",
+        "All of the above"
+      ],
+      "answer": 3
+    }
+  ],
+  "dbms_unit2": [
+    {
+      "question": "What SQL statement would you use to create SQL database named Test?",
+      "options": [
+        "CREATE DBT Test;",
+        "CREATE Test",
+        "CREATE DATABASE Test;",
+        "MAKE DATABASE Test;"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which SQL statement is used to retrieve data from a database?",
+      "options": [
+        "Update",
+        "SELECT",
+        "Insert",
+        "Delete"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Identify the error in 'ALTER TABLE Students DROP COLUMN DateOfBirth date;'",
+      "options": [
+        "ALTER TABLE",
+        "DROP COLUMN",
+        "DateOfBirth",
+        "date"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following is not a class of constraint in SQL Server?",
+      "options": [
+        "NOT NULL",
+        "CHECK",
+        "NULL",
+        "UNIQUE"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Purpose of foreign key constraint in SQL Server is ___",
+      "options": [
+        "FOREIGN KEY constraints identify and enforce the relationships between tables",
+        "A foreign key in one table points to a candidate key in another table",
+        "You cannot insert a row with a foreign key value, except NULL, if there is no candidate key with that value",
+        "Foreign keys allow for NULL as one of the unique values"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the constraint can be enforced one per table?",
+      "options": [
+        "primary key constraint",
+        "Not Null constraint",
+        "Foreign Key constraint",
+        "Check constraint"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "___ is a special type of integrity constraint that relates two relations & maintains consistency across the relations.",
+      "options": [
+        "Entity Integrity Constraints",
+        "Referential Integrity Constraints",
+        "Domain Integrity Constraints",
+        "Domain Constraints"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Drop Table cannot be used to drop a table referenced by a ___ constraint.",
+      "options": [
+        "Local Key",
+        "Primary Key",
+        "Composite Key",
+        "Foreign Key"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "How many Primary keys can have in a table?",
+      "options": [
+        "Only 1",
+        "Only 2",
+        "Depends on no of Columns",
+        "Depends on DBA"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is true about the SQL AS clause?",
+      "options": [
+        "The AS clause in SQL is used to change the column name in the output or assign a name to a derived column",
+        "The SQL AS clause can only be used with the JOIN clause",
+        "The AS clause in SQL is used to define a search condition",
+        "AS clause is used to change the values in all rows"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How can you change 'Thomas' into 'Michel' in the 'LastName' column in the Users table?",
+      "options": [
+        "UPDATE User SET LastName = 'Thomas' INTO LastName = 'Michel'",
+        "MODIFY Users SET LastName = 'Michel' WHERE LastName = 'Thomas'",
+        "MODIFY Users SET LastName = 'Thomas' INTO LastName = 'Michel'",
+        "UPDATE Users SET LastName = 'Michel' WHERE LastName = 'Thomas'"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which command is used to change the definition of a table in SQL?",
+      "options": [
+        "CREATE",
+        "UPDATE",
+        "ALTER",
+        "SELECT"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What keyword in SQL is used to check for a null value?",
+      "options": [
+        "=",
+        "IS NULL",
+        "IS NOT NULL",
+        "< >"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does the IN operator do in SQL?",
+      "options": [
+        "Returns rows that match a specified value",
+        "Filters rows that do not match a specified value",
+        "Compares a value to a list of specified values",
+        "Compares columns of two tables"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the result of the query SELECT COUNT(DISTINCT Salary) FROM EMPLOYEE;?",
+      "options": [
+        "Total number of employees",
+        "Total number of unique salaries",
+        "Total number of salaries greater than a specified value",
+        "Average salary of employees"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the meaning of 'HAVING' clause in MySQL?",
+      "options": [
+        "To filter out the row values",
+        "To filter out the column values",
+        "To filter out the row and column values",
+        "None of the mentioned"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which operator is used to check the existence of a record in a subquery?",
+      "options": [
+        "In",
+        "Exists",
+        "Check",
+        "For"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How many records must be matched with the given criteria to return TRUE from EXISTS condition in SQL?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "EXISTS operator is used with WHICH of the following clause(s)?",
+      "options": [
+        "Select",
+        "In",
+        "Where",
+        "Group by"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does the EXISTS keyword do in SQL?",
+      "options": [
+        "Checks if a value exists in a table",
+        "Verifies if a nested query returns at least one row",
+        "Ensures a column is not null",
+        "Combines results of multiple queries"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the primary use of a SQL view?",
+      "options": [
+        "To store permanent data in the database",
+        "To create a virtual table from a SQL query",
+        "To create relationships between tables",
+        "To perform database migrations"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which SQL command is used to create a view?",
+      "options": [
+        "CREATE TABLE",
+        "CREATE VIEW",
+        "ALTER VIEW",
+        "SELECT INTO"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "You can delete a view with ___ command.",
+      "options": [
+        "drop view",
+        "delete view",
+        "remove view",
+        "truncate view"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is a trigger in SQL?",
+      "options": [
+        "A stored procedure that executes automatically in response to an event",
+        "A command to backup data",
+        "A query to create new views",
+        "A temporary table for transaction logs"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following can activate a trigger?",
+      "options": [
+        "A user login event",
+        "A SELECT query",
+        "An INSERT, UPDATE, or DELETE operation",
+        "A schema modification"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which SQL command is used to modify the structure of an existing table?",
+      "options": [
+        "update table",
+        "modify table",
+        "alter table",
+        "change table"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What happens when DROP TABLE CASCADE is executed?",
+      "options": [
+        "Only the table structure is removed",
+        "The table and its dependent objects are removed",
+        "The table data is cleared, but the structure is preserved",
+        "The table is locked for further operations"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What happens if you execute DROP TABLE table_name; in SQL?",
+      "options": [
+        "The table structure is removed, but the data is retained",
+        "Both the table structure and data are removed",
+        "Only the table relationships are deleted",
+        "The table is temporarily hidden"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the main goal of informal design guidelines for relation schemas?",
+      "options": [
+        "Improve efficiency of queries",
+        "Reduce anomalies and redundancies",
+        "Simplify database architecture",
+        "Increase the size of the database"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A relation schema is said to have good design if it avoids which of the following?",
+      "options": [
+        "Foreign keys",
+        "Redundancy and null values",
+        "Composite attributes",
+        "Views"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following can lead to redundancy in a relational schema?",
+      "options": [
+        "Storing derived attributes",
+        "Using foreign keys",
+        "Storing minimal data",
+        "Using primary keys"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the term used to describe the splitting of a large table into smaller ones to improve design?",
+      "options": [
+        "Aggregation",
+        "Normalization",
+        "Generalization",
+        "Denormalization"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a characteristic of functional dependency?",
+      "options": [
+        "It is a one-to-one mapping",
+        "It requires foreign keys",
+        "It is a constraint between two attributes",
+        "It ensures primary key uniqueness"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is NOT a type of functional dependency?",
+      "options": [
+        "Full functional dependency",
+        "Partial functional dependency",
+        "Transitive functional dependency",
+        "Reflexive functional dependency"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In a relation, if attribute B is functionally dependent on attribute A, which of the following is true?",
+      "options": [
+        "Each value of A is associated with one value of B",
+        "Each value of B is associated with one value of A",
+        "There is no dependency between A and B",
+        "A and B must be the same attribute"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which normal form ensures that no non-prime attribute is dependent on a part of a candidate key?",
+      "options": [
+        "First Normal Form (1NF)",
+        "Second Normal Form (2NF)",
+        "Third Normal Form (3NF)",
+        "Boyce-Codd Normal Form (BCNF)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A relation is in 1NF if it ___",
+      "options": [
+        "Has no transitive dependencies",
+        "Has a candidate key",
+        "Contains only atomic values",
+        "Is free of all anomalies"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In which normal form is every non-prime attribute non-transitively dependent on the primary key?",
+      "options": [
+        "1NF",
+        "2NF",
+        "3NF",
+        "BCNF"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which dependency violates 3NF?",
+      "options": [
+        "Transitive dependency",
+        "Partial dependency",
+        "Candidate key dependency",
+        "Full functional dependency"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Relation is in BCNF if it is in 3NF and ___",
+      "options": [
+        "Every determinant is a candidate key",
+        "All attributes are dependent on the entire primary key",
+        "It has no transitive dependencies",
+        "It has no multivalued dependencies"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "BCNF is stricter than 3NF because it eliminates ___",
+      "options": [
+        "Functional dependencies",
+        "Multivalued dependencies",
+        "Dependencies where a non-candidate key attribute determines a candidate key",
+        "All transitive dependencies"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is a prime attribute in normalization?",
+      "options": [
+        "An attribute part of a candidate key",
+        "An attribute not part of any key",
+        "An attribute dependent on another attribute",
+        "An attribute used as a foreign key"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of these is always true for BCNF?",
+      "options": [
+        "It eliminates all redundancies",
+        "Every determinant is a superkey",
+        "It is free of all anomalies",
+        "It allows partial dependencies"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What type of dependency does 2NF aim to eliminate?",
+      "options": [
+        "Partial dependency",
+        "Transitive dependency",
+        "Candidate key dependency",
+        "Referential dependency"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which normal form is sufficient to handle most real-world database design requirements?",
+      "options": [
+        "1NF",
+        "2NF",
+        "3NF",
+        "BCNF"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is a set of inference rules used to derive all the functional dependencies on a relational database?",
+      "options": [
+        "Armstrong's Axioms",
+        "Boyce-Codd Axioms",
+        "Dependency Axioms",
+        "Relational Axioms"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is a minimal cover of a set of functional dependencies?",
+      "options": [
+        "A set of dependencies with redundant attributes",
+        "A minimal equivalent set of functional dependencies",
+        "A set of all possible keys for a relation",
+        "A reduced schema without any dependencies"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which property is essential for a decomposition to be considered lossless?",
+      "options": [
+        "Dependency preservation",
+        "Non-additive join property",
+        "Minimal redundancy",
+        "Full functional dependency"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does dependency preservation ensure in a relational decomposition?",
+      "options": [
+        "All functional dependencies are retained in decomposed relations",
+        "The schema is reduced to fewer attributes",
+        "No multivalued dependencies exist",
+        "All relations are in BCNF"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the closure of an attribute set in functional dependency theory?",
+      "options": [
+        "All attributes in the relation",
+        "The set of all attributes that can be functionally determined by the attribute set",
+        "All possible super keys",
+        "The smallest key for the relation"
+      ],
+      "answer": 1
+    }
+  ],
+  "sepm_unit2": [
+    {
+      "question": "Aggregation represents ___.",
+      "options": [
+        "is_a relationship",
+        "part_of relationship",
+        "composed_of relationship",
+        "none of above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The feature of the object oriented paradigm which helps code reuse is ___.",
+      "options": [
+        "Object",
+        "Class",
+        "Inheritance",
+        "Aggregation"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which among these are the rules to be considered to form Class diagrams?",
+      "options": [
+        "Class symbols must have at least a name compartment",
+        "Compartment can be in random order",
+        "Attributes and operations can be listed at any suitable place",
+        "Class symbols must not have at least a name compartment"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Object diagram is used to show the design ___ view of a system.",
+      "options": [
+        "static",
+        "dynamic",
+        "logical",
+        "process"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following diagram is used to model the vocabulary of a system?",
+      "options": [
+        "Object Diagram",
+        "Activity Diagram",
+        "Class diagram",
+        "Interaction Diagram"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The object-oriented development life cycle is which of the following?",
+      "options": [
+        "Analysis, design, and implementation steps in the given order and using the steps no more than one time",
+        "Analysis, design, and implementation steps in any order and using the steps no more than one time",
+        "Analysis, design, and implementation steps in any order and using multiple iterations",
+        "Analysis, design, and implementation steps in the given order and using multiple iterations"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Composition is a stronger form of which of the following?",
+      "options": [
+        "Aggregation",
+        "Inheritance",
+        "Encapsulation",
+        "Generalization"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Sequence of messages is emphasized by ___ diagram.",
+      "options": [
+        "state chart",
+        "sequence",
+        "activity",
+        "collaboration"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which model in system modeling depicts the dynamic behavior of the system?",
+      "options": [
+        "Context Model",
+        "Behavioral Model",
+        "Data Model",
+        "Object Model"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The UML supports event-based modeling using ___ diagrams.",
+      "options": [
+        "Deployment",
+        "Collaboration",
+        "State",
+        "Class"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "___ allows us to infer that different members of classes have some common characteristics.",
+      "options": [
+        "Realization",
+        "Aggregation",
+        "Generalization",
+        "dependency"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "___ & ___ diagrams of UML represent Interaction modeling.",
+      "options": [
+        "Use Case, Sequence",
+        "Class, Object",
+        "Activity, State Chart",
+        "Class, State"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Actual programming of software code is done during the ___ step in the SDLC.",
+      "options": [
+        "Maintenance and Evaluation",
+        "Design",
+        "Development",
+        "Testing"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A scenario is ___.",
+      "options": [
+        "An instance of a use case",
+        "Same as a use case",
+        "Diagrammatic representation of a use case",
+        "A type of use case"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which one is not a UML diagram?",
+      "options": [
+        "Class Diagram",
+        "Component Diagram",
+        "Protocol state diagram",
+        "Entity diagram"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Aggregation is ___.",
+      "options": [
+        "Weak association",
+        "Strong association",
+        "Required association",
+        "None"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How many types of actor are there in use case diagram?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In UML, operation signature consists of ___.",
+      "options": [
+        "Operation name and parameters",
+        "Return type and operation",
+        "Operation name",
+        "Operation name, return type"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "___ is not a type of relationship in a use case diagram.",
+      "options": [
+        "Association",
+        "Generalization",
+        "Extend",
+        "Collaboration"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is NOT a true benefit of UML class diagrams?",
+      "options": [
+        "Communicates design to developers",
+        "Provides blueprint for implementation",
+        "Represents real-world system being modeled",
+        "Shows execution flow"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Activity diagram focuses on ___.",
+      "options": [
+        "Flow of activities",
+        "State changes",
+        "Object creation",
+        "Class relationships"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Sequence diagrams model ___ behavior.",
+      "options": [
+        "Static",
+        "Dynamic",
+        "Structural",
+        "None"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "State diagram represents ___.",
+      "options": [
+        "State transitions of an object",
+        "Object relationships",
+        "Data flow",
+        "System architecture"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "___ diagram shows component dependencies.",
+      "options": [
+        "Class",
+        "Component",
+        "Deployment",
+        "Object"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Deployment diagram shows ___.",
+      "options": [
+        "Software components",
+        "Hardware nodes",
+        "Class relationships",
+        "Use cases"
+      ],
+      "answer": 1
+    }
+  ],
+  "maths_unit2": [
+    {
+      "question": "Rank of an identity matrix of order d is ___",
+      "options": [
+        "0",
+        "1",
+        "d",
+        "d-1"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "System of equations AX = B has solutions if",
+      "options": [
+        "Rank[A] = number of unknowns",
+        "Rank[A] = Rank[A|B]",
+        "Rank[A] > Rank[A|B]",
+        "Rank[A] < number of unknowns"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "System AX = 0 has nontrivial solution if and only if",
+      "options": [
+        "Determinant of A = Determinant of X",
+        "Determinant of A = 0",
+        "Determinant of A ≠ 0",
+        "Rank of A = n"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements is incorrect about Rank of a matrix?",
+      "options": [
+        "Rank of a matrix A is the number of nonzero rows in its echelon form",
+        "Rank of a matrix A is equal to number of pivot columns in it",
+        "Rank is always greater than number of rows",
+        "Rank of a matrix A is number of basic variables in the system AX = B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "System of equations AX = B has infinite number of solutions if",
+      "options": [
+        "Rank[A] = Rank[A|B] = number of unknowns",
+        "Rank[A] = Rank[A|B] < number of unknowns",
+        "Rank[A] ≠ Rank[A|B]",
+        "Rank[A] = Rank[A|B] > number of unknowns"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The eigen values of a triangular matrix A are",
+      "options": [
+        "Off-diagonal elements",
+        "Diagonal elements",
+        "Determinant of A",
+        "Trace of A"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If A is a square matrix, then det(A) =",
+      "options": [
+        "Sum of the eigen values of A",
+        "Product of the eigen values of A",
+        "Product of diagonal elements of A",
+        "Sum of diagonal elements of A"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An n×n matrix A is diagonalizable if and only if",
+      "options": [
+        "A has n distinct eigen values",
+        "A has repeated eigen vectors",
+        "A has repeated eigen values",
+        "A has n linearly independent eigen vectors"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If A is 3×4 matrix the maximum possible value of the rank A is",
+      "options": [
+        "3",
+        "4",
+        "7",
+        "12"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If a matrix A is reduced to row echelon form, then rank of the matrix is",
+      "options": [
+        "Number of non-zero rows",
+        "Number of zero rows",
+        "Total number of rows",
+        "Total number of columns"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following method is not used to find the solution of the system of equations?",
+      "options": [
+        "Gauss elimination method",
+        "Gauss seidel method",
+        "Cramer's rule",
+        "LU decomposition method"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is not a valid elementary row operation?",
+      "options": [
+        "Interchange two rows",
+        "Multiply a row by a non-zero scalar",
+        "Add a multiple of one row to another",
+        "Multiply two rows together"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A subset S of vector space V over field F is a basis of V if S is linearly independent and",
+      "options": [
+        "S is finite",
+        "Span(S) = V",
+        "S has n elements",
+        "Span(S) = S"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If {u₁, u₂, ..., uₙ} is linearly independent set, then c₁u₁ + c₂u₂ + ... + cₙuₙ = 0 has",
+      "options": [
+        "Infinitely many solutions",
+        "Only trivial solution",
+        "No solution",
+        "Both B and C are possible"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The row space of an m × n matrix A is a subspace of",
+      "options": [
+        "Rᵐ",
+        "Rⁿ",
+        "Rᵐˣⁿ",
+        "R"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In two dimensional Euclidean space, identity element with respect to vector addition is",
+      "options": [
+        "(1, 1)",
+        "(0, 0)",
+        "(1, 0)",
+        "(0, 1)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In three dimensional Euclidean space, inverse of (-2, -2, 0) with respect to vector addition is",
+      "options": [
+        "(0, 0, 0)",
+        "(2, 2, 2)",
+        "(2, 2, 0)",
+        "(-2, -2, 0)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Let T: R⁴ → R⁴ be the linear transformation with null space of T = {(0,0,0,0)}. Then nullity of T is",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The dimension of the subspace of R³ spanned by {(2,0,1), (5,2,1), (1,2,-1)} is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The column space of an m × n matrix is a subspace of",
+      "options": [
+        "Rⁿ",
+        "Rᵐ",
+        "Rᵐˣⁿ",
+        "R"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Let T: R³ → R³ be the linear transformation with nullity of T = 1, then rank of T is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If T: V → W is a linear transformation, which of the following statements is not true?",
+      "options": [
+        "T(0) = 0 for 0 ∈ V",
+        "T(-x) = -T(x) for x ∈ V",
+        "T(2x) = 2T(x) for x ∈ V",
+        "T(x+y) = T(x) - T(y)"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The set W = {(a, b, 0): a, b ∈ R} is a subspace of",
+      "options": [
+        "R²",
+        "R(R)",
+        "R³",
+        "R⁴"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A system of equation AX = b has solution if and only if",
+      "options": [
+        "b ∈ Null(A)",
+        "b ∈ Row(A)",
+        "b ∈ Col(A)",
+        "b ∈ R"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Let T: R² → R² be the linear transformation defined by T(x,y) = (x, 0). Then the matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "[[1,0],[0,1]]",
+        "[[1,0],[0,0]]",
+        "[[0,0],[0,1]]",
+        "[[0,1],[1,0]]"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Two vectors u and v in Rⁿ are orthogonal if",
+      "options": [
+        "u·v = 1",
+        "u·v = 0",
+        "u×v = 0",
+        "u+v = 0"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If a basis of a vector space has 3 elements, then dimension of the vector space is",
+      "options": [
+        "Less than 4",
+        "Greater than 3",
+        "3",
+        "Cannot be determined"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The set of all solutions to the homogeneous equation system AX = 0, where A is an m × n matrix is",
+      "options": [
+        "Row space of A",
+        "Column space of A",
+        "Null space of A",
+        "Range of A"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Let T: R² → R² be the linear transformation defined by T(x,y) = (0, y). Then matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "[[1,0],[0,1]]",
+        "[[0,0],[0,1]]",
+        "[[1,0],[0,0]]",
+        "[[0,1],[1,0]]"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If S = {v₁, v₂, ..., vₙ} is a set of vectors in a finite dimension vector space V, then S is called a basis for V if",
+      "options": [
+        "S spans V",
+        "S is linearly independent",
+        "Either (a) or (b)",
+        "S spans V and S is linearly independent"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If the inner product of two vectors is zero then they are called",
+      "options": [
+        "Parallel vectors",
+        "Null vectors",
+        "Orthogonal vectors",
+        "Unit vectors"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The matrix of linear transformation T(x, y) = (y, x) with respect to the standard basis is",
+      "options": [
+        "[[1,0],[0,1]]",
+        "[[0,1],[1,0]]",
+        "[[1,1],[0,0]]",
+        "[[0,0],[1,1]]"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The quadratic form 3x₁² - 4x₁x₂ + 6x₂² is",
+      "options": [
+        "Positive definite",
+        "Positive semi-definite",
+        "Negative definite",
+        "Neither negative definite nor positive definite"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In QR factorization of matrix A, Q is a matrix whose columns form an orthonormal basis for",
+      "options": [
+        "Null(A)",
+        "Col(A)",
+        "Row(A)",
+        "Both Null(A) and Row(A)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The quadratic form 3x² + 5y² + z² is",
+      "options": [
+        "Positive definite",
+        "Negative definite",
+        "Negative semi definite",
+        "Positive semi definite"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In PCA, what are the principal components?",
+      "options": [
+        "Features of the data set",
+        "Eigen values of the covariance matrix",
+        "Eigen vectors of the covariance matrix",
+        "Data points in the data set"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In PCA, what is the relationship between the first principal component and the second principal component?",
+      "options": [
+        "They are parallel",
+        "They are positively correlated",
+        "They are negatively correlated",
+        "They are orthogonal"
+      ],
+      "answer": 3
+    }
+  ]
+};
+const CATALOG = {
+  "dbms": {
+    "name": "DBMS - Unit 1",
+    "icon": "🗄️",
+    "description": "Database Management Systems",
+    "unit": 1
+  },
+  "sepm": {
+    "name": "SEPM - Unit 1",
+    "icon": "📋",
+    "description": "Software Engineering & Project Management",
+    "unit": 1
+  },
+  "maths": {
+    "name": "Maths - Unit 1",
+    "icon": "📐",
+    "description": "Engineering Mathematics",
+    "unit": 1
+  },
+  "daa_unit2": {
+    "name": "DAA - Unit 2",
+    "icon": "📊",
+    "description": "Design and Analysis of Algorithms",
+    "unit": 2
+  },
+  "dbms_unit2": {
+    "name": "DBMS - Unit 2",
+    "icon": "🗄️",
+    "description": "Database Management Systems",
+    "unit": 2
+  },
+  "sepm_unit2": {
+    "name": "SEPM - Unit 2",
+    "icon": "📋",
+    "description": "Software Engineering & Project Management",
+    "unit": 2
+  },
+  "maths_unit2": {
+    "name": "Maths - Unit 2",
+    "icon": "📐",
+    "description": "Engineering Mathematics",
+    "unit": 2
+  }
 };
 let currentSubject=null,questions=[],cur=0,score=0,answered=false,mode='practice';
 const LABELS=['A','B','C','D'];
