@@ -4171,199 +4171,509 @@
   ],
   "mp_unit2": [
     {
-      "question": "Which register is used as default counter in LOOP instruction in 8086?",
+      "question": "What is the difference between a procedure and a macro in 8086?",
       "options": [
-        "AX",
-        "BX",
-        "CX",
-        "DX"
+        "Procedures are faster, macros use less memory",
+        "Macros are expanded inline, procedures use CALL/RET",
+        "Procedures are expanded inline, macros use CALL/RET",
+        "There is no difference"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which interrupt is used to read a character from keyboard in 8086?",
+      "options": [
+        "INT 10H",
+        "INT 21H",
+        "INT 13H",
+        "INT 19H"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The DOS function to create a file is available through which interrupt?",
+      "options": [
+        "INT 10H",
+        "INT 21H with AH=3CH",
+        "INT 13H",
+        "INT 21H with AH=4CH"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In Arduino, pinMode() function is used to",
+      "options": [
+        "Read digital input",
+        "Write digital output",
+        "Configure a pin as INPUT or OUTPUT",
+        "Read analog input"
       ],
       "answer": 2
     },
     {
-      "question": "The 8086 microprocessor has how many 16-bit registers?",
+      "question": "The analogRead() function in Arduino returns a value in the range",
+      "options": [
+        "0 to 255",
+        "0 to 1023",
+        "0 to 4095",
+        "0 to 65535"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "digitalWrite() function in Arduino is used to",
+      "options": [
+        "Read digital value",
+        "Write HIGH or LOW to a digital pin",
+        "Configure pin mode",
+        "Read analog value"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "RISC stands for",
+      "options": [
+        "Reduced Instruction Set Computer",
+        "Random Instruction Set Computer",
+        "Rapid Instruction Set Computer",
+        "Regular Instruction Set Computer"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "CISC stands for",
+      "options": [
+        "Complete Instruction Set Computer",
+        "Complex Instruction Set Computer",
+        "Common Instruction Set Computer",
+        "Central Instruction Set Computer"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is a characteristic of RISC architecture?",
+      "options": [
+        "Variable length instructions",
+        "Many addressing modes",
+        "Fixed length instructions",
+        "Complex instructions"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "ARM processor uses which type of architecture?",
+      "options": [
+        "CISC",
+        "RISC",
+        "MISC",
+        "VLIW"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The ARM processor has how many general purpose registers?",
       "options": [
         "8",
-        "14",
+        "13",
         "16",
-        "4"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "Which flag is set when there is a carry from lower nibble to higher nibble?",
-      "options": [
-        "Carry Flag",
-        "Auxiliary Flag",
-        "Zero Flag",
-        "Parity Flag"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "What is the size of the instruction queue in 8086?",
-      "options": [
-        "4 bytes",
-        "6 bytes",
-        "8 bytes",
-        "2 bytes"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "Which addressing mode is used in the instruction MOV AX, [BX+SI]?",
-      "options": [
-        "Direct addressing",
-        "Register indirect",
-        "Based indexed addressing",
-        "Immediate addressing"
+        "32"
       ],
       "answer": 2
     },
     {
-      "question": "The 8086 microprocessor can address up to how much memory?",
+      "question": "The Program Status Register (PSR) in ARM contains",
       "options": [
-        "64 KB",
-        "256 KB",
-        "1 MB",
-        "16 MB"
+        "Only condition flags",
+        "Only control bits",
+        "Condition flags and control bits",
+        "Only address information"
       ],
       "answer": 2
     },
     {
-      "question": "Which segment register is used for stack operations?",
+      "question": "In ARM, the link register (LR) is used to",
       "options": [
-        "CS",
-        "DS",
-        "SS",
-        "ES"
+        "Store return address during subroutine call",
+        "Store stack pointer",
+        "Store program counter",
+        "Store status flags"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "ARM7 processor uses how many stage pipeline?",
+      "options": [
+        "2-stage",
+        "3-stage",
+        "5-stage",
+        "7-stage"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The Arduino Due board uses which processor?",
+      "options": [
+        "ATmega328",
+        "ATmega2560",
+        "ARM Cortex-M3",
+        "ARM Cortex-A9"
       ],
       "answer": 2
     },
     {
-      "question": "What does the BIU in 8086 stand for?",
+      "question": "Serial.begin(9600) in Arduino sets the",
       "options": [
-        "Binary Interface Unit",
-        "Bus Interface Unit",
-        "Basic Instruction Unit",
-        "Buffer Input Unit"
+        "Pin mode",
+        "Baud rate for serial communication",
+        "Analog reference",
+        "Digital output"
       ],
       "answer": 1
     },
     {
-      "question": "Which instruction is used to transfer control to a subroutine?",
+      "question": "Serial.println() function in Arduino",
       "options": [
-        "JMP",
-        "CALL",
-        "RET",
-        "LOOP"
+        "Reads data from serial port",
+        "Writes data followed by newline to serial port",
+        "Initializes serial communication",
+        "Closes serial communication"
       ],
       "answer": 1
     },
     {
-      "question": "The physical address in 8086 is calculated as:",
+      "question": "In 8086, the EXTRN directive is used to",
       "options": [
-        "Segment * 16 + Offset",
-        "Segment + Offset",
-        "Segment * Offset",
-        "Segment / 16 + Offset"
+        "Define a variable",
+        "Declare a symbol defined in another module",
+        "End the program",
+        "Define a procedure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The OFFSET operator in 8086 assembly returns",
+      "options": [
+        "Segment address",
+        "Offset address of a variable",
+        "Physical address",
+        "Logical address"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which directive is used to include another file in 8086 assembly?",
+      "options": [
+        "EXTERN",
+        "IMPORT",
+        "INCLUDE",
+        "REQUIRE"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "INT 21H with AH=4CH is used to",
+      "options": [
+        "Read character",
+        "Write character",
+        "Terminate program",
+        "Open file"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In embedded systems, GPIO stands for",
+      "options": [
+        "General Purpose Input/Output",
+        "Global Processor Input/Output",
+        "General Processor I/O",
+        "Graphics Processing Input/Output"
       ],
       "answer": 0
     },
     {
-      "question": "Which flag is used to control the direction of string operations?",
+      "question": "PWM stands for",
       "options": [
-        "Carry Flag",
-        "Direction Flag",
-        "Overflow Flag",
-        "Trap Flag"
+        "Pulse Width Modification",
+        "Pulse Width Modulation",
+        "Power Width Modulation",
+        "Processor Width Modulation"
       ],
       "answer": 1
     },
     {
-      "question": "What is the purpose of the XLAT instruction?",
+      "question": "In Arduino, analogWrite() uses PWM on pins marked with",
       "options": [
-        "Transfer data between registers",
-        "Translate a byte using a lookup table",
-        "Exchange data between memory locations",
-        "Load effective address"
+        "*",
+        "~",
+        "#",
+        "@"
       ],
       "answer": 1
     },
     {
-      "question": "Which interrupt has the highest priority in 8086?",
+      "question": "The delay() function in Arduino",
       "options": [
-        "NMI",
-        "INTR",
-        "Software interrupt",
-        "Single step"
+        "Pauses the program for specified milliseconds",
+        "Pauses the program for specified microseconds",
+        "Returns the time since program started",
+        "Sets a timer interrupt"
       ],
       "answer": 0
     },
     {
-      "question": "The EU in 8086 stands for:",
+      "question": "millis() function in Arduino returns",
       "options": [
-        "Execution Unit",
-        "External Unit",
-        "Enhanced Unit",
-        "Elementary Unit"
+        "Current time in seconds",
+        "Time since program started in milliseconds",
+        "Delay time",
+        "Clock frequency"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In ARM architecture, the Stack Pointer register is",
+      "options": [
+        "R13",
+        "R14",
+        "R15",
+        "R0"
       ],
       "answer": 0
     },
     {
-      "question": "Which register pair is used for 32-bit multiplication result in 8086?",
+      "question": "The Program Counter in ARM is register",
       "options": [
-        "AX:BX",
-        "DX:AX",
-        "CX:BX",
-        "SI:DI"
+        "R13",
+        "R14",
+        "R15",
+        "R0"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "AMBA in ARM stands for",
+      "options": [
+        "Advanced Microprocessor Bus Architecture",
+        "Advanced Microcontroller Bus Architecture",
+        "ARM Microcontroller Bus Architecture",
+        "Advanced Memory Bus Architecture"
       ],
       "answer": 1
+    },
+    {
+      "question": "Which of the following is NOT a feature of embedded systems?",
+      "options": [
+        "Real-time operation",
+        "Low power consumption",
+        "Dedicated functionality",
+        "General purpose computing"
+      ],
+      "answer": 3
     }
   ],
   "maths_unit2": [
     {
-      "question": "If f(x) = x² + 2x + 1, then f'(x) equals:",
+      "question": "Rank of an identity matrix of order d is ___",
       "options": [
-        "2x + 2",
-        "x² + 2",
-        "2x + 1",
-        "x + 2"
+        "0",
+        "1",
+        "d",
+        "d-1"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
-      "question": "The integral of e^x is:",
+      "question": "System of equations AX = B has solutions if",
       "options": [
-        "e^x + C",
-        "xe^x + C",
-        "e^(x+1) + C",
-        "ln(e^x) + C"
-      ],
-      "answer": 0
-    },
-    {
-      "question": "What is the derivative of sin(x)?",
-      "options": [
-        "-cos(x)",
-        "cos(x)",
-        "tan(x)",
-        "-sin(x)"
+        "Rank[A] = number of unknowns",
+        "Rank[A] = Rank[A|B]",
+        "Rank[A] > Rank[A|B]",
+        "Rank[A] < number of unknowns"
       ],
       "answer": 1
     },
     {
-      "question": "The Laplace transform of 1 is:",
+      "question": "System AX = 0 has nontrivial solution if and only if",
       "options": [
-        "1/s",
-        "s",
-        "1",
-        "s²"
+        "Determinant of A = Determinant of X",
+        "Determinant of A = 0",
+        "Determinant of A ≠ 0",
+        "Rank of A = n"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements is incorrect about Rank of a matrix?",
+      "options": [
+        "Rank of a matrix A is the number of nonzero rows in its echelon form",
+        "Rank of a matrix A is equal to number of pivot columns in it",
+        "Rank is always greater than number of rows",
+        "Rank of a matrix A is number of basic variables in the system AX = B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "System of equations AX = B has infinite number of solutions if",
+      "options": [
+        "Rank[A] = Rank[A|B] = number of unknowns",
+        "Rank[A] = Rank[A|B] < number of unknowns",
+        "Rank[A] ≠ Rank[A|B]",
+        "Rank[A] = Rank[A|B] > number of unknowns"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The eigen values of a triangular matrix A are",
+      "options": [
+        "Off-diagonal elements",
+        "Diagonal elements",
+        "Determinant of A",
+        "Trace of A"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If A is a square matrix, then det(A) =",
+      "options": [
+        "Sum of the eigen values of A",
+        "Product of the eigen values of A",
+        "Product of diagonal elements of A",
+        "Sum of diagonal elements of A"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An n×n matrix A is diagonalizable if and only if",
+      "options": [
+        "A has n distinct eigen values",
+        "A has repeated eigen vectors",
+        "A has repeated eigen values",
+        "A has n linearly independent eigen vectors"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If A is 3×4 matrix the maximum possible value of the rank A is",
+      "options": [
+        "3",
+        "4",
+        "7",
+        "12"
       ],
       "answer": 0
     },
     {
-      "question": "What is the order of the differential equation y'' + 2y' + y = 0?",
+      "question": "If a matrix A is reduced to row echelon form, then rank of the matrix is",
+      "options": [
+        "Number of non-zero rows",
+        "Number of zero rows",
+        "Total number of rows",
+        "Total number of columns"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following method is not used to find the solution of the system of equations?",
+      "options": [
+        "Gauss elimination method",
+        "Gauss seidel method",
+        "Cramer's rule",
+        "LU decomposition method"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is not a valid elementary row operation?",
+      "options": [
+        "Interchange two rows",
+        "Multiply a row by a non-zero scalar",
+        "Add a multiple of one row to another",
+        "Multiply two rows together"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A subset S of vector space V over field F is a basis of V if S is linearly independent and",
+      "options": [
+        "S is finite",
+        "Span(S) = V",
+        "S has n elements",
+        "Span(S) = S"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If {u₁, u₂, ..., uₙ} is linearly independent set, then c₁u₁ + c₂u₂ + ... + cₙuₙ = 0 has",
+      "options": [
+        "Infinitely many solutions",
+        "Only trivial solution",
+        "No solution",
+        "Both B and C are possible"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The row space of an m × n matrix A is a subspace of",
+      "options": [
+        "Rᵐ",
+        "Rⁿ",
+        "Rᵐˣⁿ",
+        "R"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In two dimensional Euclidean space, identity element with respect to vector addition is",
+      "options": [
+        "(1, 1)",
+        "(0, 0)",
+        "(1, 0)",
+        "(0, 1)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In three dimensional Euclidean space, inverse of (-2, -2, 0) with respect to vector addition is",
+      "options": [
+        "(0, 0, 0)",
+        "(2, 2, 2)",
+        "(2, 2, 0)",
+        "(-2, -2, 0)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Let T: R⁴ → R⁴ be the linear transformation with null space of T = {(0,0,0,0)}. Then nullity of T is",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The dimension of the subspace of R³ spanned by {(2,0,1), (5,2,1), (1,2,-1)} is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The column space of an m × n matrix is a subspace of",
+      "options": [
+        "Rⁿ",
+        "Rᵐ",
+        "Rᵐˣⁿ",
+        "R"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Let T: R³ → R³ be the linear transformation with nullity of T = 1, then rank of T is",
       "options": [
         "1",
         "2",
@@ -4373,54 +4683,164 @@
       "answer": 1
     },
     {
-      "question": "The inverse Laplace transform of 1/s² is:",
+      "question": "If T: V → W is a linear transformation, which of the following statements is not true?",
       "options": [
-        "1",
-        "t",
-        "t²",
-        "e^t"
+        "T(0) = 0 for 0 ∈ V",
+        "T(-x) = -T(x) for x ∈ V",
+        "T(2x) = 2T(x) for x ∈ V",
+        "T(x+y) = T(x) - T(y)"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The set W = {(a, b, 0): a, b ∈ R} is a subspace of",
+      "options": [
+        "R²",
+        "R(R)",
+        "R³",
+        "R⁴"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A system of equation AX = b has solution if and only if",
+      "options": [
+        "b ∈ Null(A)",
+        "b ∈ Row(A)",
+        "b ∈ Col(A)",
+        "b ∈ R"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Let T: R² → R² be the linear transformation defined by T(x,y) = (x, 0). Then the matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "[[1,0],[0,1]]",
+        "[[1,0],[0,0]]",
+        "[[0,0],[0,1]]",
+        "[[0,1],[1,0]]"
       ],
       "answer": 1
     },
     {
-      "question": "Which method is used to solve first-order linear differential equations?",
+      "question": "Two vectors u and v in Rⁿ are orthogonal if",
       "options": [
-        "Integration by parts",
-        "Integrating factor method",
-        "Partial fractions",
-        "L'Hopital's rule"
+        "u·v = 1",
+        "u·v = 0",
+        "u×v = 0",
+        "u+v = 0"
       ],
       "answer": 1
     },
     {
-      "question": "The Laplace transform of t is:",
+      "question": "If a basis of a vector space has 3 elements, then dimension of the vector space is",
       "options": [
-        "1/s",
-        "1/s²",
-        "s",
-        "s²"
-      ],
-      "answer": 1
-    },
-    {
-      "question": "What is the degree of the differential equation (y')² + y = x?",
-      "options": [
-        "1",
-        "2",
+        "Less than 4",
+        "Greater than 3",
         "3",
-        "Not defined"
+        "Cannot be determined"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The set of all solutions to the homogeneous equation system AX = 0, where A is an m × n matrix is",
+      "options": [
+        "Row space of A",
+        "Column space of A",
+        "Null space of A",
+        "Range of A"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Let T: R² → R² be the linear transformation defined by T(x,y) = (0, y). Then matrix of linear transformation with respect to standard basis is",
+      "options": [
+        "[[1,0],[0,1]]",
+        "[[0,0],[0,1]]",
+        "[[1,0],[0,0]]",
+        "[[0,1],[1,0]]"
       ],
       "answer": 1
     },
     {
-      "question": "The solution of dy/dx = y is:",
+      "question": "If S = {v₁, v₂, ..., vₙ} is a set of vectors in a finite dimension vector space V, then S is called a basis for V if",
       "options": [
-        "y = Ce^x",
-        "y = Cx",
-        "y = C/x",
-        "y = x + C"
+        "S spans V",
+        "S is linearly independent",
+        "Either (a) or (b)",
+        "S spans V and S is linearly independent"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If the inner product of two vectors is zero then they are called",
+      "options": [
+        "Parallel vectors",
+        "Null vectors",
+        "Orthogonal vectors",
+        "Unit vectors"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The matrix of linear transformation T(x, y) = (y, x) with respect to the standard basis is",
+      "options": [
+        "[[1,0],[0,1]]",
+        "[[0,1],[1,0]]",
+        "[[1,1],[0,0]]",
+        "[[0,0],[1,1]]"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The quadratic form 3x₁² - 4x₁x₂ + 6x₂² is",
+      "options": [
+        "Positive definite",
+        "Positive semi-definite",
+        "Negative definite",
+        "Neither negative definite nor positive definite"
       ],
       "answer": 0
+    },
+    {
+      "question": "In QR factorization of matrix A, Q is a matrix whose columns form an orthonormal basis for",
+      "options": [
+        "Null(A)",
+        "Col(A)",
+        "Row(A)",
+        "Both Null(A) and Row(A)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The quadratic form 3x² + 5y² + z² is",
+      "options": [
+        "Positive definite",
+        "Negative definite",
+        "Negative semi definite",
+        "Positive semi definite"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In PCA, what are the principal components?",
+      "options": [
+        "Features of the data set",
+        "Eigen values of the covariance matrix",
+        "Eigen vectors of the covariance matrix",
+        "Data points in the data set"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In PCA, what is the relationship between the first principal component and the second principal component?",
+      "options": [
+        "They are parallel",
+        "They are positively correlated",
+        "They are negatively correlated",
+        "They are orthogonal"
+      ],
+      "answer": 3
     }
   ]
 }
