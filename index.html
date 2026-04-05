@@ -294,11 +294,10 @@ function renderQuestion() {
         btn.innerHTML = `<span class="lbl">${labels[i]}</span><span class="opt-text">${opt}</span>`;
         
         const answered = answers[currentIndex] !== null;
+        const isUnit2 = CATALOG[currentSubject]?.unit === 2;
         
         if (answered) {
             btn.disabled = true;
-            const isUnit2 = CATALOG[currentSubject]?.unit === 2;
-            
             if (currentMode === 'practice') {
                 // For Unit 2 practice mode, show selected answer as correct
                 if (isUnit2) {
@@ -310,6 +309,9 @@ function renderQuestion() {
             } else {
                 if (i === answers[currentIndex]) btn.classList.add('selected-exam');
             }
+        } else if (currentMode === 'practice' && !isUnit2) {
+            // Show correct answer immediately for Unit 1 practice mode
+            if (i === q.answer) btn.classList.add('correct');
         }
         
         btn.onclick = () => selectAnswer(i);
