@@ -299,10 +299,11 @@ function renderQuestion() {
         if (answered) {
             btn.disabled = true;
             if (currentMode === 'practice') {
-                // For Unit 2 practice mode, show selected answer as correct
+                // For Practice Mode, if it's Unit 2, mark the selected answer as correct (green)
                 if (isUnit2) {
                     if (i === answers[currentIndex]) btn.classList.add('correct');
                 } else {
+                    // For other units in Practice Mode, show the true correct answer
                     if (i === q.answer) btn.classList.add('correct');
                     else if (i === answers[currentIndex]) btn.classList.add('incorrect');
                 }
@@ -310,7 +311,7 @@ function renderQuestion() {
                 if (i === answers[currentIndex]) btn.classList.add('selected-exam');
             }
         } else if (currentMode === 'practice' && !isUnit2) {
-            // Show correct answer immediately for Unit 1 practice mode
+            // Highlight the correct answer immediately for Unit 1 practice mode
             if (i === q.answer) btn.classList.add('correct');
         }
         
@@ -352,9 +353,9 @@ function selectAnswer(idx) {
     // Check if current subject is Unit 2
     const isUnit2 = CATALOG[currentSubject]?.unit === 2;
     
-    // Auto-correct for Unit 2 in practice mode
+    // Auto-correct for Unit 2 in practice mode: any choice is correct
     if (currentMode === 'practice' && isUnit2) {
-        score++;  // Always give score for Unit 2 practice mode
+        score++;
     } else if (idx === correct) {
         score++;
     }
@@ -363,10 +364,11 @@ function selectAnswer(idx) {
     btns.forEach((btn, i) => {
         btn.disabled = true;
         if (currentMode === 'practice') {
-            // For Unit 2 practice mode, mark selected answer as correct
+            // For Unit 2 practice mode, mark selected answer as correct (green)
             if (isUnit2) {
                 if (i === idx) btn.classList.add('correct');
             } else {
+                // Standard practice mode behavior
                 if (i === correct) btn.classList.add('correct');
                 else if (i === idx) btn.classList.add('incorrect');
             }
