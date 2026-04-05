@@ -297,9 +297,16 @@ function renderQuestion() {
         
         if (answered) {
             btn.disabled = true;
+            const isUnit2 = CATALOG[currentSubject]?.unit === 2;
+            
             if (currentMode === 'practice') {
-                if (i === q.answer) btn.classList.add('correct');
-                else if (i === answers[currentIndex]) btn.classList.add('incorrect');
+                // For Unit 2 practice mode, show selected answer as correct
+                if (isUnit2) {
+                    if (i === answers[currentIndex]) btn.classList.add('correct');
+                } else {
+                    if (i === q.answer) btn.classList.add('correct');
+                    else if (i === answers[currentIndex]) btn.classList.add('incorrect');
+                }
             } else {
                 if (i === answers[currentIndex]) btn.classList.add('selected-exam');
             }
@@ -340,14 +347,27 @@ function selectAnswer(idx) {
     answers[currentIndex] = idx;
     const correct = questions[currentIndex].answer;
     
-    if (idx === correct) score++;
+    // Check if current subject is Unit 2
+    const isUnit2 = CATALOG[currentSubject]?.unit === 2;
+    
+    // Auto-correct for Unit 2 in practice mode
+    if (currentMode === 'practice' && isUnit2) {
+        score++;  // Always give score for Unit 2 practice mode
+    } else if (idx === correct) {
+        score++;
+    }
     
     const btns = document.querySelectorAll('.opt-btn');
     btns.forEach((btn, i) => {
         btn.disabled = true;
         if (currentMode === 'practice') {
-            if (i === correct) btn.classList.add('correct');
-            else if (i === idx) btn.classList.add('incorrect');
+            // For Unit 2 practice mode, mark selected answer as correct
+            if (isUnit2) {
+                if (i === idx) btn.classList.add('correct');
+            } else {
+                if (i === correct) btn.classList.add('correct');
+                else if (i === idx) btn.classList.add('incorrect');
+            }
         } else {
             if (i === idx) btn.classList.add('selected-exam');
         }
