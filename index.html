@@ -294,25 +294,15 @@ function renderQuestion() {
         btn.innerHTML = `<span class="lbl">${labels[i]}</span><span class="opt-text">${opt}</span>`;
         
         const answered = answers[currentIndex] !== null;
-        const isUnit2 = CATALOG[currentSubject]?.unit === 2;
         
         if (answered) {
             btn.disabled = true;
             if (currentMode === 'practice') {
-                // For Practice Mode, if it's Unit 2, mark the selected answer as correct (green)
-                if (isUnit2) {
-                    if (i === answers[currentIndex]) btn.classList.add('correct');
-                } else {
-                    // For other units in Practice Mode, show the true correct answer
-                    if (i === q.answer) btn.classList.add('correct');
-                    else if (i === answers[currentIndex]) btn.classList.add('incorrect');
-                }
+                // In Practice Mode, mark the selected answer as correct (green) always
+                if (i === answers[currentIndex]) btn.classList.add('correct');
             } else {
                 if (i === answers[currentIndex]) btn.classList.add('selected-exam');
             }
-        } else if (currentMode === 'practice' && !isUnit2) {
-            // Highlight the correct answer immediately for Unit 1 practice mode
-            if (i === q.answer) btn.classList.add('correct');
         }
         
         btn.onclick = () => selectAnswer(i);
@@ -350,11 +340,8 @@ function selectAnswer(idx) {
     answers[currentIndex] = idx;
     const correct = questions[currentIndex].answer;
     
-    // Check if current subject is Unit 2
-    const isUnit2 = CATALOG[currentSubject]?.unit === 2;
-    
-    // Auto-correct for Unit 2 in practice mode: any choice is correct
-    if (currentMode === 'practice' && isUnit2) {
+    // In practice mode, any choice is considered correct
+    if (currentMode === 'practice') {
         score++;
     } else if (idx === correct) {
         score++;
@@ -364,14 +351,8 @@ function selectAnswer(idx) {
     btns.forEach((btn, i) => {
         btn.disabled = true;
         if (currentMode === 'practice') {
-            // For Unit 2 practice mode, mark selected answer as correct (green)
-            if (isUnit2) {
-                if (i === idx) btn.classList.add('correct');
-            } else {
-                // Standard practice mode behavior
-                if (i === correct) btn.classList.add('correct');
-                else if (i === idx) btn.classList.add('incorrect');
-            }
+            // In practice mode, mark the selected answer as correct (green)
+            if (i === idx) btn.classList.add('correct');
         } else {
             if (i === idx) btn.classList.add('selected-exam');
         }
