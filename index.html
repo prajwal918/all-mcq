@@ -298,11 +298,16 @@ function renderQuestion() {
         if (answered) {
             btn.disabled = true;
             if (currentMode === 'practice') {
-                // In Practice Mode, mark the selected answer as correct (green) always
+                // Highlight the selected answer
                 if (i === answers[currentIndex]) btn.classList.add('correct');
+                // Also highlight the true correct answer if it's different
+                if (i === q.answer) btn.classList.add('correct');
             } else {
                 if (i === answers[currentIndex]) btn.classList.add('selected-exam');
             }
+        } else if (currentMode === 'practice') {
+            // "ALWAYS ON": Highlight the true correct answer immediately in Practice Mode
+            if (i === q.answer) btn.classList.add('correct');
         }
         
         btn.onclick = () => selectAnswer(i);
