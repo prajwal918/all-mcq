@@ -1,13 +1,35 @@
 name: CI
+
 on:
   push:
     branches: [ "main", "master" ]
   pull_request:
     branches: [ "main", "master" ]
+
 jobs:
-  build:
+  test:
+    name: Run Tests & Checks
     runs-on: ubuntu-latest
+    
     steps:
-    - uses: actions/checkout@v3
-    - name: Run checks
-      run: echo "Checks passed"
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Validate JSON Data Format
+        run: |
+          # Use jq to ensure the questions file is valid JSON
+          jq empty all_questions.json
+          
+      - name: Lint HTML Structure
+        run: |
+          npx --yes htmlhint "index.html"
+          
+      - name: Verify Application Files Exist
+        run: |
+          test -f index.html
+          test -f all_questions.json

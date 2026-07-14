@@ -192,10 +192,17 @@ let answers = [];
 async function loadQuestions() {
     try {
         const res = await fetch('all_questions.json');
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
         SUBJECTS = await res.json();
         renderSubjectGrid();
     } catch (e) {
         console.error('Failed to load questions:', e);
+        const grid = document.getElementById('subject-grid');
+        if (grid) {
+            grid.innerHTML = '<div style="color:var(--red);padding:1rem;text-align:center;border:1px solid var(--red-border);border-radius:8px;background:var(--red-bg);">Failed to load questions data. Please check your connection and try again.</div>';
+        }
     }
 }
 
