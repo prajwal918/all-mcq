@@ -1,5 +1,7 @@
 FROM nginx:1.25-alpine
 
+LABEL security.hardened="true"
+
 # Set working directory
 WORKDIR /usr/share/nginx/html
 
