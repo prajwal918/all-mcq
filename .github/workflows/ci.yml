@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Checkout Repository
         continue-on-error: true
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Set up Node.js
         continue-on-error: true
